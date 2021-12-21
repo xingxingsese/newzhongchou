@@ -11,5 +11,11 @@
 
     <artifactId>atcrowdfunding-api</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.lsc.zhongchou</groupId>
+            <artifactId>atcrowdfunding-bean</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
