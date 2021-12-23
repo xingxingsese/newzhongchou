@@ -4,20 +4,20 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-  
-  
+
+
   <!-- targetRuntime="MyBatis3" MyBatis3Simple-->
   <context id="DB2Tables" targetRuntime="MyBatis3">
   	
-  	
+  	<!--true 无注释-->
   	<commentGenerator>
   		<property name="suppressAllComments" value="true"/>
   	</commentGenerator>
   	<!-- 配置需要连接逆向的数据库 -->
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-        connectionURL="jdbc:mysql://192.168.128.130:3306/atcrowdfunding"
+        connectionURL="jdbc:mysql://192.168.2.215:3306/guli_admin"
         userId="root"
-        password="123456">
+        password="root">
     </jdbcConnection>
 
 	<!--  -->
@@ -27,8 +27,8 @@
 
 
 	<!-- javaModelGenerator：javaModel?  javaBean -->
-    <javaModelGenerator targetPackage="com.atguigu.atcrowdfunding.bean" 
-    	targetProject="..\atcrowdfunding-bean\src\main\java">
+    <javaModelGenerator targetPackage="com.lsc.bean"
+    	targetProject="..\atcrowdfunding-bean\src\main\java"><!--目标工程   .\本工程 -->
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
@@ -40,7 +40,7 @@
     </sqlMapGenerator>
 
 	<!-- javaClientGenerator：Dao接口放在哪里 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.atguigu.atcrowdfunding.mapper"  
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.lsc.mapper"
     	targetProject=".\src\main\java">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
