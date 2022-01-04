@@ -9,7 +9,7 @@
   <!-- targetRuntime="MyBatis3" MyBatis3Simple-->
   <context id="DB2Tables" targetRuntime="MyBatis3">
   	
-  	
+  	<!--true 无注释-->
   	<commentGenerator>
   		<property name="suppressAllComments" value="true"/>
   	</commentGenerator>

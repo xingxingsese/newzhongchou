@@ -10,7 +10,7 @@
 
 	<!-- 1、包扫描 -->
 	<!--只包含-->
-	<context:component-scan base-package="com.lsc.atcrowdfunding.controller" use-default-filters="false">
+	<context:component-scan base-package="com.lsc.controller" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 		<!--web层全局错误处理-->
 		<context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>

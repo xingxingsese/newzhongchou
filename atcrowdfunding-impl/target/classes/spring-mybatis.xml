@@ -17,14 +17,14 @@
 		<!-- 自定mybatis全局配置文件的位置 -->
 		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
 	</bean>
-	
-	
+
+
 	<!-- 指定mapper接口在哪里 -->
 <!-- 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 			<property name="basePackage" value="com.atguigu.atcrowdfunding.mapper"></property>
 	</bean> -->
-	<!-- 
+	<!--
 	以上都一样
 	 -->
-	<mybatis-spring:scan base-package="com.atguigu.atcrowdfunding.mapper"/>
+	<mybatis-spring:scan base-package="com.lsc.mapper"/>
 </beans>

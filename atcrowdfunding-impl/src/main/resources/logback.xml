@@ -19,12 +19,12 @@
          <appender-ref ref="STDOUT"/>  
      </logger>
       -->
-      <logger name="mybatis.mapperr" level="debug" additivity="false">
-      	 <appender-ref ref="haha" />
-      </logger>
-      
+
+    <logger name="com.lsc.mapper" level="debug" additivity="false">
+        <appender-ref ref="haha" />
+    </logger>
       <!-- 将业务先调整为debug级别 -->
-      <logger name="com.lsc" level="debug" additivity="false">
+      <logger name="com.lsc" level="info" additivity="false">
       	 <appender-ref ref="haha" />
       </logger>
       

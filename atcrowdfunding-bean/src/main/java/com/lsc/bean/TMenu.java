@@ -1,5 +1,8 @@
 package com.lsc.bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TMenu {
     private Integer id;
 
@@ -10,6 +13,16 @@ public class TMenu {
     private String icon;
 
     private String url;
+
+    private List<TMenu> tMenus = new ArrayList();
+
+    public List<TMenu> gettMenus() {
+        return tMenus;
+    }
+
+    public void settMenus(List<TMenu> tMenus) {
+        this.tMenus = tMenus;
+    }
 
     public Integer getId() {
         return id;
