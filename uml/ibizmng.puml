@@ -1,0 +1,32 @@
+@startmindmap
+/'* Debian
+** Ubuntu
+*** Linux Mint
+*** Kubuntu
+*** Lubuntu
+*** KDE Neon
+** LMDE
+** SolydXK
+** SteamOS
+** Raspbian with a very long name
+*** <s>Raspmbc</s> => OSMC
+*** <s>Raspyfi</s> => Volumio'/
+
+
+
+
+
+* ibizmng
+** 1 Controller
+*** com.ipay.ibizmng.web.migration.Controller.MigrationController
+** 2 Interface
+*** com.ipay.ibizmng.biz.migration.manager.MigrationManager
+**** com.ipay.ibizmng.biz.migration.manager.MigrationManager.impl
+** 3 Service
+*** com.ipay.ibizmng.common.service.integration.iexpbizprod;
+**** com.ipay.ibizmng.common.service.integration.iexpbizprod.impl;
+** 4 远程调用
+
+@endmindmap
+
+

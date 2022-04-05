@@ -5,6 +5,7 @@ import com.lsc.com.lsc.utils.AppUtils;
 import com.lsc.constant.Constant;
 import com.lsc.api.AdminService;
 import com.lsc.bean.TAdmin;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -29,6 +31,47 @@ public class LoginController {
 
     @Autowired
     AdminService adminService;
+
+    /**
+     * 批量删除
+     * @param id
+     * @param session
+     * @param model
+     * @return
+     */
+    @GetMapping("/user/batch/delete")
+    public String deleteBatchAdmin(@RequestParam("ids") String ids,HttpSession session,Model model){
+        model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));
+        model.addAttribute("pn", session.getAttribute("pn"));
+        if (StringUtils.isNotBlank(ids)){
+            String[] split = ids.split(",");
+            try {
+                for (String id : split) {
+                    adminService.deleteAdmin(Integer.parseInt(id));
+                }
+            } catch (NumberFormatException e) {
+                log.error("删除用户：{} 时出现异常",ids,e);
+            }
+        }
+
+        return "redirect:admin/index.html";
+    }
+    /**
+     * 单个删除
+     * @param id
+     * @param session
+     * @param model
+     * @return
+     */
+    @GetMapping("/user/delete")
+    public String deleteAdmin(@RequestParam("id") Integer id,HttpSession session,Model model){
+
+
+        model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));
+        model.addAttribute("pn", session.getAttribute("pn"));
+        adminService.deleteAdmin(id);
+        return "redirect:admin/index.html";
+    }
 
     @PostMapping("/doLogin")
     public String login(@RequestParam("username") String userName, @RequestParam("password")String passWord,

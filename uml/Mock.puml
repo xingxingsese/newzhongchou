@@ -1,0 +1,18 @@
+@startuml
+participant 用户 as yh
+participant 应用 as yy
+participant 数据库 as bd
+autonumber /'自动带序号'/
+hide footbox /'去除脚注'/
+
+yh -> yy : 登录request
+yy -> bd : 查询数据库
+bd --> yy : 返回查询结果
+yy -> yy : 判断是否登录成功
+yy --> yh : 进入登录页
+
+
+@enduml
+
+
+

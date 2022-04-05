@@ -42,10 +42,18 @@
 				  <li class="active">新增</li>
 				</ol>
 			<div class="panel panel-default">
-              <div class="panel-heading">表单数据<div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-question-sign"></i></div></div>
+              <div class="panel-heading">表单数据<div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal">
+				  <i class="glyphicon glyphicon-question-sign"></i></div></div>
 			  <div class="panel-body">
 				<form role="form"  method="post" action="${ctx }/user/add">
-			
+					<c:if test="${!empty msg }">
+						<div class="alert alert-warning alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<strong>帐号错误!</strong> ${msg }
+						</div>
+					</c:if>
 							
 				  <div class="form-group">
 					<label for="exampleInputPassword1">登陆账号</label>
@@ -53,14 +61,14 @@
 					name="loginacct" value="${TAdmin.loginacct }" placeholder="请输入登陆账号">
 				  </div>
 				  	<!-- 警告框 -->
-				  <c:if test="${!empty loginacctmsg }">
+				<%--  <c:if test="${!empty loginacctmsg }">
 					<div class="alert alert-warning alert-dismissible" role="alert">
 	  					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 	  					<span aria-hidden="true">&times;</span>
 	  					</button>
 	  					<strong>帐号错误!</strong> ${loginacctmsg }
 					</div>
-				</c:if>
+				</c:if>--%>
 				  <div class="form-group">
 					<label for="exampleInputPassword1">用户名称</label>
 					<input type="text" class="form-control" id="exampleInputPassword1" 
@@ -73,14 +81,14 @@
 				  </div>
 				  
 				  	<!-- 警告框 -->
-				  <c:if test="${!empty emailmsg }">
+				 <%-- <c:if test="${!empty emailmsg }">
 					<div class="alert alert-warning alert-dismissible" role="alert">
 	  					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 	  					<span aria-hidden="true">&times;</span>
 	  					</button>
 	  					<strong>邮箱错误!</strong> ${emailmsg }
 					</div>
-					</c:if>
+					</c:if>--%>
 				  <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> 新增</button>
 				  <button type="reset" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置</button>
 				</form>

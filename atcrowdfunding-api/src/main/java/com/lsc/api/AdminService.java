@@ -11,7 +11,21 @@ import java.util.List;
  * @date: 2021/12/26
  */
 public interface AdminService {
-    public TAdmin selectLogInfo(String userName, String passWord);
+    TAdmin selectLogInfo(String userName, String passWord);
 
     List<TMenu> selectListMenus();
+
+    List<TAdmin> listAllAdminByCondition(String condition);
+
+    TAdmin selectById(Integer id);
+
+    void updateAdmin(TAdmin admin);
+
+    void savaAdmin(TAdmin tAdmin);
+
+    boolean checkLogAccount(TAdmin tAdmin);
+
+    boolean checkemail(TAdmin tAdmin);
+
+    void deleteAdmin(Integer id);
 }

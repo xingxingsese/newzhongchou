@@ -1,0 +1,54 @@
+@startuml
+participant user
+participant wf
+participant codat
+participant xero
+autonumber /'自动带序号'/
+hide footbox /'去除脚注'/
+
+user -> wf: 登录
+activate user #FFBBBB/'开始红色柱状条'/
+activate wf #FFBBBB/'红色柱状条'/
+
+deactivate user #FFBBBB/'结束红色柱状条'/
+
+wf -> codat: 申请公司\n(对应wf的币种账户)
+deactivate wf #FFBBBB/'红色柱状条'/
+activate codat #FFBBBB
+
+codat --> wf : 返回redirectUrl \n 跳转到codat页面创建连接
+deactivate codat
+
+activate wf #FFBBBB
+wf --> user : 展示codat页面
+deactivate wf
+activate user #FFBBBB
+
+user -> codat : 通过companyId创建connection
+deactivate user
+
+activate codat #FFBBBB
+codat -> codat : 选择集成的平台(xero)
+
+
+codat -> xero : 跳转到xero的授权页
+deactivate codat
+activate xero #FFBBBB
+
+
+xero --> codat : 返回授权结果
+deactivate xero #FFBBBB
+
+activate codat #FFBBBB
+deactivate codat
+codat -> codat : 跳转到在codat设置的回调地址
+
+activate user #FFBBBB
+codat -> user : 跳转到wf指定页
+deactivate user #FFBBBB
+
+newpage/'分割符'/
+
+
+@enduml
+

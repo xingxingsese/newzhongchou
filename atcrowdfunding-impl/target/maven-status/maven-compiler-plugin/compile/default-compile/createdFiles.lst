@@ -12,6 +12,7 @@ com\lsc\mapper\QrtzFiredTriggersMapper.class
 com\lsc\mapper\TOrderMapper.class
 com\lsc\mapper\TPermissionMapper.class
 com\lsc\mapper\QrtzCronTriggersMapper.class
+com\lsc\com\lsc\utils\AppUtils.class
 com\lsc\mapper\TMenuMapper.class
 com\lsc\mapper\QrtzSchedulerStateMapper.class
 com\lsc\mapper\TResourceMapper.class

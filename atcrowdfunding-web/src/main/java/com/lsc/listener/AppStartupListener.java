@@ -40,7 +40,6 @@ public class AppStartupListener implements ServletContextListener {
      */
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-
         log.debug("com.lsc.listener.AppStartupListener 项目关闭... lsc");
     }
 }

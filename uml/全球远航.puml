@@ -1,0 +1,86 @@
+@startuml
+
+participant 商户 as sh
+participant 前端 as qd
+participant 生态 as st
+participant iboos as yy
+participant sf
+autonumber /'自动带序号'/
+hide footbox /'去除脚注'/
+
+
+sh -> qd : 发起申请开店请求 状态:初始化
+qd -> st : 发送表单数据
+st -> st : 存入db
+st --> qd
+qd --> sh
+st -> sf : 异步发送请求
+
+yy -> st : 修改状态为:成功
+st -> sf : 异步发送请求同步数据
+
+newpage/'分割符'/
+
+sh -> qd : 发起申请开店请求 状态:初始化
+qd -> st : 发送表单数据
+st -> st : 存入db
+st --> qd
+qd --> sh
+st -> sf : 异步发送请求同步数据
+
+yy -> st : 修改状态为:审核中
+st -> sf : 异步发送请求同步数据
+
+yy -> st : 修改状态为:成功
+st -> sf : 异步发送请求同步数据
+
+newpage/'分割符'/
+
+sh -> qd : 发起申请开店请求 状态:初始化
+qd -> st : 发送表单数据
+st -> st : 存入db
+st --> qd
+qd --> sh
+st -> sf : 异步发送请求同步数据
+
+yy -> st : 修改状态为:审核中
+st -> sf : 异步发送请求同步数据
+
+yy -> st : 修改状态为:失败
+st -> sf : 异步发送请求同步数据
+
+
+newpage/'分割符'/
+
+sh -> qd : 发起申请开店请求 状态:初始化
+qd -> st : 发送表单数据
+st -> st : 存入db
+st --> qd
+qd --> sh
+st -> sf : 异步发送请求同步数据
+
+yy -> st : 修改状态为:审核中
+
+st -> st : 根据单号查询db,该单目前状态
+
+st -> st : 判断站点.....
+group 判断站点: [独立站]
+st -> st : 判断目前状态和运营传递过来的状态 该单目前状态是否符合该状态规则
+note left :  初始化 > 成功/失败
+else 多站点
+
+st -> st : 判断目前状态和运营传递过来的状态 该单目前状态是否符合该状态规则
+note left :  初始化 > 审核中 > 成功/失败
+group 成功情况
+st -> st : 符合状态规则,修改db数据状态
+st -> sf : 异步发送请求同步数据
+else 失败情况
+st -> st : 不符合,把当前数据存入bd
+st -> st : 定时任务捞取: \n 1 判断当前申请单状态是否为初始化 \n 2 判断数据库内是否有审核中状态的数据 \n 3 判断是否有成功或失败的数据, 依次发送
+end
+
+yy -> st : 修改状态为:失败
+st -> st : 同上逻辑,判断是否符合状态规则 \n 决定是否同步
+st -> sf : 异步发送请求同步数据
+end
+@enduml

@@ -12,4 +12,13 @@ public class Constant {
 
     public static final String MENU_SESSION_KEY = "muns";
 
+    public static final String DEFAULT_PAGE_SIZE = "5";
+
+    public static final String QUERY_CONDITION_KEY = "condition";
+    /**
+     * 连续分几页
+     */
+    public static final Integer CONTINUES_PAGE_NUM = 5;
+
+
 }

@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lsc.api.AdminService;
 import com.lsc.bean.TAdmin;
+import com.lsc.constant.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,28 +40,25 @@ public class PerminssionPageController {
 	 * 注解@RequestParam 获取 请求参数pn (显示第几页 )defaultValue 如果没有传值默认显示1
 	 * 注解@RequestParam 获取 请求参数ps  (每页显示几条数据)defaultValue 如果没有传值默认显示1
 	 */
-/*	@GetMapping("/admin/index.html")
+	@GetMapping("/admin/index.html")
 	public String userPage(Model model,
 			@RequestParam(value="pn",defaultValue = "1")Integer pn,
-			@RequestParam(value="ps",defaultValue = AppConstant.DEFAULT_PAGE_SIZE)Integer ps,
+			@RequestParam(value="ps",defaultValue = Constant.DEFAULT_PAGE_SIZE)Integer ps,
 			@RequestParam(value="condition" ,defaultValue = "") String condition,
 			HttpSession session) {
 		//将查询条件放在session中
-		session.setAttribute(AppConstant.QUERY_CONDITION_KEY, condition);
+		session.setAttribute(Constant.QUERY_CONDITION_KEY, condition);
 		session.setAttribute("pn", pn);
 		//查出系统中所有的用户 显示第1页 每页显示ps条数据
 		PageHelper.startPage(pn, ps);
-		//用户传进来的有可能带查询条件所以不使用这个方法
-		//List<TAdmin> admins = adminService.listAllAdmin();//查询出所有数据,想把数据分页显示的话,必须紧跟 PageHelper.startPage()方法
-		
 		List<TAdmin> admins = adminService.listAllAdminByCondition(condition);
 		//数据源传进来,分页数据条显示几个
-		PageInfo<TAdmin> page = new PageInfo<TAdmin>(admins,AppConstant.CONTINUES_PAGE_NUM);
+		PageInfo<TAdmin> page = new PageInfo<TAdmin>(admins,Constant.CONTINUES_PAGE_NUM);
 		//把数据共享到页面中
 		model.addAttribute("page",page);
 		return "permission/user";
 		
-	}*/
+	}
 	//跳到role页面的
 	@GetMapping("/role/index.html")
 	public String rolePage() {
