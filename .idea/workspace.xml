@@ -6,74 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b27dcea-53e0-4f31-9151-deaca2899de3" name="Default Changelist" comment="众筹">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/AssertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/ExceptionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/ExceptionUtils/LscException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/AdminCrudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/lsc/utils.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uml/Mock.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uml/codat.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uml/ibizmng.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uml/全球远航.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="8b27dcea-53e0-4f31-9151-deaca2899de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/commonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/AdminCrudControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/TestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uml/sequence.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/META-INF/atcrowdfunding-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/api/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/api/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/target/atcrowdfunding-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/target/atcrowdfunding-bean-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TbUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TbUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/target/classes/com/lsc/bean/TAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/target/classes/com/lsc/bean/TAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/target/classes/com/lsc/bean/TbUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/target/classes/com/lsc/bean/TbUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/com/lsc/utils/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/com/lsc/utils/AppUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/adminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/spring-beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/spring-beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/atcrowdfunding-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/atcrowdfunding-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/com/lsc/utils/AppUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/com/lsc/utils/AppUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/adminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/adminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/spring-beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/spring-beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/test-classes/com/lsc/test/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/test-classes/com/lsc/test/DemoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/PerminssionPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/PerminssionPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/listener/AppStartupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/listener/AppStartupListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/PerminssionPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/PerminssionPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/listener/AppStartupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/listener/AppStartupListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-bean-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/permission/user-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/permission/user-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/permission/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/permission/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/PerminssionPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/PerminssionPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/listener/AppStartupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/listener/AppStartupListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -93,7 +44,7 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="464" />
+    <option name="myElementSize" value="495" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -104,10 +55,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/AdminCrudControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="574">
+              <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,66 +67,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/role.jsp">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
+            <state relative-caret-position="132">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-add.jsp">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/stubbing/answers/CallsRealMethods.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="286">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/MockHandlerImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/NullResultGuardian.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/InvocationNotifierHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/creation/MethodInterceptorFilter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TAdminMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/TestBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1046">
-              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="222" column="60" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -185,18 +155,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="UML Sequence" />
         <option value="UML MindMap" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spring.version</find>
       <find>jcl</find>
       <find>项目启动</find>
       <find>dataSource</find>
@@ -224,6 +193,9 @@
       <find>loglog</find>
       <find>delete</find>
       <find>deleteAllBtn</find>
+      <find>junit.version</find>
+      <find>powermock-</find>
+      <find>power</find>
     </findStrings>
     <replaceStrings>
       <replace>tMenus</replace>
@@ -240,17 +212,11 @@
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-add.jsp" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/include/side-bar.jsp" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/listener/AppStartupListener.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/PerminssionPageController.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/adminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/bean/TAdmin.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/bean/TbUser.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/bean/TCert.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceA.java" />
@@ -264,13 +230,10 @@
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/Assert/IResponseEnum.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/exception/BusinessExceptionAssert.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/Assert/Assert.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/exception/BusinessException.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/enums/ResponseEnum.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/UnifiedExceptionHandler.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/UnifiedExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/UnifiedExceptionHandler.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/exception/BaseException.java" />
@@ -280,7 +243,6 @@
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/AssertUtils.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/ExceptionUtils/LscException.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/com/lsc/utils/AppUtils.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/uml/Mock.puml" />
@@ -295,6 +257,17 @@
         <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TbUser.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdmin.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/commonUtils.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/TestBean.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/AdminCrudControllerTest.java" />
       </list>
     </option>
   </component>
@@ -370,10 +343,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2096" />
-    <option name="y" value="109" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="x" value="2345" />
+    <option name="y" value="278" />
+    <option name="width" value="1455" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -444,6 +417,77 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lsc" type="462c0819:PsiDirectoryNode" />
               <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="ExceptionUtils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -655,14 +699,38 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
               <item name="uml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -673,34 +741,21 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/lsc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FreeMarkerUtils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lsc.controller" />
       <recent name="com.lsc.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.lsc" />
-      <recent name="com.lsc.service.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\WEB-INF\views\lsc" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\test\java\com\lsc\bean" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\static" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\include" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.lsc.service.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp" />
@@ -708,6 +763,21 @@
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web" />
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\WEB-INF\webapp" />
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\resources\mybatis" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lsc" />
+      <recent name="com.lsc.service.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lsc.utils" />
+      <recent name="com.lsc.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TestCodeDome\atcrowdfunding\uml" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\WEB-INF\views\lsc" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\test\java\com\lsc\bean" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\static" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,7 +792,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.39">
+  <component name="RunManager" selected="JUnit.AdminCrudControllerTest.test">
+    <configuration name="AdminCrudControllerTest.addAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-web" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.controller.AdminCrudControllerTest" />
+      <option name="METHOD_NAME" value="addAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminCrudControllerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.controller.AdminCrudControllerTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-impl" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="com.lsc.controller.AdminCrudControllerTest" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="com.lsc.controller.AdminCrudController" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.test.DemoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest.build" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.test.DemoTest" />
+      <option name="METHOD_NAME" value="build" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="atcrowdfunding-impl" />
       <extension name="coverage">
@@ -734,38 +879,6 @@
       <option name="PACKAGE_NAME" value="com.lsc.test" />
       <option name="MAIN_CLASS_NAME" value="com.lsc.test.DemoTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MockitTestTest.testMockit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="atcrowdfunding-impl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lsc.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lsc.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.lsc.service.impl.MockitTestTest" />
-      <option name="METHOD_NAME" value="testMockit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="adminServiceImplTest.selectLogInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="atcrowdfunding-impl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lsc.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lsc.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.lsc.service.impl.adminServiceImplTest" />
-      <option name="METHOD_NAME" value="selectLogInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -846,16 +959,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DemoTest.build" />
+      <item itemvalue="JUnit.AdminCrudControllerTest.addAdmin" />
+      <item itemvalue="JUnit.DemoTest" />
       <item itemvalue="JUnit.DemoTest.test" />
-      <item itemvalue="JUnit.adminServiceImplTest.selectLogInfo" />
-      <item itemvalue="JUnit.MockitTestTest.testMockit" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.39" />
+      <item itemvalue="JUnit.AdminCrudControllerTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MockitTestTest.testMockit" />
-        <item itemvalue="JUnit.adminServiceImplTest.selectLogInfo" />
+        <item itemvalue="JUnit.AdminCrudControllerTest.test" />
+        <item itemvalue="JUnit.AdminCrudControllerTest.addAdmin" />
         <item itemvalue="JUnit.DemoTest.test" />
+        <item itemvalue="JUnit.DemoTest" />
+        <item itemvalue="JUnit.DemoTest.build" />
       </list>
     </recent_temporary>
   </component>
@@ -885,7 +1002,10 @@
       <workItem from="1647480977668" duration="10632000" />
       <workItem from="1648034949421" duration="5794000" />
       <workItem from="1648384070937" duration="10294000" />
-      <workItem from="1648608621451" duration="17349000" />
+      <workItem from="1648608621451" duration="17788000" />
+      <workItem from="1649256794121" duration="5605000" />
+      <workItem from="1649848056774" duration="10362000" />
+      <workItem from="1650457079957" duration="13405000" />
     </task>
     <task id="LOCAL-00001" summary="众筹">
       <created>1640017822324</created>
@@ -901,57 +1021,64 @@
       <option name="project" value="LOCAL" />
       <updated>1640187693878</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="众筹">
+      <created>1649172155944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649172155944</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 25m 13s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 18h 11m 59s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 27m 40s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 18h 13m 08s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 28m 45s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 18h 14m 21s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 29m 04s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 19h 40m 53s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 29m 17s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 19h 41m 49s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 31m 07s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_addAdmin - 2022.04.22 at 19h 42m 41s.xml">
+      <configuration name="AdminCrudControllerTest.addAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 31m 31s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_test - 2022.04.26 at 16h 32m 44s.xml">
+      <configuration name="AdminCrudControllerTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 31m 42s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_test - 2022.04.26 at 16h 33m 07s.xml">
+      <configuration name="AdminCrudControllerTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 38m 14s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_test - 2022.04.26 at 16h 33m 56s.xml">
+      <configuration name="AdminCrudControllerTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitTestTest_testMockit - 2022.01.17 at 23h 39m 37s.xml">
-      <configuration name="MockitTestTest.testMockit" configurationId="JUnit" />
+    <history-entry file="AdminCrudControllerTest_test - 2022.04.26 at 16h 34m 50s.xml">
+      <configuration name="AdminCrudControllerTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120160000" />
+    <option name="totallyTimeSpent" value="149971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984152" visible="true" weight="0.23524721" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.50158477" side_tool="true" weight="0.23524721" />
-      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.50158477" side_tool="true" weight="0.23524721" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4984152" visible="true" weight="0.1838118" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296355" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3042789" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23454833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39936608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -974,273 +1101,45 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Coverage" order="7" weight="0.32974482" />
-      <window_info anchor="right" id="PlantUML" order="8" weight="0.6541756" />
+      <window_info anchor="right" id="PlantUML" order="8" weight="0.33971292" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="众筹" />
     <MESSAGE value="修改pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改pom" />
+    <MESSAGE value="众筹" />
+    <option name="LAST_COMMIT_MESSAGE" value="众筹" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/atcrowdfunding$adminServiceImplTest_selectLogInfo.ic" NAME="adminServiceImplTest.selectLogInfo Coverage Results" MODIFIED="1642431933033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.lsc.service.impl.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/atcrowdfunding$DemoTest_test.ic" NAME="DemoTest.test Coverage Results" MODIFIED="1650461141958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lsc.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/atcrowdfunding$DemoTest_test.exec" NAME="DemoTest.test Coverage Results" MODIFIED="1650461023947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lsc.test.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/enums/IResponseEnum.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/Assert/Assert.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/exception/BaseException.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/UnifiedExceptionHandler.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/exception/BusinessException.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/UnifiedMessageSource.java" />
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TAdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdminExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="176" column="24" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/ExceptionUtils/LscException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/com/lsc/utils/AppUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2134">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4571#4572#0" expanded="true" />
-            <element signature="e#4622#4623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/listener/AppStartupListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/include/common-js.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3212">
-          <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/serviceauth/auth_adv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/include/side-bar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/SysRoleMenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/SysRoleMenuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="149" column="34" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar!/org/slf4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6-sources.jar!/org/slf4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="670" column="51" lean-forward="true" selection-start-line="670" selection-start-column="51" selection-end-line="670" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/Mock.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/codat.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" selection-start-line="49" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/全球远航.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/ibizmng.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/TRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4356">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/AssertUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/ExceptionCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="true" />
-            <element signature="e#23112#23113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TRoleExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1268,16 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -1285,59 +1174,378 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
+        <state relative-caret-position="4884">
           <caret line="222" column="60" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/AdminCrudController.java">
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/role.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="840">
+          <caret line="390" column="43" selection-start-line="390" selection-start-column="31" selection-end-line="390" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        <state relative-caret-position="980">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdminRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/sequence.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/codat.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" selection-start-line="49" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/ibizmng.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/Mock.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+          <folding>
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/PropertyDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE.jar!/org/springframework/ui/Model.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TMenuExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/4.0.0/mockito-core-4.0.0.jar!/org/mockito/MockitoAnnotations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/target/classes/com/lsc/bean/TAdmin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#1780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/target/test-classes/com/lsc/test/DemoTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+          <folding>
+            <element signature="e#0#4595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/utils/commonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/test/java/com/lsc/test/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/AdminCrudController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Matchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding>
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="314" column="34" selection-start-line="314" selection-start-column="24" selection-end-line="314" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="202" column="21" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/TAdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/creation/AbstractMockitoMethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/invocation/realmethod/CGLIBProxyRealMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/invocation/InvocationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/stubbing/answers/CallsRealMethods.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/MockHandlerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/NullResultGuardian.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/handler/InvocationNotifierHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/creation/MethodInterceptorFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TAdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/TestBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/test/java/com/lsc/controller/AdminCrudControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/RoleAjaxCrudController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/WEB-INF/views/permission/role.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
+        <state relative-caret-position="132">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>

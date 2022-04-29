@@ -1,6 +1,10 @@
 package com.lsc.bean;
 
-public class TAdmin {
+import lombok.NonNull;
+import lombok.ToString;
+
+@ToString
+public class TAdmin extends TMenuExample{
     private Integer id;
 
     private String loginacct;

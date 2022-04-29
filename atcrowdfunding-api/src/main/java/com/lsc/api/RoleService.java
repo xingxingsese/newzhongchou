@@ -17,4 +17,8 @@ public interface RoleService {
     void addRole(TRole tRole);
 
     void deleteRole(int id);
+
+    TRole getRoleById(Integer id);
+
+    void updataRole(TRole tRole);
 }

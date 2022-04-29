@@ -68,4 +68,14 @@ public class RoleServiceImpl implements RoleService {
     public void deleteRole(int id) {
         tRoleMapper.deleteByPrimaryKey(id);
     }
+
+    @Override
+    public TRole getRoleById(Integer id) {
+        return tRoleMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public void updataRole(TRole tRole) {
+        tRoleMapper.updateByPrimaryKeySelective(tRole);
+    }
 }

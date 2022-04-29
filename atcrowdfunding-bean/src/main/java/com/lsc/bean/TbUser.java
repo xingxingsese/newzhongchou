@@ -3,6 +3,8 @@ package com.lsc.bean;
 import java.util.Date;
 
 public class TbUser {
+    private Integer id;
+
     private Long userId;
 
     private String username;
@@ -51,5 +53,25 @@ public class TbUser {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "TbUser{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", username='" + username + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", password='" + password + '\'' +
+                ", createTime=" + createTime +
+                '}';
     }
 }
