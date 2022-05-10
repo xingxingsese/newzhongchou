@@ -32,10 +32,7 @@ public class DemoTest {
 
     @Test
     public void test() {
-        boolean result1 = true;
-        System.out.println(Boolean.TRUE.equals(result1));
-        System.out.println("Boolean.TRUE = " + Boolean.TRUE);
-        System.out.println("result1 = " + result1);
+        System.out.println("Math.random() = " + Math.random()*10);
     }
 
     public TAdmin buildTadmin(TAdmin tAdmin){

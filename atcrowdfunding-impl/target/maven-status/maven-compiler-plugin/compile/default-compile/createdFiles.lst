@@ -11,9 +11,11 @@ com\lsc\mapper\SysConfigMapper.class
 com\lsc\mapper\QrtzFiredTriggersMapper.class
 com\lsc\mapper\TOrderMapper.class
 com\lsc\mapper\TPermissionMapper.class
+com\lsc\service\impl\MenuServiceImpl.class
 com\lsc\mapper\QrtzCronTriggersMapper.class
 com\lsc\com\lsc\utils\AppUtils.class
 com\lsc\mapper\TMenuMapper.class
+com\lsc\service\impl\AdminServiceImpl.class
 com\lsc\mapper\QrtzSchedulerStateMapper.class
 com\lsc\mapper\TResourceMapper.class
 com\lsc\mapper\TProjectTagMapper.class
@@ -23,7 +25,6 @@ com\lsc\mapper\TRolePermissionMapper.class
 com\lsc\mapper\SysOssMapper.class
 com\lsc\mapper\TProjectMapper.class
 com\lsc\mapper\TTagMapper.class
-com\lsc\service\impl\adminServiceImpl.class
 com\lsc\mapper\QrtzPausedTriggerGrpsMapper.class
 com\lsc\mapper\TMemberProjectFollowMapper.class
 com\lsc\mapper\TTypeMapper.class
@@ -32,6 +33,7 @@ com\lsc\mapper\SysLogMapper.class
 com\lsc\mapper\TTransactionMapper.class
 com\lsc\mapper\TMessageMapper.class
 com\lsc\mapper\TReturnMapper.class
+com\lsc\service\impl\RoleServiceImpl.class
 com\lsc\mapper\ScheduleJobLogMapper.class
 com\lsc\mapper\QrtzLocksMapper.class
 com\lsc\mapper\TAccountTypeCertMapper.class

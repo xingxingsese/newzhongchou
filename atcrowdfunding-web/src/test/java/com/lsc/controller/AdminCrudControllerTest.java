@@ -1,22 +1,21 @@
 package com.lsc.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lsc.bean.TAdmin;
-import com.lsc.bean.TAdminExample;
 import com.lsc.mapper.TAdminMapper;
 import com.lsc.service.impl.AdminServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.Spy;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.mockito.Matchers.any;
 
 /**
  * @Description:
@@ -55,15 +54,5 @@ public class AdminCrudControllerTest {
 
     }
 
-    @Test
-    public void test(){
-        List<String> list = new ArrayList<>();
-        list.add("site");
-        TestBean testBean = new TestBean();
-        testBean.setName("test");
-        testBean.setList(list);
-        testBean.setStringList(JSONObject.toJSONString(list));
 
-        System.out.println("JSONObject.toJSONString(list) = " + JSONObject.toJSONString(testBean));
-    }
 }

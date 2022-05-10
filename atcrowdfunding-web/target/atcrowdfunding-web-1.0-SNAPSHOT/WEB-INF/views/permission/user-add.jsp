@@ -42,7 +42,8 @@
 				  <li class="active">新增</li>
 				</ol>
 			<div class="panel panel-default">
-              <div class="panel-heading">表单数据<div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-question-sign"></i></div></div>
+              <div class="panel-heading">表单数据<div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal">
+				  <i class="glyphicon glyphicon-question-sign"></i></div></div>
 			  <div class="panel-body">
 				<form role="form"  method="post" action="${ctx }/user/add">
 					<c:if test="${!empty msg }">

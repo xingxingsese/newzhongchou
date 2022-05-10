@@ -1,2 +1,4 @@
 com\lsc\api\AdminService.class
+com\lsc\api\RoleService.class
+com\lsc\api\MenuService.class
 com\lsc\constant\Constant.class

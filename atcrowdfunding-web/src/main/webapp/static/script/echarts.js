@@ -64761,7 +64761,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var zrUtil = __webpack_require__(4);
 	    var numberUtil = __webpack_require__(7);
 
-	    // constant
+	    // Constant
 	    var DEFAULT_BAR_BOUND = [20, 140];
 
 	    var ContinuousModel = VisualMapModel.extend({

@@ -20,5 +20,9 @@ public class Constant {
      */
     public static final Integer CONTINUES_PAGE_NUM = 5;
 
+    public static final String JAVA_CODE_TEMPLATE_PATH = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\CodeTemplates";
 
+    public static final String OK = "ok";
+
+    public static final String FAIL = "fail";
 }

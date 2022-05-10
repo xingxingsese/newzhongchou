@@ -4,10 +4,7 @@ import com.lsc.api.RoleService;
 import com.lsc.bean.TRole;
 import com.lsc.bean.TRoleExample;
 import com.lsc.mapper.TRoleMapper;
-import com.lsc.utils.AssertUtils;
-import com.lsc.utils.ExceptionCode;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

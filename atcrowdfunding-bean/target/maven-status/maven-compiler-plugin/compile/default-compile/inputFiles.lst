@@ -22,7 +22,9 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\Sy
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TMessage.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TProjectExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TCertExample.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TCodeTemplateExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\ScheduleJobLog.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\CodeBean.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TRolePermission.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzCronTriggersExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TMessageExample.java
@@ -64,6 +66,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\Qr
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzPausedTriggerGrpsKey.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TAccountTypeCertExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TOrderExample.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TCodeTemplate.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TbUser.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzLocksExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\SysLogExample.java

@@ -24,6 +24,12 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>com.lsc.zhongchou</groupId>
+            <artifactId>Freemarker-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- 除了web的servlet和工具类，剩下都是业务层的依赖 -->
         <!-- junit -->
         <dependency>

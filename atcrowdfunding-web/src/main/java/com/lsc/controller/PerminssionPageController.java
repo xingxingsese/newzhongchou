@@ -24,10 +24,25 @@ import java.util.List;
 @Controller
 public class PerminssionPageController {
 	
-	private static final String String = null;
+
 	@Autowired
 	AdminService adminService;
-	
+
+	// 跳转到Mock代码生成页
+	@GetMapping("/templetes/mock.html")
+	public String templetesMockPages() {
+
+		return "lsc/templetes-code";
+	}
+
+
+	// 跳转到java代码生成页
+	@GetMapping("/templetes/code.html")
+	public String templetesCodePages() {
+
+		return "lsc/templetes-code";
+	}
+
 	//跳到菜单维护页
 	@GetMapping("/menu/index.html")
 	public String menuPage() {
@@ -132,4 +147,7 @@ public class PerminssionPageController {
 		
 		return "servicemanage/tag";
 	}
+
+
+
 }

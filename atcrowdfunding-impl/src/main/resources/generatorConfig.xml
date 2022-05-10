@@ -45,7 +45,7 @@
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
-    <table tableName="%"/>
+    <table tableName="t_code_template"/>
 
   </context>
 </generatorConfiguration>

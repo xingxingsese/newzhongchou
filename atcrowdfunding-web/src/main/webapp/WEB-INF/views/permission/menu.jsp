@@ -185,6 +185,8 @@
 			}
 	}
 	//移除其他组的按钮
+
+
 	function removeCrudBtnGroup(treeId, treeNode){
 		//鼠标从当前元素移走
 		var tid =treeNode.tId;
@@ -290,7 +292,7 @@
 						layer.msg("保存失败");
 					}
 					//关闭模态框
-					$("#menuAddModal").modal("hide");
+					$("#menuAddModel").modal("hide");
 					//刷新数据
 					initMenuTree(); 
 				});

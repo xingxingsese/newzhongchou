@@ -3,10 +3,12 @@ package com.lsc.controller;
 import com.alibaba.druid.support.json.JSONUtils;
 import com.lsc.api.AdminService;
 import com.lsc.bean.TAdmin;
+import com.lsc.common.ExceptionUtils.LscException;
 import com.lsc.constant.Constant;
-import com.lsc.utils.ExceptionUtils.LscException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,27 +16,28 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
-import javax.xml.ws.Service;
 
 /**
  * @Description:
  * @Author: lisc
  * @date: 2022/1/23
  */
-@Slf4j
+
 public class AdminCrudController {
-
-
+    private static final Logger log = LoggerFactory.getLogger(AdminCrudController.class);
+    /**
+     * adminService注释
+     */
     @Autowired
     AdminService adminService;
 
     @GetMapping("/user/batch/delete")
-    public String deleteBacthAdmin(@RequestParam("ids")String ids,
-                                    HttpSession session,Model model){
+    public String deleteBacthAdmin(@RequestParam("ids") String ids,
+                                   HttpSession session, Model model) {
         String condition = (String) session.getAttribute(Constant.QUERY_CONDITION_KEY);
         Integer pn = (Integer) session.getAttribute("pn");
-        model.addAttribute(Constant.QUERY_CONDITION_KEY,condition);
-        model.addAttribute("pn",pn);
+        model.addAttribute(Constant.QUERY_CONDITION_KEY, condition);
+        model.addAttribute("pn", pn);
         if (StringUtils.isNotBlank(ids)) {
             String[] split = ids.split(",");
             for (String s : split) {
