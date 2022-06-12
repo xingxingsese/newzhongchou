@@ -1,4 +1,5 @@
 com\lsc\controller\AdminCrudController.class
+com\lsc\controller\FreeMarkerController.class
 com\lsc\controller\MenuAjaxCrudController.class
 com\lsc\controller\PerminssionPageController.class
 com\lsc\controller\LoginController.class

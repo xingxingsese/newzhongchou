@@ -161,4 +161,23 @@
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getUserHasRoles" parameterType="java.lang.Integer" resultMap="com.lsc.bean.TRole">
+    select distinct <include refid="Base_Column_List" />
+    from t_role as r left join t_admin_role as ar on r.id = ar.adminid
+   where ar.adminid = ${id}
+  </select>
+
+  <select id="getUserUnRoles" parameterType="java.lang.Integer" resultMap="com.lsc.bean.TRole">
+    select distinct
+    <include refid="Base_Column_List"/>
+    t_role rr
+    where rr.id not in (
+     select distinct
+    <include refid="Base_Column_List"/>
+    from t_role as r left join t_admin_role as ar on r.id = ar.adminid
+    where ar.adminid = ${id}
+    )
+
+  </select>
 </mapper>

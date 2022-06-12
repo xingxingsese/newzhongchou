@@ -21,4 +21,8 @@ public interface RoleService {
     TRole getRoleById(Integer id);
 
     void updataRole(TRole tRole);
+
+    List<TRole> getUserHasRoles(Integer id);
+
+    List<TRole> getUserUnRoles(Integer id);
 }

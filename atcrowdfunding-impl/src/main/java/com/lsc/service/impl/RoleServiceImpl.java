@@ -75,4 +75,26 @@ public class RoleServiceImpl implements RoleService {
     public void updataRole(TRole tRole) {
         tRoleMapper.updateByPrimaryKeySelective(tRole);
     }
+
+    /**
+     * 查询用户已有角色
+     * @param id
+     * @return
+     */
+    @Override
+    public List<TRole> getUserHasRoles(Integer id) {
+        return tRoleMapper.getUserHasRoles(id);
+    }
+
+
+    /**
+     * 查询用户未有角色
+     * @param id
+     * @return
+     */
+    @Override
+    public List<TRole> getUserUnRoles(Integer id) {
+
+        return tRoleMapper.getUserUnRoles(id);
+    }
 }

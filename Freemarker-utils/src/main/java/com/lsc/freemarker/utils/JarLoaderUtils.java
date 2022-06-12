@@ -2,15 +2,21 @@ package com.lsc.freemarker.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.lsc.bean.MockAttributeBean;
+import com.lsc.bean.MockClassBean;
+import com.lsc.bean.MockMethodBean;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,6 +57,80 @@ public class JarLoaderUtils {
         }
 
         return loadClass;
+    }
+
+    /**
+     * 获取类所有属性和方法
+     * @param classNamePath 类路径
+     * @param outPath json文本输出路径
+     * @param aClass 反射的类
+     * @return
+     */
+    public static MockClassBean buildSourceData(String classNamePath, String outPath, Class<?> aClass) {
+
+        // 全类名
+        String classPathName = aClass.getName();
+        int lastIndexOf = classNamePath.lastIndexOf('.');
+        // 类名
+        String className = classNamePath.substring(lastIndexOf + 1);
+        // 包名
+        String packageName = classNamePath.substring(0, lastIndexOf);
+
+
+        // 得到类下所有属性
+        Field[] declaredFields = aClass.getDeclaredFields();
+        ArrayList<MockAttributeBean> fieldList = new ArrayList<>();
+        log.info("获取当前类的所有属性:start");
+        for (Field field : declaredFields) {
+            // 设置属性可访问
+            field.setAccessible(true);
+            MockAttributeBean mockAttributeBean = MockAttributeBean.builder()
+                    // 属性名
+                    .attributeName(field.getName())
+                    // 属性类型
+                    .attributeType(field.getType().getSimpleName())
+                    .build();
+            fieldList.add(mockAttributeBean);
+        }
+
+        log.info("获取当前类的所有方法:start");
+
+        ArrayList<MockMethodBean> methodList = new ArrayList<>();
+        // 得到类下所有方法 不包括继承的
+        for (Method method : aClass.getDeclaredMethods()) {
+
+            ArrayList<String> paraName = new ArrayList<>();
+            ArrayList<String> paraType = new ArrayList<>();
+            // 方法内参数
+            Parameter[] parameters = method.getParameters();
+            for (Parameter parameter : parameters) {
+                // 参数名
+                paraName.add(StringBuildUtils.buildLowerCaseStr(parameter.getType().getSimpleName()));
+                // 参数类型
+                paraType.add(parameter.getType().getSimpleName());
+            }
+
+
+            MockMethodBean mockMethodBean = MockMethodBean.builder().methodName(method.getName())  // 方法名
+                    .parameterType(paraType) // 参数类型
+                    .parameterName(paraName) // 参数名
+                    .returnType(method.getReturnType().getSimpleName())  // 方法返回类型
+                    .build();
+            methodList.add(mockMethodBean);
+
+            Class<?>[] parameterTypes = method.getParameterTypes();
+            for (Class<?> parameterType : parameterTypes) {
+                // 判断当前参数是否是基本类型
+                if (!JarLoaderUtils.isWrapClass(parameterType)) {
+                    // 把方法入参生成json文件到指定目录下
+                    JarLoaderUtils.CreationJsonText(parameterType, outPath);
+                }
+            }
+        }
+        return MockClassBean.builder().className(className).packageName(packageName).pack(classPathName)
+                .attribute(fieldList)
+                .methodBeansList(methodList)
+                .build();
     }
 
     /**

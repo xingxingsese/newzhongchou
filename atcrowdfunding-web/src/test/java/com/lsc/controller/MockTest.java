@@ -1,16 +1,23 @@
 package com.lsc.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.lsc.bean.MockAttributeBean;
+import com.lsc.bean.MockClassBean;
+import com.lsc.bean.MockMethodBean;
 import com.lsc.freemarker.utils.JarLoaderUtils;
+import com.lsc.freemarker.utils.StringBuildUtils;
 import org.junit.Test;
+import org.mockito.Mockito;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.util.Date;
-import java.util.Random;
+import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * @Description:
@@ -23,6 +30,15 @@ public class MockTest {
 
     @Test
     public void test() {
+        List listMock = Mockito.mock(List.class);
+        Mockito.doAnswer(new Answer(){
+            @Override
+            public Object answer(InvocationOnMock invocationOnMock)throws Throwable {
+              Object argument = invocationOnMock.getArguments();
+                Consumer.class.getDeclaredMethod("accept",Object.class).invoke(argument,1);
+                return argument;
+            }
+        }).when(listMock).forEach(Mockito.any());
 
     }
 
@@ -35,67 +51,24 @@ public class MockTest {
 
         try {
             // 根据jar包路径和要获取的class全类名获取反射class对象
-          /*  Class<?> aClass = JarLoaderUtils.getClassObject(jarPath, classNamePath);
+            Class<?> aClass = JarLoaderUtils.getClassObject(jarPath, classNamePath);
             if (aClass == null) {
                 log.info("Class为null");
                 return;
-            }*/
-            ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-            Class<?> aClass = classLoader.loadClass("com.lsc.controller.AdminCrudController");
-
-            // 全类名
-            String classPathName = aClass.getName();
-            int lastIndexOf = classNamePath.lastIndexOf('.');
-            // 类名
-            String className = classNamePath.substring(lastIndexOf + 1);
-            // 包名
-            String packageName = classNamePath.substring(0, lastIndexOf);
-
-            // 得到类下所有属性
-            Field[] declaredFields = aClass.getDeclaredFields();
-            log.info("获取当前类的所有属性:start");
-            for (Field field : declaredFields) {
-                // 设置属性可访问
-                field.setAccessible(true);
-                // 属性名
-                log.info(field.getName());
-                // 属性类型
-                log.info(field.getType().getSimpleName());
-
             }
-            log.info("获取当前类的所有属性:end");
+          /*  ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+            Class<?> aClass = classLoader.loadClass("com.lsc.controller.AdminCrudController");*/
 
+            MockClassBean mockClassBean = JarLoaderUtils.buildSourceData(classNamePath, outPath, aClass);
 
-            // 得到类下所有方法 不包括继承的
-            for (Method method : aClass.getDeclaredMethods()) {
-                // 方法名
-                String methodName = method.getName();
-                System.out.println("methodName = " + methodName);
-
-                Parameter[] parameters = method.getParameters();
-                for (Parameter parameter : parameters) {
-                    // arg0
-                    System.out.println("parameters = " + parameter.getName());
-
-                    System.out.println("parameter.getType() = " + parameter.getType().getSimpleName());
-                }
-
-
-                Class<?>[] parameterTypes = method.getParameterTypes();
-                for (Class<?> parameterType : parameterTypes) {
-                    // 判断当前参数是否是基本类型
-                    if (!JarLoaderUtils.isWrapClass(parameterType)) {
-                        // 把方法入参生成json文件到指定目录下
-                        JarLoaderUtils.CreationJsonText(parameterType, outPath);
-                    }
-                }
-            }
 
         } catch (Exception e) {
             log.info("错误异常e :{} message:{}", e, e.getMessage());
 
         }
     }
+
+
 
 
 }

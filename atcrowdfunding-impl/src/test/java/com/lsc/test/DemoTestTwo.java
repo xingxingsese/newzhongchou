@@ -1,10 +1,10 @@
 package com.lsc.test;
 
+import com.lsc.bean.TbUser;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 /**
  * @Description:
@@ -15,25 +15,23 @@ public class DemoTestTwo {
 
     @Test
     public void test() {
-        List<Long> list = new ArrayList();
-        Date date = new Date();
-        for (int i =0 ;i < 20; i ++){
-            long aLong = (long) (Math.random() * 10000);
-          //  System.out.println(aLong);
-           // System.out.println("Math.random() = " + Math.random()*1000);
-           /* date.setTime(System.currentTimeMillis() + i*1000);
-            System.out.println("date = " + date);*/
-           list.add(i,System.currentTimeMillis() + i*1000);
+        /*String substring = UUID.randomUUID().toString().replace("-", "").substring(0, 11);
+        System.out.println("substring = " + substring);*/
 
-        }
+        Optional<TbUser> opt = Optional.empty();
+        System.out.println("empty = " + opt);
 
-        int i = 1;
-        for (Long o : list) {
-            date.setTime(System.currentTimeMillis() + i*1000);
-            i++;
-            System.out.println(date);
+        System.out.println("opt.isPresent() = " + opt.isPresent());
 
-        }
+        Optional<TbUser> tbUser = opt.of(new TbUser());
+        System.out.println("of = " + tbUser);
+
+
+        Optional<Object> optional = Optional.ofNullable(null);
+        System.out.println("ofNullable = " + optional);
+
+        Object orElse = optional.orElse(new TbUser());
+        System.out.println("orElse = " + orElse);
 
     }
 

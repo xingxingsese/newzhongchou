@@ -24,6 +24,15 @@ public interface FreeMarkerService {
      */
     Boolean beanJsonBuildCode(String templatePath, String outPath, Map jsonTextFile);
 
+    /**
+     * 根据jar包生成指定类的mock代码
+     * @param jarPath jar包路径
+     * @param classPath 要生成类的全类名
+     * @param outPath 输出mock代码位置
+     * @return
+     */
+    Boolean jarDataBuildMockCode(String jarPath,String classPath,String outPath);
+
 
     /**
      * 查询所有模版

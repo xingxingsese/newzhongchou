@@ -85,5 +85,6 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.70" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mapstruct:mapstruct:1.1.0.Final" level="project" />
   </component>
 </module>

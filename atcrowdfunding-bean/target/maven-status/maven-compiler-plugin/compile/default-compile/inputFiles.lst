@@ -28,6 +28,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\Co
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TRolePermission.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzCronTriggersExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TMessageExample.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\MockAttributeBean.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\ScheduleJob.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzSimpropTriggers.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\SysConfig.java
@@ -54,6 +55,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\Sy
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzFiredTriggers.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\SysUserRole.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TMemberAddress.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\MockMethodBean.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TAdminRole.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TProjectTag.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzFiredTriggersKey.java
@@ -100,6 +102,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\Qr
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzLocksKey.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TRolePermissionExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\TTypeExample.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\MockClassBean.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\QrtzCalendarsExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\SysRoleExample.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-bean\src\main\java\com\lsc\bean\SysUserTokenExample.java

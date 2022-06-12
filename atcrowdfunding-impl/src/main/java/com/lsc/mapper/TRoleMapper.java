@@ -27,4 +27,8 @@ public interface TRoleMapper {
     int updateByPrimaryKeySelective(TRole record);
 
     int updateByPrimaryKey(TRole record);
+
+    List<TRole> getUserHasRoles(Integer id);
+
+    List<TRole> getUserUnRoles(Integer id);
 }

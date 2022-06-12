@@ -51,7 +51,7 @@
 							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							<strong>帐号错误!</strong> ${msg }
+							<strong>帐号错误!</strong> ${msg }msg
 						</div>
 					</c:if>
 							

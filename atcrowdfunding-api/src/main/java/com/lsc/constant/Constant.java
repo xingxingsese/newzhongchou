@@ -25,4 +25,8 @@ public class Constant {
     public static final String OK = "ok";
 
     public static final String FAIL = "fail";
+
+    public static final Integer JAVA = 1;
+
+    public static final Integer MOCK = 2;
 }

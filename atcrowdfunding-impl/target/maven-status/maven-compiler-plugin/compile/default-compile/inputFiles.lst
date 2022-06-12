@@ -51,6 +51,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\AdminServiceImpl.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TPermissionMenuMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\RoleServiceImpl.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\PermissonsServiceImpl.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TReturnMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\QrtzPausedTriggerGrpsMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TMemberProjectFollowMapper.java

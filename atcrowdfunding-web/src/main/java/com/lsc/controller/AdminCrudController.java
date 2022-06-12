@@ -2,7 +2,9 @@ package com.lsc.controller;
 
 import com.alibaba.druid.support.json.JSONUtils;
 import com.lsc.api.AdminService;
+import com.lsc.api.RoleService;
 import com.lsc.bean.TAdmin;
+import com.lsc.bean.TRole;
 import com.lsc.common.ExceptionUtils.LscException;
 import com.lsc.constant.Constant;
 import lombok.extern.slf4j.Slf4j;
@@ -10,26 +12,56 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * @Description:
  * @Author: lisc
  * @date: 2022/1/23
  */
-
+@Controller
 public class AdminCrudController {
     private static final Logger log = LoggerFactory.getLogger(AdminCrudController.class);
+
     /**
      * adminService注释
      */
     @Autowired
     AdminService adminService;
+
+    /**
+     *  角色service
+     */
+    @Autowired
+    RoleService roleService;
+
+    /**
+     * 角色分配页
+     * @return
+     */
+    @GetMapping("/user/assignRole.html")
+    public String toAssignRole(@RequestParam("id") Integer id,Model model){
+        // 查出客户已有的角色
+        List<TRole> roles =  roleService.getUserHasRoles(id);
+
+        // 查出客户未有的角色
+        List<TRole> unRoles = roleService.getUserUnRoles(id);
+
+        // 存入model中, 页面使用
+        model.addAttribute("roles",roles);
+        model.addAttribute("unRoles",unRoles);
+
+        return "permission/user-role";
+    }
+
+
 
     @GetMapping("/user/batch/delete")
     public String deleteBacthAdmin(@RequestParam("ids") String ids,

@@ -48,6 +48,8 @@ public class FreemarkerUtils {
         list.add("星期五");
         dateModel.put("weeks", list);
 
+
+
         // 5 文件输出
         /**
          * 文件输出 也叫处理模型

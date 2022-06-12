@@ -1,105 +1,40 @@
 package com.lsc.bean;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class TCodeTemplate {
+    // 模版id
     private Integer id;
 
+    // 模版名称
     private String templateName;
 
+    // 模版内容
     private String templateText;
 
+    // 代码输出路径
     private String outPath;
 
+    // 元数据json文本
     private String metaDataJsonText;
 
+    // 模版类型  mock 还是javacode
     private Integer type;
 
+    // 创建时间
     private Date createDate;
 
+    // 创建人
     private String author;
 
+    // 更新时间
     private Date updateDate;
 
+    // 用户id
     private String userId;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getTemplateName() {
-        return templateName;
-    }
-
-    public void setTemplateName(String templateName) {
-        this.templateName = templateName == null ? null : templateName.trim();
-    }
-
-    public String getTemplateText() {
-        return templateText;
-    }
-
-    public void setTemplateText(String templateText) {
-        this.templateText = templateText == null ? null : templateText.trim();
-    }
-
-    public String getOutPath() {
-        return outPath;
-    }
-
-    public void setOutPath(String outPath) {
-        this.outPath = outPath == null ? null : outPath.trim();
-    }
-
-    public String getMetaDataJsonText() {
-        return metaDataJsonText;
-    }
-
-    public void setMetaDataJsonText(String metaDataJsonText) {
-        this.metaDataJsonText = metaDataJsonText == null ? null : metaDataJsonText.trim();
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author == null ? null : author.trim();
-    }
-
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId == null ? null : userId.trim();
-    }
 }
