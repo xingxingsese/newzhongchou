@@ -1,15 +1,20 @@
 package com.lsc.service.impl;
 
 import com.lsc.api.PermissonService;
-import com.lsc.bean.TPermission;
+import com.lsc.bean.*;
 import com.lsc.constant.Constant;
+import com.lsc.mapper.TMenuMapper;
 import com.lsc.mapper.TPermissionMapper;
+import com.lsc.mapper.TRolePermissionMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Description:
@@ -22,6 +27,12 @@ public class PermissonsServiceImpl implements PermissonService {
 
     @Autowired
     TPermissionMapper tPermissionMapper;
+
+    @Autowired
+    TRolePermissionMapper tRolePermissionMapper;
+
+    @Autowired
+    TMenuMapper menuMapper;
 
     /**
      * 查出所有权限
@@ -71,5 +82,31 @@ public class PermissonsServiceImpl implements PermissonService {
         TPermission tPermisson = tPermissionMapper.selectByPrimaryKey(id);
         log.info("查询权限完毕result:{}",tPermisson);
         return tPermisson;
+    }
+
+    @Override
+    public void assignPermissionForRole(Integer rid, String permissionIds) {
+        List<Integer> integerList = null;
+        if (StringUtils.isNotBlank(permissionIds)){
+            integerList = Arrays.asList(permissionIds.split(",")).stream().map(s -> Integer.parseInt(s)).collect(Collectors.toList());
+        }
+        TRolePermissionExample permissionidNotIn = new TRolePermissionExample();
+        permissionidNotIn.createCriteria().andRoleidEqualTo(rid);
+        tRolePermissionMapper.deleteByExample(permissionidNotIn);
+        tRolePermissionMapper.insertPermissioinToRoleBath(rid,integerList);
+    }
+
+    @Override
+    public List<TPermission> getRolePermission(Integer userId) {
+
+        List<TPermission> tRolePermissions = tPermissionMapper.queryRolePermission(userId);
+        return tRolePermissions;
+    }
+
+    //获取当前权限对应的所有菜单
+    @Override
+    public List<TMenu> getMenusByPermissionId(Integer permissionId) {
+
+        return menuMapper.getMenusByPermissionId(permissionId);
     }
 }

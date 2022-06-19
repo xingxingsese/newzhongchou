@@ -27,4 +27,6 @@ public interface TAdminRoleMapper {
     int updateByPrimaryKeySelective(TAdminRole record);
 
     int updateByPrimaryKey(TAdminRole record);
+
+    void insertSelectiveBath(@Param("uid")Integer uid, @Param("rids")List<String> stringList);
 }

@@ -1,4 +1,4 @@
-package com.lsc.controller;
+package com.lsc.controller.permission;
 
 import com.alibaba.druid.support.json.JSONUtils;
 import com.lsc.api.AdminService;
@@ -7,7 +7,6 @@ import com.lsc.bean.TAdmin;
 import com.lsc.bean.TRole;
 import com.lsc.common.ExceptionUtils.LscException;
 import com.lsc.constant.Constant;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,6 +41,23 @@ public class AdminCrudController {
     @Autowired
     RoleService roleService;
 
+    @GetMapping("/user/unAssign/role")
+    public String unAssignUserRole(@RequestParam("uid")Integer uid,@RequestParam("rids")String rids){
+        roleService.unAssignUserRole(uid,rids);
+        return "redirect:/user/assignRole.html?id=" + uid;
+    }
+
+    /**
+     * 给用户分配指定的角色
+     * @param uid
+     * @param rids
+     * @return
+     */
+    @GetMapping("/user/assign/role")
+    public String assignUserRole(@RequestParam("uid")Integer uid,@RequestParam("rids")String rids){
+        roleService.assignUserRole(uid,rids);
+        return "redirect:/user/assignRole.html?id=" + uid;
+    }
     /**
      * 角色分配页
      * @return
@@ -78,6 +94,46 @@ public class AdminCrudController {
             }
         }
         return "redirect:/admin/index.html";
+    }
+    /**
+     * 批量删除
+     * @param ids
+     * @param session
+     * @param model
+     * @return
+     */
+    @GetMapping("/user/batch/delete")
+    public String deleteBatchAdmin(@RequestParam("ids") String ids,HttpSession session,Model model){
+        model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));
+        model.addAttribute("pn", session.getAttribute("pn"));
+        if (StringUtils.isNotBlank(ids)){
+            String[] split = ids.split(",");
+            try {
+                for (String id : split) {
+                    adminService.deleteAdmin(Integer.parseInt(id));
+                }
+            } catch (NumberFormatException e) {
+                log.error("删除用户：{} 时出现异常",ids,e);
+            }
+        }
+
+        return "redirect:admin/index.html";
+    }
+    /**
+     * 单个删除
+     * @param id
+     * @param session
+     * @param model
+     * @return
+     */
+    @GetMapping("/user/delete")
+    public String deleteAdmin(@RequestParam("id") Integer id,HttpSession session,Model model){
+
+
+        model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));
+        model.addAttribute("pn", session.getAttribute("pn"));
+        adminService.deleteAdmin(id);
+        return "redirect:admin/index.html";
     }
 
     @PostMapping("user/add")

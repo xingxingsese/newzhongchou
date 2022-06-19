@@ -6,6 +6,16 @@
     <result column="menuid" jdbcType="INTEGER" property="menuid" />
     <result column="permissionid" jdbcType="INTEGER" property="permissionid" />
   </resultMap>
+
+  <insert id="insertBatchMenuPermission" >
+    INSERT INTO t_permission_menu(menuid,permissionid)
+    values
+    <foreach collection="menuIds" item="menuId" separator=",">
+      (#{menuId},#{permissionId})
+    </foreach>
+
+  </insert>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

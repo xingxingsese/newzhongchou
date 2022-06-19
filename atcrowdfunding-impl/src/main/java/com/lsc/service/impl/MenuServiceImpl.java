@@ -2,13 +2,17 @@ package com.lsc.service.impl;
 
 import com.lsc.api.MenuService;
 import com.lsc.bean.TMenu;
+import com.lsc.bean.TPermissionMenuExample;
 import com.lsc.constant.Constant;
 import com.lsc.mapper.TMenuMapper;
+import com.lsc.mapper.TPermissionMenuMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,6 +26,9 @@ public class MenuServiceImpl implements MenuService {
 
     @Autowired
     TMenuMapper tMenuMapper;
+
+    @Autowired
+    TPermissionMenuMapper permissionMenuMapper;
 
     /**
      * 查出所有菜单
@@ -71,5 +78,29 @@ public class MenuServiceImpl implements MenuService {
         TMenu tMenu = tMenuMapper.selectByPrimaryKey(id);
         log.info("查询菜单完毕result:{}",tMenu);
         return tMenu;
+    }
+
+    /**
+     * 给指定id分配可操作的菜单
+     * permissionId 权限id
+     * menuIds 菜单的id
+     */
+    @Override
+    public void saveMenuPermissions(Integer permissionId, String menuIds) {
+        List<Integer> menuIdsList = new ArrayList<Integer>();
+        if(!StringUtils.isEmpty(menuIds)) {
+            String[] split = menuIds.split(",");
+            for (String string : split) {
+                int menuId = Integer.parseInt(string);
+                menuIdsList.add(menuId);
+            }
+
+            TPermissionMenuExample example = new TPermissionMenuExample();
+            //先删除这个权限对应的所有菜单
+            example.createCriteria().andPermissionidEqualTo(permissionId);
+            permissionMenuMapper.deleteByExample(example);
+            //保存这个权限对应的所有菜单
+            permissionMenuMapper.insertBatchMenuPermission(permissionId,menuIdsList);
+        }
     }
 }

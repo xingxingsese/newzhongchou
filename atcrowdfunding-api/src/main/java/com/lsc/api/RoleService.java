@@ -25,4 +25,8 @@ public interface RoleService {
     List<TRole> getUserHasRoles(Integer id);
 
     List<TRole> getUserUnRoles(Integer id);
+
+    void assignUserRole(Integer uid, String rids);
+
+    void unAssignUserRole(Integer uid, String rids);
 }

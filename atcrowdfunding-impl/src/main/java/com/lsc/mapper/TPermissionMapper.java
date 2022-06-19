@@ -3,6 +3,8 @@ package com.lsc.mapper;
 import com.lsc.bean.TPermission;
 import com.lsc.bean.TPermissionExample;
 import java.util.List;
+
+import com.lsc.bean.TRolePermission;
 import org.apache.ibatis.annotations.Param;
 
 public interface TPermissionMapper {
@@ -27,4 +29,6 @@ public interface TPermissionMapper {
     int updateByPrimaryKeySelective(TPermission record);
 
     int updateByPrimaryKey(TPermission record);
+
+    List<TPermission> queryRolePermission(Integer userId);
 }

@@ -8,6 +8,27 @@
     <result column="icon" jdbcType="VARCHAR" property="icon" />
     <result column="url" jdbcType="VARCHAR" property="url" />
   </resultMap>
+
+  <select id="getMyMenus" resultMap="BaseResultMap">
+    select distinct m.* from t_menu m <!-- 菜单表 -->
+    <!-- 权限菜单表 -->
+    left join t_permission_menu pm on pm.menuid=m.id
+    <!-- 员工权限表 -->
+    left join t_role_permission rp on pm.permissionid=rp.permissionid
+    <!--员工角色表   -->
+    left join t_admin_role ar on ar.roleid = rp.roleid
+    where ar.adminid=#{id}
+  </select>
+
+
+  <!--List<TMenu> getMenusByPermissionId(Integer permissionId);  -->
+  <select id="getMenusByPermissionId" resultMap="BaseResultMap">
+  	SELECT DISTINCT m.* from t_menu m
+  		LEFT JOIN t_permission_menu pm ON pm.menuid = m.id
+  		where pm.permissionid=#{permissionId}
+  </select>
+
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

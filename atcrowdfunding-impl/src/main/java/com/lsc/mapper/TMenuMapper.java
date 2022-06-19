@@ -27,4 +27,9 @@ public interface TMenuMapper {
     int updateByPrimaryKeySelective(TMenu record);
 
     int updateByPrimaryKey(TMenu record);
+
+    List<TMenu> getMenusByPermissionId(Integer permissionId);
+    //查询指定id可操作的菜单
+
+    List<TMenu> getMyMenus(Integer id);
 }

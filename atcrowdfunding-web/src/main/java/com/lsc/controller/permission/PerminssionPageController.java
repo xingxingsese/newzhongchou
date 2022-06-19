@@ -1,4 +1,4 @@
-package com.lsc.controller;
+package com.lsc.controller.permission;
 
 
 import com.github.pagehelper.PageHelper;

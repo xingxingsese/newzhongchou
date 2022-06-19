@@ -148,7 +148,17 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map">
+
+
+    <select id="queryRolePermission" resultType="com.lsc.bean.TPermission">
+      select * from t_permission tp left join t_role_permission tr on tp.id = tr.permissionid
+      where tp.pid = ${userId}
+    </select>
+
+
+
+
+    <update id="updateByExampleSelective" parameterType="map">
     update t_permission
     <set>
       <if test="record.id != null">

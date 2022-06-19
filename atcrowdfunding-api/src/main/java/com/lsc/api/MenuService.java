@@ -24,4 +24,7 @@ public interface MenuService {
     String updateMenu(TMenu tMenu);
 
     TMenu getMenu(Integer id);
+
+    //给指定id分配它可以操作的菜单
+    void saveMenuPermissions(Integer permissionId, String menuIds);
 }

@@ -135,4 +135,31 @@ public class AdminServiceImpl implements AdminService {
     public void deleteAdmin(Integer id) {
         tAdminMapper.deleteByPrimaryKey(id);
     }
+
+    //根据用户id动态查出菜单
+    @Override
+    public List<TMenu> listYourMenus(Integer id) {
+        //父菜单集合
+        List<TMenu> parentsMenu = new ArrayList<TMenu>();
+        //全部菜单
+        List<TMenu> myMenus = tMenuMapper.getMyMenus(id);
+        for (TMenu tMenu : myMenus) {
+            if(tMenu.getPid() == 0) {
+                //找出父菜单
+                parentsMenu.add(tMenu);
+            }
+        }
+        for(TMenu pMenu :parentsMenu) {//遍历出所有父菜单
+
+            for(TMenu childMenu : myMenus) {//遍历所有菜单
+
+                if(childMenu.getPid() == pMenu.getId()) {//判断菜单的pid是否等于当前这个父菜单的id
+
+                    pMenu.gettMenus().add(childMenu);//getChilds()方法存储他的子菜单
+                }
+            }
+        }
+
+        return parentsMenu;
+    }
 }

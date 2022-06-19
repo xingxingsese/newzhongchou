@@ -6,6 +6,14 @@
     <result column="roleid" jdbcType="INTEGER" property="roleid" />
     <result column="permissionid" jdbcType="INTEGER" property="permissionid" />
   </resultMap>
+
+  <insert id="insertPermissioinToRoleBath">
+    insert into t_role_permission(roleid,permissionid)
+    values
+    <foreach collection="integerList" item="permissionid" separator=",">
+      (#{rid),#{permissionid})
+    </foreach>
+  </insert>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -178,4 +186,6 @@
       permissionid = #{permissionid,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+
 </mapper>

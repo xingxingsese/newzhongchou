@@ -28,4 +28,8 @@ public interface AdminService {
     boolean checkemail(TAdmin tAdmin);
 
     void deleteAdmin(Integer id);
+
+    //根据用户id查出用户可以操作的菜单
+    List<TMenu> listYourMenus(Integer id);
+
 }

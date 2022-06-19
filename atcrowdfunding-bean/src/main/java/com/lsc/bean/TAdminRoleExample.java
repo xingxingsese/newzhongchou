@@ -264,7 +264,7 @@ public class TAdminRoleExample {
             return (Criteria) this;
         }
 
-        public Criteria andRoleidIn(List<Integer> values) {
+        public Criteria andRoleidIn(List<String> values) {
             addCriterion("roleid in", values, "roleid");
             return (Criteria) this;
         }

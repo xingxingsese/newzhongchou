@@ -27,4 +27,6 @@ public interface TPermissionMenuMapper {
     int updateByPrimaryKeySelective(TPermissionMenu record);
 
     int updateByPrimaryKey(TPermissionMenu record);
+
+    void insertBatchMenuPermission(@Param("permissionId")Integer permissionId, @Param("menuIds")List<Integer> menuIdsList);
 }

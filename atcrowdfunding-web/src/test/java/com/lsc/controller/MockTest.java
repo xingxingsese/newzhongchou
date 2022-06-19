@@ -57,7 +57,7 @@ public class MockTest {
                 return;
             }
           /*  ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-            Class<?> aClass = classLoader.loadClass("com.lsc.controller.AdminCrudController");*/
+            Class<?> aClass = classLoader.loadClass("com.lsc.controller.permission.AdminCrudController");*/
 
             MockClassBean mockClassBean = JarLoaderUtils.buildSourceData(classNamePath, outPath, aClass);
 

@@ -1,4 +1,4 @@
-package com.lsc.controller;
+package com.lsc.controller.permission;
 
 import com.lsc.api.PermissonService;
 import com.lsc.bean.TPermission;
@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,6 +24,30 @@ public class PermissonAjaxCrudController {
     @Autowired
     PermissonService permissonService;
 
+    @GetMapping("permission/role/get")
+    public List<TPermission> getRolePermission(@RequestParam("userId") Integer userId){
+        List<TPermission> list = permissonService.getRolePermission(userId);
+        return list;
+    }
+    /**
+     * 给角色分配权限
+     * @param rid
+     * @param permissionIds
+     * @return
+     */
+    @PostMapping("/permission/role/assign")
+    public String roleAssignPermission(@RequestParam("rid") Integer rid,
+                                       @RequestParam("permissionIds") String permissionIds) {
+
+        permissonService.assignPermissionForRole(rid,permissionIds);
+        return "ok";
+    }
+
+    /**
+     * 查询所有权限
+     *
+     * @return
+     */
     @GetMapping("/permisson/list")
     public List<TPermission> getAllPermissons() {
 

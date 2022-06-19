@@ -1,0 +1,49 @@
+@startuml
+title  codat \n更新映射关系逻辑图
+start
+if (是否为删除) then (yes)
+
+    if(判断request.id 是否为null) then (yes);
+    stop
+    else(no)
+    :根据id对ipay内映射表逻辑删除;
+
+    endif
+
+else (no)
+: 修改映射关系或新增;
+    if (判断request.id 是否为null) then (yes)
+
+    partition 事务 {
+    floating note: 无法获取mappingId
+
+    :新增;
+        if(根据公司id获取连接) then(yes)
+        :;
+        else(no)
+        endif
+     :根据userId、平台、状态 \n 查询ibizmerh账户信息;
+     :构建数据调用codat,创建账户;
+            if(创建成功) then(true)
+
+            :组装数据插入ipay侧映射表;
+
+            else(false)
+            endif
+            end
+
+
+
+   }
+    else(no)
+    'space label only for alignment /'对齐'/
+    label sp_lab0
+
+    :修改;
+    floating note right: 修改哪些内容?
+    :修改ipay侧映射表bankName;
+    endif
+
+endif
+end
+@enduml

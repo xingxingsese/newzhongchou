@@ -128,7 +128,15 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.lsc.bean.TAdminRoleExample" resultType="java.lang.Long">
+    <insert id="insertSelectiveBath">
+      insert into t_admin_role(adminid, roleid)
+      values
+      <foreach collection="rids" item="rid" separator=",">
+        (#{uid},#{rid})
+      </foreach>
+
+    </insert>
+    <select id="countByExample" parameterType="com.lsc.bean.TAdminRoleExample" resultType="java.lang.Long">
     select count(*) from t_admin_role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
