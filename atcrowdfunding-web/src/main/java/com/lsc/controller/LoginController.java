@@ -1,11 +1,10 @@
 package com.lsc.controller;
 
 import com.lsc.bean.TMenu;
-import com.lsc.com.lsc.utils.AppUtils;
+import com.lsc.utils.AppUtils;
 import com.lsc.constant.Constant;
 import com.lsc.api.AdminService;
 import com.lsc.bean.TAdmin;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
-import java.util.Arrays;
 import java.util.List;
 
 /**

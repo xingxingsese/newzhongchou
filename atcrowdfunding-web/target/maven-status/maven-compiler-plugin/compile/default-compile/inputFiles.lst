@@ -1,8 +1,10 @@
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\FreeMarkerController.java
-E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\RoleAjaxCrudController.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\permission\RoleAjaxCrudController.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\permission\MenuAjaxCrudController.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\listener\AppStartupListener.java
-E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\MenuAjaxCrudController.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\permission\AdminCrudController.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\LoginController.java
-E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\PerminssionPageController.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\config\AtcrowdfundingSecurityConfig.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\permission\PermissonAjaxCrudController.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\RegController.java
-E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\AdminCrudController.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\java\com\lsc\controller\permission\PerminssionPageController.java

@@ -12,6 +12,7 @@
         <module name="atcrowdfunding-common" />
         <module name="atcrowdfunding-bean" />
         <module name="Freemarker-utils" />
+        <module name="spring-security-test" />
         <module name="atcrowdfunding-impl" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,19 @@
       <module name="atcrowdfunding-impl" target="1.8" />
       <module name="atcrowdfunding-web" target="1.8" />
       <module name="Freemarker-utils" target="1.8" />
+      <module name="spring-security-test" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Freemarker-utils" options="" />
+      <module name="atcrowdfunding-api" options="" />
+      <module name="atcrowdfunding-bean" options="" />
+      <module name="atcrowdfunding-common" options="" />
+      <module name="atcrowdfunding-impl" options="" />
+      <module name="atcrowdfunding-web" options="" />
+      <module name="spring-security-test" options="" />
+    </option>
   </component>
 </project>

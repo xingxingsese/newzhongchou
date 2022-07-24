@@ -8,7 +8,7 @@
     		类名都打印全类名（默认）；如果类名太长，进行缩写 
     			
      -->
-    <appender name="haha" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="kongzhitai" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{360} - %msg%n</pattern>
         </encoder>
@@ -25,11 +25,11 @@
     </logger>
       <!-- 将业务先调整为debug级别 -->
       <logger name="com.lsc" level="info" additivity="false">
-      	 <appender-ref ref="haha" />
+      	 <appender-ref ref="kongzhitai" />
       </logger>
       
       <!-- 根级别；没有用logger精确设置级别的就默认使用root指定的级别 -->
      <root level="info">
-         <appender-ref ref="haha" />
+         <appender-ref ref="kongzhitai" />
      </root>
 </configuration> 

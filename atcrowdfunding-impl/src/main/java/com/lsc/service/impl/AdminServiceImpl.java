@@ -5,7 +5,7 @@ import com.lsc.bean.TAdmin;
 import com.lsc.bean.TAdminExample;
 import com.lsc.bean.TMenu;
 import com.lsc.bean.TMenuExample;
-import com.lsc.com.lsc.utils.AppUtils;
+import com.lsc.utils.AppUtils;
 import com.lsc.mapper.TAdminMapper;
 import com.lsc.mapper.TMenuMapper;
 import com.lsc.common.AssertUtils;

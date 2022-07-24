@@ -1,0 +1,19 @@
+Enable:启用
+Security:安全
+Configuration:配置
+configure:配置
+authorize：授权
+Matcher:匹配
+permit:允许
+authenticated:认证过
+Adapter：适配器
+Authentication:身份认证
+AuthenticationManager：认证管理器；管理登录规则等信息的
+Granted:授予
+Authority:权限
+credentials:凭据
+access:访问
+Deny（Denied）：拒绝
+Repository: @Repository：操作数据库；仓库
+tokenRepository：令牌仓库；
+GrantedAuthority：授予的权限

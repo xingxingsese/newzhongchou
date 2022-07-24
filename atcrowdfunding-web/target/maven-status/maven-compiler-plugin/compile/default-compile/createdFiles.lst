@@ -1,7 +1,8 @@
-com\lsc\controller\AdminCrudController.class
+com\lsc\controller\permission\PerminssionPageController.class
+com\lsc\controller\permission\MenuAjaxCrudController.class
+com\lsc\controller\permission\RoleAjaxCrudController.class
+com\lsc\controller\permission\AdminCrudController.class
 com\lsc\controller\FreeMarkerController.class
-com\lsc\controller\MenuAjaxCrudController.class
-com\lsc\controller\PerminssionPageController.class
+com\lsc\controller\permission\PermissonAjaxCrudController.class
 com\lsc\controller\LoginController.class
-com\lsc\controller\RoleAjaxCrudController.class
 com\lsc\listener\AppStartupListener.class

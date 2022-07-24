@@ -192,10 +192,16 @@
        var str = $("#templetesText").val();
        var templetesName = $("#templetesName").val();
        var userId = ${loginUser.id}
+       var userName = ${loginUser.name}
 
         //ajax提交携带数据,只需要把数据组装成对象,放在参数位置即可
         $.post("${ctx}/freemarker/templete/mock",
-        {"templateText": str,"templateName":templetesName,"id":userId}
+        {
+            "templateText": str,
+            "templateName":templetesName,
+            "userId":userId,
+            "author":userName
+        }
         , function (data) {
             if (data == "ok") {
                 layer.msg("保存成功");

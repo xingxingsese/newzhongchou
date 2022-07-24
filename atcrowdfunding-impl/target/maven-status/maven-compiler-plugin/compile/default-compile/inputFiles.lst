@@ -25,7 +25,6 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\QrtzBlobTriggersMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TRoleMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TbUserMapper.java
-E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\com\lsc\utils\AppUtils.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\QrtzSchedulerStateMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\SysMenuMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TTypeMapper.java
@@ -50,6 +49,7 @@ E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TMessageMapper.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\AdminServiceImpl.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TPermissionMenuMapper.java
+E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\utils\AppUtils.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\RoleServiceImpl.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\service\impl\PermissonsServiceImpl.java
 E:\TestCodeDome\atcrowdfunding\atcrowdfunding-impl\src\main\java\com\lsc\mapper\TReturnMapper.java

@@ -1,16 +1,22 @@
 package com.lsc.common;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * Created by lisc on 2021/12/19
  */
 public class FileUtils {
+    private static final Logger log = LoggerFactory.getLogger(FileUtils.class);
+
     // 得到相对路径
     public static String getRelativePath(File baseDir, File file) {
         if (baseDir.equals(file)) {
@@ -58,12 +64,13 @@ public class FileUtils {
 
     /**
      * 输出文件到指定目录
+     *
      * @param filePath 文件目录
      * @param fileName 文件名
-     * @param content 文件内容
+     * @param content  文件内容
      */
-    public static void fileWrite(String filePath,String fileName,String content) {
-        File file = new File(filePath,fileName);
+    public static void fileWrite(String filePath, String fileName, String content) {
+        File file = new File(filePath, fileName);
         BufferedWriter bufferedWriter = null;
         try {
             // 如果文件不存在创建文件
@@ -75,7 +82,7 @@ public class FileUtils {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 bufferedWriter.flush();
             } catch (IOException e) {
@@ -114,6 +121,87 @@ public class FileUtils {
         }
     }
 
+    /**
+     * 返回Stream(Java 8) 流式数据处理，按行读取
+     *
+     * @param url 文件路径
+     * @return
+     */
+    public static Stream readFileLinesReturnStream(String url) {
 
+        // 读取文件内容到Stream流中，按行读取
+        Stream<String> lines = null;
+        try {
+            lines = Files.lines(Paths.get(url));
+        } catch (IOException e) {
+            log.error(String.format("FileUtils:readFileReturnStream方法发生异常 e : %s", e));
+        }
+
+        // 随机顺序进行数据处理
+        //  lines.forEach(ele -> { System.out.println(ele);});
+
+        // 按文件行顺序进行处理
+        //  lines.forEachOrdered(System.out::println);
+
+        // 转换成List<String>, 要注java.lang.OutOfMemoryError: Java heap space
+        // List<String> collect = lines.collect(Collectors.toList());
+        return lines;
+    }
+
+
+    /**
+     * 返回List 读取所有行
+     *
+     * @param url 文件路径
+     * @return
+     */
+    public static List readFileAllLinesReturnList(String url) {
+
+        List<String> lines = null;
+        try {
+            // 转换成List<String>, 要注意java.lang.OutOfMemoryError: Java heap space
+            lines = Files.readAllLines(Paths.get(url), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            log.error(String.format("FileUtils:readFileReturnList 方法发生异常 e : %s", e));
+        }
+
+        return lines;
+    }
+
+    /**
+     * 读取文件所有字节 返回bytes
+     *
+     * @param url
+     * @return
+     */
+    public static byte[] readFileAllBytesReturnBytes(String url) {
+
+        byte[] bytes = new byte[0];
+        try {
+            bytes = Files.readAllBytes(Paths.get(url));
+        } catch (IOException e) {
+            log.error(String.format("FileUtils:readFileAllBytesReturnBytes 方法发生异常 e : %s", e));
+        }
+        // String content = new String(bytes, StandardCharsets.UTF_8);
+        return bytes;
+    }
+
+
+    public static BufferedReader readFileBufferedReader(String url) {
+
+        // 带缓冲的流读取，默认缓冲区8k
+        BufferedReader br = null;
+        try {
+            br = Files.newBufferedReader(Paths.get(url));
+        } catch (IOException e) {
+            log.error(String.format("FileUtils:readFileBufferedReader 方法发生异常 e : %s", e));
+        }
+         /*   String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }*/
+
+        return br;
+    }
 
 }
