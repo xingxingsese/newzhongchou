@@ -204,4 +204,47 @@ public class FileUtils {
         return br;
     }
 
+
+    /**
+     * 输出文件到指定目录
+     *
+     * @param filePath 文件目录
+     * @param content  文件内容
+     */
+    public static void fileWriteAdbMkdir(String filePath, String content) {
+        File file = new File(filePath);
+
+        // 文件夹已存在
+        if (file.exists()) {
+            System.out.println("File exists");
+        }
+        if (null != file.getParentFile()) {
+            file.getParentFile().mkdirs();
+        }
+
+
+        BufferedWriter bufferedWriter = null;
+        try {
+            // 如果文件不存在创建文件
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            bufferedWriter = new BufferedWriter(new FileWriter(file));
+            bufferedWriter.write(content);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                bufferedWriter.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                bufferedWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

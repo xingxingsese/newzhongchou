@@ -9,256 +9,22 @@
     <bookmark url="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml" line="10" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b27dcea-53e0-4f31-9151-deaca2899de3" name="Default Changelist" comment="众筹">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_security_test_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_security_test_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_anarres_lzo_lzo_core_1_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_portlet_4_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/AESUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/DesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/KaisaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/PBEUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/RsaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/Bzip2Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/DEFLATEUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/GzipUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/Lz4Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/LzoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/SnappyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/YasuoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZLibUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/config/AtcrowdfundingSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/.jsdtscope" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.wst.common.component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/spring-security-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/bean/AdminUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/bean/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/bean/TAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/componet/AppPasswordEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/componet/AppUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/componet/HahaPermissionEvaluatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/componet/RedisPersistentTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/config/AppDataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/config/AppSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/controller/GongfuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/resources/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/include/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/include/sidebar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level1/1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level1/2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level1/3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level2/1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level2/2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level2/3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level3/1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level3/2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/level3/3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/views/unauth.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/highlight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/main/webapp/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-test/src/test/java/com/atguigu/test/SpringTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/atcrowdfunding_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/atcrowdfunding_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/atcrowdfunding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/atcrowdfunding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8b27dcea-53e0-4f31-9151-deaca2899de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Freemarker-utils/Freemarker-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/Freemarker-utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/Freemarker-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/target/Freemarker-utils-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/atcrowdfunding-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/atcrowdfunding-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/api/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/api/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/atcrowdfunding-bean.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/atcrowdfunding-bean.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-bean/target/atcrowdfunding-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-bean/target/atcrowdfunding-bean-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/atcrowdfunding-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/atcrowdfunding-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/FileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/ziputils/ZipUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/com/lsc/utils/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/utils/AppUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/atcrowdfunding-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/atcrowdfunding-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/atcrowdfunding-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/atcrowdfunding-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/static/script/docs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/webapp/static/script/docs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/FreeMarkerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/FreeMarkerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/com/lsc/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/Freemarker-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/Freemarker-utils-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-bean-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/lsc/templetes-code.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/views/lsc/templetes-code.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/static/script/docs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/static/script/docs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/PerminssionPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/PermissonAjaxCrudController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/com/lsc/controller/RoleAjaxCrudController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-test/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-test/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-test/target/spring-security-test-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-test/target/spring-security-test-0.0.1-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -326,14 +92,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="402">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#1657#1658#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1115#1116#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/jdk/src.zip!/java/nio/file/Files.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/jdk/src.zip!/java/io/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -355,8 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TempletesCode</find>
-      <find>addTempletes</find>
       <find>/user/update</find>
       <find>session.s</find>
       <find>msg</find>
@@ -385,6 +226,8 @@
       <find>searchJarFiles</find>
       <find>private</find>
       <find>private static</find>
+      <find>readFileAllBytesReturnBytes</find>
+      <find>isDirectory</find>
     </findStrings>
     <replaceStrings>
       <replace>tMenus</replace>
@@ -421,9 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TPermissionMapper.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/TPermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/PermissonAjaxCrudController.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/MenuAjaxCrudController.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/MenuService.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/MenuServiceImpl.java" />
@@ -465,13 +305,16 @@
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/DEFLATEUtils.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/YasuoUtils.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/YasuoTest.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/Bzip2Utils.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/CompressionEncryptionTest.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/RsaUtil.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/PBEUtil.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" />
       </list>
     </option>
   </component>
@@ -579,16 +422,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="encryptionutils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -870,15 +703,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CompressionEncryptionTest.test01">
-    <configuration name="PBEUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lsc.common.encryptionutils.PBEUtil" />
+  <component name="RunManager" selected="Application.ZipUtils">
+    <configuration name="ZipUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lsc.common.ziputils.ZipUtils" />
       <module name="atcrowdfunding-common" />
-      <shortenClasspath name="MANIFEST" />
-      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lsc.common.encryptionutils.*" />
+          <option name="PATTERN" value="com.lsc.common.ziputils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lsc.common.jFrame" />
+      <module name="atcrowdfunding-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -891,6 +735,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CompressionEncryptionTest" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZipTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-common" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ZipTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZipTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atcrowdfunding-common" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ZipTest" />
+      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1118,17 +982,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PBEUtil" />
       <item itemvalue="Tomcat Server.security" />
       <item itemvalue="Tomcat Server.众筹" />
       <item itemvalue="Tomcat Server.localhost" />
       <item itemvalue="JUnit.CompressionEncryptionTest.test01" />
+      <item itemvalue="Application.jFrame" />
+      <item itemvalue="JUnit.ZipTest.test" />
+      <item itemvalue="JUnit.ZipTest.test02" />
+      <item itemvalue="Application.ZipUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ZipUtils" />
+        <item itemvalue="JUnit.ZipTest.test" />
+        <item itemvalue="JUnit.ZipTest.test02" />
+        <item itemvalue="Application.jFrame" />
         <item itemvalue="JUnit.CompressionEncryptionTest.test01" />
-        <item itemvalue="JUnit.CompressionEncryptionTest.test01" />
-        <item itemvalue="Application.PBEUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -1174,7 +1043,7 @@
       <workItem from="1657441633679" duration="5784000" />
       <workItem from="1658419635384" duration="3369000" />
       <workItem from="1658586454174" duration="7556000" />
-      <workItem from="1658594087814" duration="10734000" />
+      <workItem from="1658594087814" duration="21568000" />
     </task>
     <task id="LOCAL-00001" summary="众筹">
       <created>1640017822324</created>
@@ -1197,43 +1066,50 @@
       <option name="project" value="LOCAL" />
       <updated>1649172155944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="测试">
+      <created>1658674323280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658674323281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 16m 00s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 25m 39s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 19m 07s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 26m 06s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 23m 20s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 40m 53s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 25m 07s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 43m 54s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 26m 30s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 45m 33s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 26m 40s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 46m 31s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 27m 26s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 48m 09s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 27m 39s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 49m 48s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 33m 50s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 50m 12s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompressionEncryptionTest_test01 - 2022.07.24 at 03h 34m 20s.xml">
-      <configuration name="CompressionEncryptionTest.test01" configurationId="JUnit" />
+    <history-entry file="ZipTest_test - 2022.07.26 at 00h 50m 23s.xml">
+      <configuration name="ZipTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362796000" />
+    <option name="totallyTimeSpent" value="373630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1256,8 +1132,8 @@
       <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49603805" visible="true" weight="0.19776714" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884312" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39540413" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39540413" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30903327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1329,14 +1205,15 @@
     </ignored-roots>
     <MESSAGE value="修改pom" />
     <MESSAGE value="众筹" />
-    <option name="LAST_COMMIT_MESSAGE" value="众筹" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java</url>
-          <line>112</line>
+          <line>167</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -1358,6 +1235,24 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1373,43 +1268,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="e#4573#4574#0" expanded="true" />
-            <element signature="e#4624#4625#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/bean/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-security-test/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-security-test/note.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.10.RELEASE/spring-security-config-4.2.10.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ZipUtiils.java" />
     <entry file="file://$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/config/AppSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5795">
@@ -1482,16 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-895">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1600,13 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="3200" column="31" selection-start-line="3200" selection-start-column="31" selection-end-line="3200" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6-sources.jar!/org/slf4j/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1664,13 +1505,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/resources/RsaKey/privateKey.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2071">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/YasuoTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1749,30 +1583,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/PBEUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+        <state relative-caret-position="408">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java">
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="722">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="402">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
