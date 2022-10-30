@@ -5,18 +5,21 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.lsc.bean.MockAttributeBean;
 import com.lsc.bean.MockClassBean;
 import com.lsc.bean.MockMethodBean;
+import com.lsc.freemarker.utils.CustomClassLoader;
+import com.lsc.freemarker.utils.FileUtils;
+import com.lsc.freemarker.utils.StringBuildUtils;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.Assert;
 
 import java.io.File;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -39,23 +42,29 @@ public class JarLoaderUtils {
     public static Class<?> getClassObject(String jarPath, String classNamePath) {
         Class<?> loadClass = null;
         try {
-            // 获取委托的系统类加载器
-            URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
-
+            log.info("加载jar包: jarPath:{} classNamePath:{}",jarPath,classNamePath);
+            if (classNamePath.contains("/")){
+                classNamePath = classNamePath.replace('/', '.');
+            }
             File file = new File(jarPath);
 
+            Assert.isTrue(file.exists(),"当前路径不存在");
             // 递归遍历路径下的jar包
             List<File> files = FileUtils.searchAllJarFile(file);
-            // 遍历得到的jar包路径
-            for (File file1 : files) {
-                // 把指定路径下的jar文件添加到虚拟机
-                addUrl(file1, classLoader);
-            }
-            loadClass = classLoader.loadClass(classNamePath);
-        } catch (Exception e) {
-            log.info("发生异常,异常信息 e:{}, getMessage:{}", e, e.getMessage());
-        }
+            // 过滤掉重复的jar
+            ArrayList<File> filterDuplicateJar = filterDuplicateJar(files);
+            // 调用addurl方法,把jar包加载到jvm中
+            filterDuplicateJar.forEach(JarLoaderUtils::addUrl);
 
+            CustomClassLoader loader = new CustomClassLoader();
+
+            // todo 此处有bug 如果查找一个不存在的class 会一直循环
+            // loadClass = loader.loadClass(classNamePath);
+            loadClass = loader.getParent().loadClass(classNamePath);
+
+        } catch (ClassNotFoundException e) {
+            log.error("JarLoaderUtils:getClassObject 发生异常:",e);
+        }
         return loadClass;
     }
 
@@ -142,20 +151,25 @@ public class JarLoaderUtils {
      * @Author:wangcanfeng
      * @Date: 2019/9/12-15:21
      */
-    private static void addUrl(File jarPath, URLClassLoader classLoader) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, MalformedURLException {
+    private static void addUrl(File jarPath) {
         // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
+        try {
+            // 获取委托的系统类加载器
+            URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
+            // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
+            Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
 
-        // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
-        Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
-
-        // 反射访问属性或方法时将Accessible设置为true
-        if (!method.isAccessible()) {
-            method.setAccessible(true);
+            // 反射访问属性或方法时将Accessible设置为true
+            if (!method.isAccessible()) {
+                method.setAccessible(true);
+            }
+            // 把文件路径转为URL对象
+            URL url = jarPath.toURI().toURL();
+            // 把当前jar的路径加入到类加载器需要扫描的路径
+            method.invoke(classLoader, url);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        // 把文件路径转为URL对象
-        URL url = jarPath.toURI().toURL();
-        // 把当前jar的路径加入到类加载器需要扫描的路径
-        method.invoke(classLoader, url);
 
     }
 
@@ -196,6 +210,37 @@ public class JarLoaderUtils {
             return false;
         }
 
+    }
+
+    /**
+     * 过滤重复jar包
+     * 相同的jar包,取更新时间最近的那个
+     * @param files1
+     * @return
+     */
+    public static ArrayList<File> filterDuplicateJar(List<File> files1) {
+
+        HashMap<String, File> hashMap = new HashMap<>();
+
+        for (int i = 0; i < files1.size(); i++) {
+            // 当前jar文件
+            File currentFile = files1.get(i);
+            // jar文件名,不要后面的
+            String currentFileName = currentFile.getName().substring(0, currentFile.getName().indexOf("."));
+
+            // 如果不存在,直接put,并且返回null , 如果存在,不put, 返回的是存在的对象
+            File file1 = hashMap.putIfAbsent(currentFileName, currentFile);
+
+            // 当前jar包已存在
+            if (file1 != null) {
+                // 当前的文件修改时间大于 已存在的文件, 就替换掉, 否则不动
+                if (currentFile.lastModified() > file1.lastModified()) {
+                    hashMap.put(currentFileName,currentFile);
+                }
+            }
+        }
+
+        return new ArrayList<>(hashMap.values());
     }
 }
 

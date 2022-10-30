@@ -35,7 +35,7 @@ public class AESUtil {
         // 创建初始化向量
         IvParameterSpec iv = new IvParameterSpec(key.getBytes());
         cipher.init(Cipher.ENCRYPT_MODE, keySpec, iv);
-        // cipher.init(Cipher.ENCRYPT_MODE, keySpec);
+        // cipher-txt.init(Cipher.ENCRYPT_MODE, keySpec);
         // 加密
         byte[] bytes = cipher.doFinal(original.getBytes());
 
@@ -57,7 +57,7 @@ public class AESUtil {
         // 创建初始化向量
         IvParameterSpec iv = new IvParameterSpec(key.getBytes());
         cipher.init(Cipher.DECRYPT_MODE, keySpec, iv);
-        // cipher.init(Cipher.DECRYPT_MODE, keySpec);
+        // cipher-txt.init(Cipher.DECRYPT_MODE, keySpec);
         // 解密
         byte[] bytes = cipher.doFinal(Base64Util.decryBASE64(encrypted));
 

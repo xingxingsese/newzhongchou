@@ -26,7 +26,14 @@ public class Constant {
 
     public static final String FAIL = "fail";
 
-    public static final Integer JAVA = 1;
+   // public static final Integer JAVA = 1;
 
     public static final Integer MOCK = 2;
+
+    public static final String TXT = ".txt";
+
+    public static final String JAVA = ".java";
+
+
 }
+

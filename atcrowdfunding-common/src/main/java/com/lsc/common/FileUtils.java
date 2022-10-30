@@ -186,6 +186,18 @@ public class FileUtils {
         return bytes;
     }
 
+    public static String readFileAllBytesReturnString(String url) {
+
+        byte[] bytes = new byte[0];
+        try {
+            bytes = Files.readAllBytes(Paths.get(url));
+        } catch (IOException e) {
+            log.error(String.format("FileUtils:readFileAllBytesReturnBytes 方法发生异常 e : %s", e));
+        }
+
+        return new String(bytes, StandardCharsets.UTF_8);
+    }
+
 
     public static BufferedReader readFileBufferedReader(String url) {
 

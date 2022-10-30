@@ -1,5 +1,8 @@
 package com.lsc.freemarker.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
 /**
  * @Description:
  * @Author: lisc
@@ -43,5 +46,15 @@ public class StringBuildUtils {
         char[] chars = str.toCharArray();
         chars[0] +=32;
         return String.valueOf(chars);
+    }
+
+    /**
+     * 把class类转换为Json格式的文件
+     * @param obj
+     * @param url
+     */
+    public static void classJsonString(Object obj,String url){
+        String contex = JSONObject.toJSONString(obj, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue);
+        FileUtils.fileWrite(url, obj.getClass().getSimpleName()+ ".json", contex);
     }
 }

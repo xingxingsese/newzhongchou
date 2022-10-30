@@ -1,15 +1,16 @@
 package com.lsc.freemarker.utils;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by lisc on 2021/12/19
  */
+@Slf4j
 public class FileUtils {
     // 得到相对路径
     public static String getRelativePath(File baseDir, File file) {
@@ -31,6 +32,7 @@ public class FileUtils {
 
     // 查询某个目录下所有的jar文件
     public static List<File> searchAllJarFile(File dir) {
+        log.info("searchAllJarFile start");
         ArrayList arrayList = new ArrayList<>();
         searchJarFiles(dir, arrayList);
         return arrayList;
@@ -92,6 +94,9 @@ public class FileUtils {
         try {
             // 如果文件不存在创建文件
             if (!file.exists()) {
+                // 先创建目录
+                file.getParentFile().mkdirs();
+                // 在创建文件
                 file.createNewFile();
             }
             bufferedWriter = new BufferedWriter(new FileWriter(file));
@@ -113,5 +118,29 @@ public class FileUtils {
         }
     }
 
+    /**
+     * 读取文件转换为字节码
+     * @param classPath
+     * @return
+     */
+    public byte[] loadClazz(String classPath) {
+        try {
+            log.info("loadClazz方法执行: classPath: {}", classPath);
+            FileInputStream in = new FileInputStream(new File(classPath));
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            int b;
+            while ((b = in.read()) != -1) {
+                baos.write(b);
+            }
+            in.close();
+            return baos.toByteArray();
+        } catch (Exception e) {
+            log.error("loadClazz方法执行异常",e);
+        }
+        return null;
+    }
+
 
 }
+
+

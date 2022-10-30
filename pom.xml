@@ -15,6 +15,7 @@
         <module>atcrowdfunding-impl</module>
         <module>atcrowdfunding-web</module>
         <module>Freemarker-utils</module>
+        <module>collectioneveryday-tools</module>
     </modules>
 
 

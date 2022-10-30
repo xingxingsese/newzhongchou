@@ -1,6 +1,7 @@
-package com.lsc.freemarker.core;
+package com.lsc.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.lsc.freemarker.entity.CrudBean;
 import com.lsc.freemarker.utils.FileUtils;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.template.Configuration;
@@ -44,8 +45,7 @@ public class Generator {
      * 4 构造数据模型  map的key就是模版内占位符的key
      * 5 文件输出
      */
-    @Test
-    public void test() {
+    public static String generateCrudCode(String rootPath,String packagePath,String className,String tableName) {
         // 模版路径
         String templatePath = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\CodeTemplates";
 
@@ -61,16 +61,17 @@ public class Generator {
         generator(instance, templatePath);
 
         // 4 构造数据模型  map的key就是模版内占位符的key
-       // Map<String, Object> dataModel = getDataModel(jsonTextFile);
+        // Map<String, Object> dataModel = getDataModel(jsonTextFile);
+        CrudBean crudBean = CrudBean.builder()
+                .rootPath(rootPath).packagePath(packagePath).className(className).tableName(tableName)
+                .build();
+
         Map<String, Object> dataModel = new HashMap<>();
         dataModel.put("date",new Date());
-        dataModel.put("className","codeTemplate");
-        dataModel.put("ClassName","CodeTemplate");
-        dataModel.put("projectPath","com.lsc");
-        dataModel.put("MapClassName","TCodeTemplate");
+        dataModel.put("mock",crudBean);
 
         // 5 代码生成  + 文件输出
-        scanAndGenerator(dataModel, templatePath, outPath);
+        return scanAndGenerator(dataModel, templatePath, outPath);
 
     }
 
@@ -153,25 +154,20 @@ public class Generator {
      * @param templatePath 模版路径
      * @param outPath      输出代码路径
      */
-    public static void scanAndGenerator(Map<String, Object> dataModel, String templatePath, String outPath) {
+    public static String scanAndGenerator(Map<String, Object> dataModel, String templatePath, String outPath) {
         //1  根据模版路径找到此路径下所有模版文件
         List<File> fileList = FileUtils.searchAllFile(new File(templatePath));
         for (File file : fileList) {
             try {
                 executeGenertor(dataModel, file, templatePath, outPath);
             } catch (Exception e) {
-                e.printStackTrace();
                 log.error("对模版进行代码生成时报错!", e);
             }
         }
+        return outPath;
     }
 
-    /**
-     *
-     *
-     * @param dataModel
-     * @param file
-     */
+
     /**
      * 对模版进行代码生成
      *

@@ -3,6 +3,7 @@ package com.lsc.freemarker.demo;
 import com.lsc.freemarker.utils.FileUtils;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -142,35 +143,6 @@ public class JarLoaderDemo {
      * @Author:wangcanfeng
      * @Date: 2019/9/12-15:21
      */
-  /*  public static void addUrl(File jarPath) throws NoSuchMethodException, InvocationTargetException,IllegalAccessException, MalformedURLException {
-        // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
-
-        // 获取委托的系统类加载器
-        URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
-
-        // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
-        Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
-
-        // 反射访问属性或方法时将Accessible设置为true
-        if (!method.isAccessible()) {
-            method.setAccessible(true);
-        }
-        // 把文件路径转为URL对象
-        URL url = jarPath.toURI().toURL();
-        // 把当前jar的路径加入到类加载器需要扫描的路径
-        method.invoke(classLoader, url);
-
-    }*/
-
-    /**
-     * 功能描述: 添加需要扫描的jar包
-     *
-     * @param jarPath
-     * @return:void
-     * @since: v1.0
-     * @Author:wangcanfeng
-     * @Date: 2019/9/12-15:21
-     */
     public static void addUrl(File jarPath, URLClassLoader classLoader) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, MalformedURLException {
         // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
 
@@ -217,5 +189,49 @@ public class JarLoaderDemo {
 
         return loadClass;
     }
+
+    /**
+     * 功能描述: 添加需要扫描的jar包
+     *
+     * @param jarPath
+     * @return:void
+     * @since: v1.0
+     * @Author:wangcanfeng
+     * @Date: 2019/9/12-15:21
+     */
+  /*  public static void addUrl(File jarPath) throws NoSuchMethodException, InvocationTargetException,IllegalAccessException, MalformedURLException {
+        // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
+
+        // 获取委托的系统类加载器
+        URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
+
+        // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
+        Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
+
+        // 反射访问属性或方法时将Accessible设置为true
+        if (!method.isAccessible()) {
+            method.setAccessible(true);
+        }
+        // 把文件路径转为URL对象
+        URL url = jarPath.toURI().toURL();
+        // 把当前jar的路径加入到类加载器需要扫描的路径
+        method.invoke(classLoader, url);
+
+    }*/
+
+    @Test
+    public void test() throws ClassNotFoundException {
+
+        List<String> list = Arrays.asList("E:\\尚\\ideaxiangmu\\zaixianjiaoyu\\guli\\");
+
+        // DynamicClassLoader classLoader = new DynamicClassLoader(new String[]{"E:\\TestCodeDome\\ssm-crud\\target\\classes\\"});
+        DynamicClassLoader classLoader = new DynamicClassLoader((String[]) list.toArray());
+        Class<?> aClass = classLoader.loadClass("com.guli.ucenter.controller.MemberController");
+        System.out.println("aClass = " + aClass);
+
+
+    }
+
+
 }
 

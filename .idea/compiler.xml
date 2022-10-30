@@ -12,6 +12,7 @@
         <module name="atcrowdfunding-common" />
         <module name="atcrowdfunding-bean" />
         <module name="Freemarker-utils" />
+        <module name="collectioneveryday-tools" />
         <module name="spring-security-test" />
         <module name="atcrowdfunding-impl" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="atcrowdfunding-common" target="1.8" />
       <module name="atcrowdfunding-impl" target="1.8" />
       <module name="atcrowdfunding-web" target="1.8" />
+      <module name="collectioneveryday-tools" target="1.8" />
       <module name="Freemarker-utils" target="1.8" />
       <module name="spring-security-test" target="1.8" />
     </bytecodeTargetLevel>
@@ -36,6 +38,7 @@
       <module name="atcrowdfunding-common" options="" />
       <module name="atcrowdfunding-impl" options="" />
       <module name="atcrowdfunding-web" options="" />
+      <module name="collectioneveryday-tools" options="" />
       <module name="spring-security-test" options="" />
     </option>
   </component>

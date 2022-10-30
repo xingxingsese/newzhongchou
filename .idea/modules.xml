@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/atcrowdfunding-common/atcrowdfunding-common.iml" filepath="$PROJECT_DIR$/atcrowdfunding-common/atcrowdfunding-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" filepath="$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/atcrowdfunding-web/atcrowdfunding-web.iml" filepath="$PROJECT_DIR$/atcrowdfunding-web/atcrowdfunding-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collectioneveryday-tools/collectioneveryday-tools.iml" filepath="$PROJECT_DIR$/collectioneveryday-tools/collectioneveryday-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security-test/spring-security-test.iml" filepath="$PROJECT_DIR$/spring-security-test/spring-security-test.iml" />
     </modules>
   </component>

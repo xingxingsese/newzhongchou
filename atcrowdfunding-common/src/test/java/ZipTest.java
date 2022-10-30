@@ -52,9 +52,6 @@ public class ZipTest {
 
     @Test
     public void test02() throws IOException {
-        File file = new File(PATH);
 
-        FileUtils.fileWriteAdbMkdir(PATH2+file.getName(),"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-        System.out.println("完毕");
     }
 }

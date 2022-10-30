@@ -10,19 +10,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b27dcea-53e0-4f31-9151-deaca2899de3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/DynamicClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/ClassBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/collectioneveryday-tools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerInstaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/src/main/resources/cipher-txt/20221018194638.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectioneveryday-tools/src/main/resources/cipher-txt/20221028191210.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/Freemarker-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/Freemarker-utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/JarLoaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/JarLoaderDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/StringBuildUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/StringBuildUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/Freemarker-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/target/Freemarker-utils-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/demo/JarLoaderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/demo/JarLoaderDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/utils/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/utils/FileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/utils/JarLoaderUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/utils/StringBuildUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freemarker-utils/target/classes/com/lsc/freemarker/utils/StringBuildUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-api/target/classes/com/lsc/constant/Constant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/AESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/AESUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/classes/com/lsc/common/ziputils/ZipUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-impl/atcrowdfunding-impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzBlobTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzCalendarsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzCronTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzFiredTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzJobDetailsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzLocksMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzPausedTriggerGrpsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzSchedulerStateMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzSimpleTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzSimpropTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/QrtzTriggersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/ScheduleJobLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/ScheduleJobMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysCaptchaMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysConfigMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysOssMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysRoleMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysUserRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/SysUserTokenMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TAccountTypeCertMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TAdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TAdminRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TAdvertisementMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TCertMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TCodeTemplateMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TDictionaryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMemberAddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMemberCertMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMemberMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMemberProjectFollowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TMessageMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TParamMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TPermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TPermissionMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TPermissionResourceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TProjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TProjectTagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TProjectTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TResourceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TReturnMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TRolePermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TTagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TTransactionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/mapper/TbUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/FreeMarkerServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/FreeMarkerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/MenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/PermissonsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-impl/target/classes/com/lsc/utils/AppUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/src/main/resources/springmvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-api-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/atcrowdfunding-web-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/classes/springmvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-test/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-test/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-test/target/spring-security-test-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-test/target/spring-security-test-0.0.1-SNAPSHOT.war" afterDir="false" />
     </list>
@@ -35,6 +122,7 @@
     <ignored path="$PROJECT_DIR$/atcrowdfunding-web/target/" />
     <ignored path="$PROJECT_DIR$/Freemarker-utils/target/" />
     <ignored path="$PROJECT_DIR$/spring-security-test/target/" />
+    <ignored path="$PROJECT_DIR$/collectioneveryday-tools/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +181,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="589">
+              <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1067">
+              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,78 +202,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/ReflectionUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/GeneratorFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#1657#1658#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/GeneratorBackup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/Generator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="950">
+              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/ClassBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/CrudBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/FreeMarkerGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="41" lean-forward="true" selection-end-line="279" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
+        <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/FreeMarkerGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="39" column="22" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/jdk/src.zip!/java/nio/file/Files.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/jdk/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
+            <state relative-caret-position="266">
+              <caret line="36" column="131" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="131" />
             </state>
           </provider>
         </entry>
@@ -190,15 +282,14 @@
         <option value="UML Sequence" />
         <option value="UML MindMap" />
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="UML Activity" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/user/update</find>
       <find>session.s</find>
       <find>msg</find>
       <find>loginUser</find>
@@ -228,6 +319,7 @@
       <find>private static</find>
       <find>readFileAllBytesReturnBytes</find>
       <find>isDirectory</find>
+      <find>readFileAllBytesReturn</find>
     </findStrings>
     <replaceStrings>
       <replace>tMenus</replace>
@@ -251,6 +343,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/RoleServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/MenuServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/PermissonsServiceImpl.java" root0="SKIP_INSPECTION" />
@@ -264,30 +357,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/MenuAjaxCrudController.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/MenuService.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/MenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TPermissionMenuMapper.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/TPermissionMenuMapper.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/PermissonService.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/PermissonsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/mapper/TMenuMapper.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/mybatis/mapper/TMenuMapper.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/AdminCrudController.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/api/AdminService.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TMenu.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc/config/AtcrowdfundingSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/pom.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ZipUtiils.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/ZipUtiils.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/ZLibUtils.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/RsaUtil.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/KaisaUtil.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/listener/AESUtil.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/AESUtil.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/Base64Util.java" />
@@ -312,9 +381,33 @@
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/Base64Util.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" />
-        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" />
         <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/pom.xml" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/CompressionUI.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/com/lsc/bean/ClassBean.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java" />
+        <option value="$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerFor.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerInstaller.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/gui/ToolsGUI.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FreemarkerUtils.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/StringBuildUtils.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/DynamicClassLoader.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/JarLoaderDemo.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/CompressionUI.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/bean/Settings.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/CustomClassLoader.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/FreeMarkerGenerator.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/ReflectionUtil.java" />
+        <option value="$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/PropertiesUtils.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/GeneratorBackup.java" />
+        <option value="$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/Generator.java" />
       </list>
     </option>
   </component>
@@ -351,12 +444,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-security-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-security-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="collectioneveryday-tools" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -366,11 +454,11 @@
     <option name="delegateBuildToMaven" value="true" />
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2312" />
-    <option name="y" value="207" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-2568" />
+    <option name="y" value="-135" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -381,6 +469,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -391,102 +480,25 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="ziputils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="RsaKey" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -494,7 +506,7 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -503,7 +515,37 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lsc" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lsc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lsc" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -513,7 +555,7 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="atcrowdfunding-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -521,27 +563,25 @@
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cipher-txt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="collectioneveryday-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
               <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="FreeMarkerFile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="FreeMarkerFile" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeTemplates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="FreeMarkerFile" type="462c0819:PsiDirectoryNode" />
-              <item name="SpannedFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -581,58 +621,29 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="freemarker" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Freemarker-utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atcrowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atcrowdfunding" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-security-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="FreeMarkerFile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,7 +657,7 @@
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/atcrowdfunding-impl/src/main/java/com/lsc" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-security-test/pom.xml" />
+    <property name="last_opened_file_path" value="E:/尚/ideaxiangmu/zaixianjiaoyu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -664,11 +675,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\TestCodeDome\atcrowdfunding\Freemarker-utils\FreeMarkerFile" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\static\img" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\webapp" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\Freemarker-utils\src\main\resources\FreeMarkerFile" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\Freemarker-utils\src\main\resources\CodeTemplates" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\Freemarker-utils\src\main\resources\mock-templates" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\collectioneveryday-tools\src\main\java\com\lsc\test\demo" />
+      <recent name="E:\TestCodeDome\atcrowdfunding\collectioneveryday-tools\src\main\java\com\lsc\bean" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -684,11 +695,11 @@
       <recent name="com.lsc.freemarker.core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TestCodeDome\atcrowdfunding\collectioneveryday-tools\src\main\resources\cipher-txt" />
       <recent name="E:\TestCodeDome\atcrowdfunding" />
       <recent name="E:\TestCodeDome\atcrowdfunding\uml" />
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\WEB-INF\views\lsc" />
       <recent name="E:\TestCodeDome\atcrowdfunding\atcrowdfunding-web\src\main\webapp\static\img" />
-      <recent name="E:\TestCodeDome\atcrowdfunding\Freemarker-utils\FreeMarkerFile\CodeTemplates\${project_path}" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -703,7 +714,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZipUtils">
+  <component name="RunManager" selected="JUnit.CompressionUI.test">
+    <configuration name="ToolsGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lsc.gui.ToolsGUI" />
+      <module name="collectioneveryday-tools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZipUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lsc.common.ziputils.ZipUtils" />
       <module name="atcrowdfunding-common" />
@@ -717,44 +741,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lsc.common.jFrame" />
-      <module name="atcrowdfunding-common" />
+    <configuration name="CompressionUI.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectioneveryday-tools" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lsc.common.*" />
+          <option name="PATTERN" value="com.lsc.freemarker.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompressionEncryptionTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="atcrowdfunding-common" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CompressionEncryptionTest" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZipTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="atcrowdfunding-common" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ZipTest" />
+      <option name="PACKAGE_NAME" value="com.lsc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.controller.CompressionUI" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZipTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="atcrowdfunding-common" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ZipTest" />
-      <option name="METHOD_NAME" value="test02" />
+    <configuration name="DynamicClassLoader.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Freemarker-utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.freemarker.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.freemarker.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.freemarker.demo.DynamicClassLoader" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JarLoaderDemo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Freemarker-utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lsc.freemarker.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lsc.freemarker.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.lsc.freemarker.demo.JarLoaderDemo" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -982,22 +1011,22 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ZipUtils" />
+      <item itemvalue="Application.ToolsGUI" />
+      <item itemvalue="JUnit.CompressionUI.test" />
+      <item itemvalue="JUnit.DynamicClassLoader.test" />
+      <item itemvalue="JUnit.JarLoaderDemo.test" />
       <item itemvalue="Tomcat Server.security" />
       <item itemvalue="Tomcat Server.众筹" />
       <item itemvalue="Tomcat Server.localhost" />
-      <item itemvalue="JUnit.CompressionEncryptionTest.test01" />
-      <item itemvalue="Application.jFrame" />
-      <item itemvalue="JUnit.ZipTest.test" />
-      <item itemvalue="JUnit.ZipTest.test02" />
-      <item itemvalue="Application.ZipUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompressionUI.test" />
+        <item itemvalue="JUnit.JarLoaderDemo.test" />
+        <item itemvalue="JUnit.DynamicClassLoader.test" />
+        <item itemvalue="Application.ToolsGUI" />
         <item itemvalue="Application.ZipUtils" />
-        <item itemvalue="JUnit.ZipTest.test" />
-        <item itemvalue="JUnit.ZipTest.test02" />
-        <item itemvalue="Application.jFrame" />
-        <item itemvalue="JUnit.CompressionEncryptionTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -1043,7 +1072,10 @@
       <workItem from="1657441633679" duration="5784000" />
       <workItem from="1658419635384" duration="3369000" />
       <workItem from="1658586454174" duration="7556000" />
-      <workItem from="1658594087814" duration="21568000" />
+      <workItem from="1658594087814" duration="21901000" />
+      <workItem from="1661259204952" duration="6770000" />
+      <workItem from="1666101797347" duration="9774000" />
+      <workItem from="1667132842229" duration="1834000" />
     </task>
     <task id="LOCAL-00001" summary="众筹">
       <created>1640017822324</created>
@@ -1073,43 +1105,50 @@
       <option name="project" value="LOCAL" />
       <updated>1658674323281</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加解压">
+      <created>1658768853205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658768853205</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 25m 39s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 29m 41s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 26m 06s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 31m 00s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 40m 53s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 32m 12s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 43m 54s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 34m 16s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 45m 33s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 36m 04s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 46m 31s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 36m 36s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 48m 09s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 40m 19s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 49m 48s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="JarLoaderDemo_test - 2022.10.20 at 23h 43m 31s.xml">
+      <configuration name="JarLoaderDemo.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 50m 12s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="CompressionUI_test - 2022.10.30 at 20h 28m 34s.xml">
+      <configuration name="CompressionUI.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZipTest_test - 2022.07.26 at 00h 50m 23s.xml">
-      <configuration name="ZipTest.test" configurationId="JUnit" />
+    <history-entry file="CompressionUI_test - 2022.10.30 at 20h 29m 10s.xml">
+      <configuration name="CompressionUI.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373630000" />
+    <option name="totallyTimeSpent" value="392341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1121,19 +1160,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-2568" y="-135" width="2576" height="1416" extended-state="7" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.503962" side_tool="true" weight="0.18819776" />
       <window_info id="Web" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49603805" visible="true" weight="0.19776714" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49603805" visible="true" weight="0.2069378" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884312" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.39540413" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30903327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30903327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1153,7 +1191,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.18221691" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.073365234" />
       <window_info anchor="right" id="Database" order="5" weight="0.32974482" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Coverage" order="7" weight="0.32974482" />
@@ -1206,7 +1244,8 @@
     <MESSAGE value="修改pom" />
     <MESSAGE value="众筹" />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="添加解压" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加解压" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1253,6 +1292,18 @@
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/DynamicClassLoader.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/DynamicClassLoader.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1268,370 +1319,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-security-test/src/main/java/com/atguigu/security/config/AppSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="336" column="4" selection-start-line="336" selection-start-column="4" selection-end-line="336" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/config/AtcrowdfundingSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/src/main/java/com/lsc/controller/FreeMarkerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6707">
-          <caret line="353" column="20" selection-start-line="353" selection-start-column="20" selection-end-line="353" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-bean/src/main/java/com/lsc/bean/TMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-impl/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/DesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-895">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="116" column="8" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="120" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/Lz4Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/LzoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/GzipUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/DEFLATEUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FreemarkerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/PropertiesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/StringBuildUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.30/freemarker-2.3.30-sources.jar!/freemarker/template/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47367">
-          <caret line="2668" column="20" selection-start-line="2668" selection-start-column="20" selection-end-line="2668" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/nio/file/Paths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6-sources.jar!/org/slf4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="681" column="14" selection-start-line="681" selection-start-column="14" selection-end-line="681" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/AESUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5.jar!/org/apache/commons/io/FileUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="874" column="23" selection-start-line="874" selection-start-column="23" selection-end-line="874" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/security/KeyPairGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="211" column="35" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/security/KeyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="324" column="27" selection-start-line="324" selection-start-column="27" selection-end-line="324" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/resources/RsaKey/publicKey.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/resources/RsaKey/privateKey.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/YasuoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/SnappyUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/jre/lib/jce.jar!/javax/crypto/Cipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="833" column="24" selection-start-line="833" selection-start-column="24" selection-end-line="833" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/RsaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/KaisaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/security/SecureRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="531" column="18" selection-start-line="531" selection-start-column="18" selection-end-line="531" selection-end-column="18" />
-          <folding>
-            <element signature="e#19068#19069#0" expanded="true" />
-            <element signature="e#19135#19136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/Bzip2Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZLibUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/encryptionutils/PBEUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/jdk/src.zip!/java/nio/file/Files.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1651,6 +1338,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1133">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/CompressionEncryptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerFor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/ActionListenerInstaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/javax/swing/JFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10507">
+          <caret line="605" column="16" selection-start-line="605" selection-start-column="16" selection-end-line="605" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/jFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-api/src/main/java/com/lsc/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/resources/cipher-txt/20221018194638.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/FreeMarkerDataBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/PropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/gui/ToolsGUI.java" />
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="225" column="23" selection-start-line="225" selection-start-column="23" selection-end-line="225" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -1661,30 +1487,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/test/java/ZipTest.java">
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/DynamicClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/test/demo/Constants.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/resources/FreeMarkerFile/core-service.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/bean/Settings.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/bean/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/resources/result/springApo.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="576" column="63" lean-forward="true" selection-start-line="1" selection-end-line="576" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/CompressionUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/demo/JarLoaderDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/JarLoaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="48" column="51" lean-forward="true" selection-end-line="244" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/CustomClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FreemarkerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/FreemarkerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1074">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="19" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/StringBuildUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/StringBuildUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/JarLoaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="146" column="1" lean-forward="true" selection-start-line="16" selection-end-line="146" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="371" lean-forward="true" selection-end-line="394" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/utils/PropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/utils/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/GeneratorFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="11" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/GeneratorFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/GeneratorBackup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="58" lean-forward="true" selection-end-line="212" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/FileUtils.java">
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="950">
+          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding-common/src/main/java/com/lsc/common/ziputils/ZipUtils.java">
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/ClassBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/entity/CrudBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectioneveryday-tools/src/main/java/com/lsc/controller/FreeMarkerGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="41" lean-forward="true" selection-end-line="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freemarker-utils/src/main/java/com/lsc/freemarker/core/FreeMarkerGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="131" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="131" />
         </state>
       </provider>
     </entry>
