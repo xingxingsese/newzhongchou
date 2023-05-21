@@ -9,7 +9,7 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
  * @date: 2022/4/21
  */
 public class CommonUtils {
-    public String CreationJsonText(Class<?> aclass){
+    public String CreationJsonText(Class<?> aclass) {
         if (!aclass.isInterface()) {
             return "fail";
         }

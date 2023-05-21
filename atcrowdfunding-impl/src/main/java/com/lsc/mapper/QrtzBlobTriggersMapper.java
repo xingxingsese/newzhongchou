@@ -3,7 +3,9 @@ package com.lsc.mapper;
 import com.lsc.bean.QrtzBlobTriggers;
 import com.lsc.bean.QrtzBlobTriggersExample;
 import com.lsc.bean.QrtzBlobTriggersKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzBlobTriggersMapper {

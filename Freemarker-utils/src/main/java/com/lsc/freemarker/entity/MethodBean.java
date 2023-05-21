@@ -17,7 +17,8 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class MethodBean {
-    /**.
+    /**
+     * .
      * 方法名
      */
     private String methodName;
@@ -25,7 +26,7 @@ public class MethodBean {
     /**
      * 方法返回值类型
      */
-    private String methodResponseType;
+    private List<FieldBean> methodResponseType;
 
     /**
      * 方法入参类型

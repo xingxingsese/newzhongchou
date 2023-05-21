@@ -7,16 +7,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
- * @Description:
- * lz4压缩格式
+ * @Description: lz4压缩格式
  * LZ4是一种无损数据压缩算法，着重于压缩和解压缩速度更多wikilz4
- *
+ * <p>
  * maven引入第三方库：
- *<dependency>
- *             <groupId>net.jpountz.lz4</groupId>
- *             <artifactId>lz4</artifactId>
- *             <version>1.2.0</version>
- *         </dependency>
+ * <dependency>
+ * <groupId>net.jpountz.lz4</groupId>
+ * <artifactId>lz4</artifactId>
+ * <version>1.2.0</version>
+ * </dependency>
  * @Author: lisc
  * @date: 2022/7/23
  */

@@ -31,13 +31,12 @@ public class jFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        JFrame j=new JFrame();
+        JFrame j = new JFrame();
         j.setVisible(true);
-        j.setBounds(100,100,700,500);
+        j.setBounds(100, 100, 700, 500);
         j.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JButton b1 = new JButton("上");
-        j.add(b1,BorderLayout.NORTH);
-
+        j.add(b1, BorderLayout.NORTH);
 
 
     }

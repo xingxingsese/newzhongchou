@@ -49,7 +49,7 @@ public class MenuServiceImpl implements MenuService {
     @Override
     public String saveMenu(TMenu tMenu) {
         int result = tMenuMapper.insert(tMenu);
-        log.info("添加菜单完毕result:{}",result);
+        log.info("添加菜单完毕result:{}", result);
         return result > 0 ? Constant.OK : Constant.FAIL;
     }
 
@@ -62,21 +62,21 @@ public class MenuServiceImpl implements MenuService {
     @Override
     public String deleteMenu(Integer id) {
         int result = tMenuMapper.deleteByPrimaryKey(id);
-        log.info("删除菜单完毕result:{}",result);
+        log.info("删除菜单完毕result:{}", result);
         return String.valueOf(result);
     }
 
     @Override
     public String updateMenu(TMenu tMenu) {
         int result = tMenuMapper.updateByPrimaryKey(tMenu);
-        log.info("修改菜单完毕result:{}",result);
+        log.info("修改菜单完毕result:{}", result);
         return result > 0 ? Constant.OK : Constant.FAIL;
     }
 
     @Override
     public TMenu getMenu(Integer id) {
         TMenu tMenu = tMenuMapper.selectByPrimaryKey(id);
-        log.info("查询菜单完毕result:{}",tMenu);
+        log.info("查询菜单完毕result:{}", tMenu);
         return tMenu;
     }
 
@@ -88,7 +88,7 @@ public class MenuServiceImpl implements MenuService {
     @Override
     public void saveMenuPermissions(Integer permissionId, String menuIds) {
         List<Integer> menuIdsList = new ArrayList<Integer>();
-        if(!StringUtils.isEmpty(menuIds)) {
+        if (!StringUtils.isEmpty(menuIds)) {
             String[] split = menuIds.split(",");
             for (String string : split) {
                 int menuId = Integer.parseInt(string);
@@ -100,7 +100,7 @@ public class MenuServiceImpl implements MenuService {
             example.createCriteria().andPermissionidEqualTo(permissionId);
             permissionMenuMapper.deleteByExample(example);
             //保存这个权限对应的所有菜单
-            permissionMenuMapper.insertBatchMenuPermission(permissionId,menuIdsList);
+            permissionMenuMapper.insertBatchMenuPermission(permissionId, menuIdsList);
         }
     }
 }

@@ -32,10 +32,10 @@ public class DemoTest {
 
     @Test
     public void test() {
-        System.out.println("Math.random() = " + Math.random()*10);
+        System.out.println("Math.random() = " + Math.random() * 10);
     }
 
-    public TAdmin buildTadmin(TAdmin tAdmin){
+    public TAdmin buildTadmin(TAdmin tAdmin) {
         tAdmin.setLoginacct("loginacct");
         tAdmin.setId(1);
         return tAdmin;

@@ -165,12 +165,12 @@
                 </form>
             </div>
         </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary" id="strTestBtn">保存</button>
-            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" id="strTestBtn">保存</button>
         </div>
     </div>
+</div>
 </div>
 
 <%@ include file="/include/common-js.jsp" %>
@@ -189,28 +189,29 @@
     });
     //点击保存,提交表单给服务器保存数据
     $("#strTestBtn").click(function () {
-       var str = $("#templetesText").val();
-       var templetesName = $("#templetesName").val();
-       var userId = ${loginUser.id}
-       var userName = ${loginUser.name}
+        var str = $("#templetesText").val();
+        var templetesName = $("#templetesName").val();
+        var userId =
+        ${loginUser.id}
+        var userName = ${loginUser.name}
 
-        //ajax提交携带数据,只需要把数据组装成对象,放在参数位置即可
-        $.post("${ctx}/freemarker/templete/mock",
-        {
-            "templateText": str,
-            "templateName":templetesName,
-            "userId":userId,
-            "author":userName
-        }
-        , function (data) {
-            if (data == "ok") {
-                layer.msg("保存成功");
-            } else {
-                layer.msg("生成失败");
-            }
-            //关闭模态框
-            $("#addTempletemodal").modal('hide');
-        },"json");
+            //ajax提交携带数据,只需要把数据组装成对象,放在参数位置即可
+            $.post("${ctx}/freemarker/templete/mock",
+                {
+                    "templateText": str,
+                    "templateName": templetesName,
+                    "userId": userId,
+                    "author": userName
+                }
+                , function (data) {
+                    if (data == "ok") {
+                        layer.msg("保存成功");
+                    } else {
+                        layer.msg("生成失败");
+                    }
+                    //关闭模态框
+                    $("#addTempletemodal").modal('hide');
+                }, "json");
     });
 </script>
 

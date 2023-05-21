@@ -16,7 +16,7 @@ import java.io.IOException;
 public class GUI_1JFrame extends JFrame {
 
     @Test
-    public  void test() {
+    public void test() {
         //使用SwingUtilities工具调用createAndShowGUI()方法显示GUI程序
         SwingUtilities.invokeLater(GUI_1JFrame::createAndShowGUI);
     }

@@ -5,9 +5,7 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.lsc.bean.MockAttributeBean;
 import com.lsc.bean.MockClassBean;
 import com.lsc.bean.MockMethodBean;
-import com.lsc.freemarker.utils.CustomClassLoader;
-import com.lsc.freemarker.utils.FileUtils;
-import com.lsc.freemarker.utils.StringBuildUtils;
+import com.lsc.freemarker.core.CustomClassLoader;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Assert;
@@ -42,13 +40,13 @@ public class JarLoaderUtils {
     public static Class<?> getClassObject(String jarPath, String classNamePath) {
         Class<?> loadClass = null;
         try {
-            log.info("加载jar包: jarPath:{} classNamePath:{}",jarPath,classNamePath);
-            if (classNamePath.contains("/")){
+            log.info("加载jar包: jarPath:{} classNamePath:{}", jarPath, classNamePath);
+            if (classNamePath.contains("/")) {
                 classNamePath = classNamePath.replace('/', '.');
             }
             File file = new File(jarPath);
 
-            Assert.isTrue(file.exists(),"当前路径不存在");
+            Assert.isTrue(file.exists(), "当前路径不存在");
             // 递归遍历路径下的jar包
             List<File> files = FileUtils.searchAllJarFile(file);
             // 过滤掉重复的jar
@@ -63,16 +61,17 @@ public class JarLoaderUtils {
             loadClass = loader.getParent().loadClass(classNamePath);
 
         } catch (ClassNotFoundException e) {
-            log.error("JarLoaderUtils:getClassObject 发生异常:",e);
+            log.error("JarLoaderUtils:getClassObject 发生异常:", e);
         }
         return loadClass;
     }
 
     /**
      * 获取类所有属性和方法
+     *
      * @param classNamePath 类路径
-     * @param outPath json文本输出路径
-     * @param aClass 反射的类
+     * @param outPath       json文本输出路径
+     * @param aClass        反射的类
      * @return
      */
     public static MockClassBean buildSourceData(String classNamePath, String outPath, Class<?> aClass) {
@@ -187,7 +186,7 @@ public class JarLoaderUtils {
         try {
             Object instance = clazz.newInstance();
             String content = JSONObject.toJSONString(instance, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue);
-            FileUtils.fileWrite(outPath, clazz.getSimpleName()+".json", content);
+            FileUtils.fileWrite(outPath, clazz.getSimpleName() + ".json", content);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -196,6 +195,7 @@ public class JarLoaderUtils {
     /**
      * 判断当前类型是否是基本类型 或 包装类型 或String
      * 如果非以上类型的话,会报错, catch里会返回false;
+     *
      * @param clazz
      * @return
      */
@@ -215,6 +215,7 @@ public class JarLoaderUtils {
     /**
      * 过滤重复jar包
      * 相同的jar包,取更新时间最近的那个
+     *
      * @param files1
      * @return
      */
@@ -235,7 +236,7 @@ public class JarLoaderUtils {
             if (file1 != null) {
                 // 当前的文件修改时间大于 已存在的文件, 就替换掉, 否则不动
                 if (currentFile.lastModified() > file1.lastModified()) {
-                    hashMap.put(currentFileName,currentFile);
+                    hashMap.put(currentFileName, currentFile);
                 }
             }
         }

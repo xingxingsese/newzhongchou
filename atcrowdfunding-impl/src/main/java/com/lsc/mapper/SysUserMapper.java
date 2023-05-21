@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysUser;
 import com.lsc.bean.SysUserExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysUserMapper {

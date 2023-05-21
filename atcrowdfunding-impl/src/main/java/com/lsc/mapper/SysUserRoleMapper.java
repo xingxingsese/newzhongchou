@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysUserRole;
 import com.lsc.bean.SysUserRoleExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysUserRoleMapper {

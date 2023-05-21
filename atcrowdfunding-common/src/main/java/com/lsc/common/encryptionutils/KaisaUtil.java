@@ -18,13 +18,13 @@ public class KaisaUtil {
         char[] chars = orignal.toCharArray();
         StringBuffer buffer = new StringBuffer();
         //遍历数组
-        for(char aChar : chars) {
+        for (char aChar : chars) {
             //获取字符的ASCII编码
             int asciiCode = aChar;
             //偏移数据
             asciiCode += key;
             //将偏移后的数据转为字符
-            char result = (char)asciiCode;
+            char result = (char) asciiCode;
             //拼接数据
             buffer.append(result);
         }
@@ -61,10 +61,10 @@ public class KaisaUtil {
     public static void main(String[] args) {
         String str = "open fire";
         String encode = encryptKaisa(str, 465465406);
-        System.out.println("加密后："+encode);
+        System.out.println("加密后：" + encode);
 
         String decode = decryptKaiser(encode, 465465406);
-        System.out.println("解密后："+decode);
+        System.out.println("解密后：" + decode);
 
     }
 

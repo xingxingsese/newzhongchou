@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TAdmin;
 import com.lsc.bean.TAdminExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TAdminMapper {

@@ -1,7 +1,5 @@
 package com.lsc.test.demo;
 
-import com.lsc.freemarker.utils.Constants;
-import com.lsc.freemarker.utils.SystemLog;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,7 +12,7 @@ public class UserService {
     @SystemLog
     public void insertUser() {
         try {
-            System.out.println("插入用户成功" + 10/0);
+            System.out.println("插入用户成功" + 10 / 0);
         } catch (Exception e) {
             System.out.println("插入用户异常了");
         }

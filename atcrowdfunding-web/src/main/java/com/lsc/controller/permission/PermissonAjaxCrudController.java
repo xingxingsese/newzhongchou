@@ -25,12 +25,14 @@ public class PermissonAjaxCrudController {
     PermissonService permissonService;
 
     @GetMapping("permission/role/get")
-    public List<TPermission> getRolePermission(@RequestParam("userId") Integer userId){
+    public List<TPermission> getRolePermission(@RequestParam("userId") Integer userId) {
         List<TPermission> list = permissonService.getRolePermission(userId);
         return list;
     }
+
     /**
      * 给角色分配权限
+     *
      * @param rid
      * @param permissionIds
      * @return
@@ -39,7 +41,7 @@ public class PermissonAjaxCrudController {
     public String roleAssignPermission(@RequestParam("rid") Integer rid,
                                        @RequestParam("permissionIds") String permissionIds) {
 
-        permissonService.assignPermissionForRole(rid,permissionIds);
+        permissonService.assignPermissionForRole(rid, permissionIds);
         return "ok";
     }
 

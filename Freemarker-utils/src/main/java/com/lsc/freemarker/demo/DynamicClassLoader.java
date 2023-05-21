@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
  * @Author: lisc
  * @date: 2022/10/19
  */
-public class DynamicClassLoader extends ClassLoader{
+public class DynamicClassLoader extends ClassLoader {
 
     private static final String SUFFIX = ".class";
     public String[] paths;
@@ -21,7 +21,7 @@ public class DynamicClassLoader extends ClassLoader{
         this.paths = paths;
     }
 
-    public DynamicClassLoader(ClassLoader parent,String[] paths){
+    public DynamicClassLoader(ClassLoader parent, String[] paths) {
         super(parent);
         this.paths = paths;
     }
@@ -30,10 +30,10 @@ public class DynamicClassLoader extends ClassLoader{
     @Override
     protected Class<?> findClass(String className) throws ClassNotFoundException {
         String classPath = getClassPath(className);
-        if(classPath != null){
+        if (classPath != null) {
             byte[] clazz = loadClazz(classPath);
             return defineClass(clazz, 0, clazz.length);
-        }else{
+        } else {
             System.out.println("class is not found !");
             return null;
         }
@@ -44,7 +44,7 @@ public class DynamicClassLoader extends ClassLoader{
             FileInputStream in = new FileInputStream(new File(classPath));
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             int b;
-            while((b = in.read()) != -1){
+            while ((b = in.read()) != -1) {
                 baos.write(b);
             }
             in.close();
@@ -55,20 +55,19 @@ public class DynamicClassLoader extends ClassLoader{
         return null;
     }
 
-    public String getClassPath(String className){
-        for(String path : paths){
-            if(className.contains(".")){
+    public String getClassPath(String className) {
+        for (String path : paths) {
+            if (className.contains(".")) {
                 className = className.replaceAll("\\.", Matcher.quoteReplacement(File.separator));
             }
             String classPath = path + className + SUFFIX;
             File classFile = new File(classPath);
-            if(classFile.exists()){
+            if (classFile.exists()) {
                 return classPath;
             }
         }
         return null;
     }
-
 
 
 }

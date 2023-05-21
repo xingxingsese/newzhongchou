@@ -53,7 +53,7 @@ public class PermissonsServiceImpl implements PermissonService {
     @Override
     public String savePermisson(TPermission tPermisson) {
         int result = tPermissionMapper.insert(tPermisson);
-        log.info("添加权限完毕result:{}",result);
+        log.info("添加权限完毕result:{}", result);
         return result > 0 ? Constant.OK : Constant.FAIL;
     }
 
@@ -66,34 +66,34 @@ public class PermissonsServiceImpl implements PermissonService {
     @Override
     public String deletePermisson(Integer id) {
         int result = tPermissionMapper.deleteByPrimaryKey(id);
-        log.info("删除权限完毕result:{}",result);
+        log.info("删除权限完毕result:{}", result);
         return String.valueOf(result);
     }
 
     @Override
     public String updatePermisson(TPermission tPermisson) {
         int result = tPermissionMapper.updateByPrimaryKey(tPermisson);
-        log.info("修改权限完毕result:{}",result);
+        log.info("修改权限完毕result:{}", result);
         return result > 0 ? Constant.OK : Constant.FAIL;
     }
 
     @Override
     public TPermission getPermisson(Integer id) {
         TPermission tPermisson = tPermissionMapper.selectByPrimaryKey(id);
-        log.info("查询权限完毕result:{}",tPermisson);
+        log.info("查询权限完毕result:{}", tPermisson);
         return tPermisson;
     }
 
     @Override
     public void assignPermissionForRole(Integer rid, String permissionIds) {
         List<Integer> integerList = null;
-        if (StringUtils.isNotBlank(permissionIds)){
+        if (StringUtils.isNotBlank(permissionIds)) {
             integerList = Arrays.asList(permissionIds.split(",")).stream().map(s -> Integer.parseInt(s)).collect(Collectors.toList());
         }
         TRolePermissionExample permissionidNotIn = new TRolePermissionExample();
         permissionidNotIn.createCriteria().andRoleidEqualTo(rid);
         tRolePermissionMapper.deleteByExample(permissionidNotIn);
-        tRolePermissionMapper.insertPermissioinToRoleBath(rid,integerList);
+        tRolePermissionMapper.insertPermissioinToRoleBath(rid, integerList);
     }
 
     @Override

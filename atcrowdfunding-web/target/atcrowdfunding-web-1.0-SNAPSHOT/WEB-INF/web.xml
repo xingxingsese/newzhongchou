@@ -68,7 +68,7 @@
 
 
     <!-- 配置我们自己的监听器 -->
-     <listener>
-         <listener-class>com.lsc.listener.AppStartupListener</listener-class>
-     </listener>
+    <listener>
+        <listener-class>com.lsc.listener.AppStartupListener</listener-class>
+    </listener>
 </web-app>

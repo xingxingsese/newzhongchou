@@ -147,7 +147,7 @@ public class JarLoaderDemo {
      * @Author:wangcanfeng
      * @Date: 2019/9/12-15:21
      */
-    public static void addUrl(File jarPath, URLClassLoader classLoader)  {
+    public static void addUrl(File jarPath, URLClassLoader classLoader) {
         try {
             // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
 
@@ -199,8 +199,6 @@ public class JarLoaderDemo {
         }
         return loadClass;
     }
-
-
 
 
 }

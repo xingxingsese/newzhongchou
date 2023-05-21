@@ -61,11 +61,11 @@ public class TAdmin {
         this.createtime = createtime == null ? null : createtime.trim();
     }
 
-	@Override
-	public String toString() {
-		return "TAdmin [id=" + id + ", loginacct=" + loginacct + ", userpswd=" + userpswd + ", username=" + username
-				+ ", email=" + email + ", createtime=" + createtime + "]";
-	}
-    
-    
+    @Override
+    public String toString() {
+        return "TAdmin [id=" + id + ", loginacct=" + loginacct + ", userpswd=" + userpswd + ", username=" + username
+                + ", email=" + email + ", createtime=" + createtime + "]";
+    }
+
+
 }

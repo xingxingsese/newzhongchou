@@ -7,15 +7,14 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
- * @Description:
- * lzo压缩格式
+ * @Description: lzo压缩格式
  * LZO是致力于解压速度的一种数据压缩算法，LZO是Lempel-Ziv-Oberhumer的缩写。这个算法是无损算法。
- *
+ * <p>
  * 需要引入第三方库，maven引入：
  * <dependency>
- *     <groupId>org.anarres.lzo</groupId>
- *     <artifactId>lzo-core</artifactId>
- *     <version>1.0.5</version>
+ * <groupId>org.anarres.lzo</groupId>
+ * <artifactId>lzo-core</artifactId>
+ * <version>1.0.5</version>
  * </dependency>
  * @Author: lisc
  * @date: 2022/7/23

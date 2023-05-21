@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysLog;
 import com.lsc.bean.SysLogExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysLogMapper {

@@ -66,7 +66,7 @@ public class CustomClassLoader extends ClassLoader {
      * @param classPath 例如/usr/java/classes下有一个test.App类，则/usr/java/classes即这个类的根路径，而.class文件的实际位置是/usr/java/classes/test/App.class
      */
     public List<String> getClassFilePath(String classPath) {
-        log.info("获取本地class文件: {}",classPath);
+        log.info("获取本地class文件: {}", classPath);
         // 设置class文件所在根路径
         File clazzPath = new File(classPath);
 
@@ -88,7 +88,7 @@ public class CustomClassLoader extends ClassLoader {
                     File[] classFiles = path.listFiles(new FileFilter() {
                         public boolean accept(File pathname) {
                             // 留下 是文件夹 并且文件夹名不包含test 或者 是.class文件且不包含$
-                            return (pathname.isDirectory() && !pathname.getName().contains("test")) || (pathname.getName().endsWith(".class") ); // && !pathname.getName().contains("$")
+                            return (pathname.isDirectory() && !pathname.getName().contains("test")) || (pathname.getName().endsWith(".class")); // && !pathname.getName().contains("$")
                         }
                     });
 
@@ -139,11 +139,11 @@ public class CustomClassLoader extends ClassLoader {
             String replaceAll = classFile.replaceAll("\\\\", ".");
             int com = replaceAll.indexOf("com");
             int lastIndexOf = replaceAll.lastIndexOf(".");
-            String substring = replaceAll.substring(com,lastIndexOf);
+            String substring = replaceAll.substring(com, lastIndexOf);
             if (!substring.equals(name)) {
                 continue;
             }
-          //   log.info("replaceAll: {}, findName: {}", replaceAll, name);
+            //   log.info("replaceAll: {}, findName: {}", replaceAll, name);
 
             byte[] loadClazz = loadClazz(classFile);
             return defineClass(name, loadClazz, 0, loadClazz.length);

@@ -26,7 +26,7 @@ import java.util.List;
  */
 @Service
 public class AdminServiceImpl implements AdminService {
-     public Logger logger = LoggerFactory.getLogger(this.getClass());
+    public Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     TAdminMapper tAdminMapper;
@@ -105,14 +105,14 @@ public class AdminServiceImpl implements AdminService {
     public void savaAdmin(TAdmin tAdmin) {
         // 检查用户名是否被占用
         boolean email = checkemail(tAdmin);
-        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE,ExceptionCode.EMAIL_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE, ExceptionCode.EMAIL_THRER_ARE.getMsg());
         // 检查邮箱是否被占用
         boolean log = checkLogAccount(tAdmin);
-        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE,ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE, ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
         tAdmin.setUserpswd(AppUtils.getDigestPwd("123456"));
         tAdmin.setCreatetime(AppUtils.getCurrentTime());
         tAdminMapper.insertSelective(tAdmin);
-        logger.info("{} 新增完成 !",tAdmin.getUsername());
+        logger.info("{} 新增完成 !", tAdmin.getUsername());
     }
 
     @Override
@@ -144,16 +144,16 @@ public class AdminServiceImpl implements AdminService {
         //全部菜单
         List<TMenu> myMenus = tMenuMapper.getMyMenus(id);
         for (TMenu tMenu : myMenus) {
-            if(tMenu.getPid() == 0) {
+            if (tMenu.getPid() == 0) {
                 //找出父菜单
                 parentsMenu.add(tMenu);
             }
         }
-        for(TMenu pMenu :parentsMenu) {//遍历出所有父菜单
+        for (TMenu pMenu : parentsMenu) {//遍历出所有父菜单
 
-            for(TMenu childMenu : myMenus) {//遍历所有菜单
+            for (TMenu childMenu : myMenus) {//遍历所有菜单
 
-                if(childMenu.getPid() == pMenu.getId()) {//判断菜单的pid是否等于当前这个父菜单的id
+                if (childMenu.getPid() == pMenu.getId()) {//判断菜单的pid是否等于当前这个父菜单的id
 
                     pMenu.gettMenus().add(childMenu);//getChilds()方法存储他的子菜单
                 }

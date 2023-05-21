@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysCaptcha;
 import com.lsc.bean.SysCaptchaExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysCaptchaMapper {

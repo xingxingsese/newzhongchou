@@ -1,8 +1,12 @@
 com\lsc\controller\permission\PerminssionPageController.class
+com\lsc\config\AtcrowdfundingSecurityConfig.class
 com\lsc\controller\permission\MenuAjaxCrudController.class
 com\lsc\controller\permission\RoleAjaxCrudController.class
+com\lsc\config\AtcrowdfundingSecurityConfig$2.class
 com\lsc\controller\permission\AdminCrudController.class
 com\lsc\controller\FreeMarkerController.class
 com\lsc\controller\permission\PermissonAjaxCrudController.class
+com\lsc\config\AtcrowdfundingSecurityConfig$1.class
 com\lsc\controller\LoginController.class
+com\lsc\controller\RegController.class
 com\lsc\listener\AppStartupListener.class

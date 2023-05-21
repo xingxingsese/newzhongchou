@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysRoleMenu;
 import com.lsc.bean.SysRoleMenuExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysRoleMenuMapper {

@@ -28,13 +28,13 @@ public class Settings {
         this.author = author;
     }
 
-    public Map<String,Object> getSettingMap(){
+    public Map<String, Object> getSettingMap() {
         HashMap<String, Object> map = new HashMap<>();
         Field[] declaredFields = Settings.class.getDeclaredFields();
         for (Field field : declaredFields) {
             field.setAccessible(true);
             try {
-                map.put(field.getName(),field.get(this));
+                map.put(field.getName(), field.get(this));
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }

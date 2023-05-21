@@ -8,11 +8,14 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.lsc.freemarker.entity.FieldBean;
 import com.lsc.freemarker.entity.MethodBean;
+import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.AdvisedSupport;
 import org.springframework.aop.framework.AopProxy;
 import org.springframework.aop.support.AopUtils;
+import org.springframework.util.ObjectUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -38,7 +41,7 @@ public class ReflectionUtil {
         for (Field field : fields) {
             FieldBean fieldBean = new FieldBean();
             // 跳过java自带的类
-            if (StringUtils.containsAny(field.getType().getName(), "java.lang.", "java.util.", ".Logger","$")) {
+            if (StringUtils.containsAny(field.getType().getName(), "java.lang.", "java.util.", ".Logger", "$")) {
                 continue;
             }
             // 属性类型名
@@ -85,7 +88,7 @@ public class ReflectionUtil {
                     int parameterlastIndexOf = parameterType.getTypeName().lastIndexOf('.');
                     String fieldName = parameterType.getName().substring(parameterlastIndexOf + 1);
                     FieldBean fieldBean = new FieldBean();
-                    fieldBean.setFieldPathAndName(parameterType.getTypeName().replace(".","/"));
+                    fieldBean.setFieldPathAndName(parameterType.getTypeName().replace(".", "/"));
                     fieldBean.setFieldName(StringBuildUtils.buildLowerCaseStr(fieldName));
                     fieldBean.setFieldType(fieldName);
                     parameterList.add(fieldBean);
@@ -96,9 +99,13 @@ public class ReflectionUtil {
             methodBean.setMethodRequestType(parameterList);
             String returnTypeName = declaredMethod.getReturnType().getName();
             if (!"void".equals(returnTypeName)) {
-                int indexOf = returnTypeName.lastIndexOf('.');
-                methodBean.setMethodResponseType(returnTypeName.substring(indexOf + 1));
+
                 Class<?> returnType = declaredMethod.getReturnType();
+                FieldBean fieldBean = new FieldBean();
+                fieldBean.setFieldName(StringBuildUtils.buildLowerCaseStr(returnType.getSimpleName()));
+                fieldBean.setFieldType(returnType.getSimpleName());
+                fieldBean.setFieldPathAndName(returnType.getTypeName().replace(".", "/"));
+                methodBean.setMethodResponseType(Arrays.asList(fieldBean));
                 CreationJsonTxt(declaredMethod.getReturnType(), outPathJson);
             }
             methodList.add(methodBean);
@@ -331,7 +338,7 @@ public class ReflectionUtil {
     }
 
     /**
-     * 取实例obj的自身与父的所有字段
+     * 取实例obj的自身所有属性不包含父类
      *
      * @param obj 实例
      * @return
@@ -369,14 +376,13 @@ public class ReflectionUtil {
     }
 
 
-
     /**
      * 根据Class对象,反射出对象的json文本
-     * @param aclass 类对象
+     *
+     * @param aclass      类对象
      * @param outPathJson 文本输出路径
      */
     public static void CreationJsonTxt(Class<?> aclass, String outPathJson) {
-        log.info("CreationJsonTxt : outPathJson:{}",outPathJson);
 
         try {
             if (!aclass.isInterface() && !aclass.isEnum()) {
@@ -389,5 +395,94 @@ public class ReflectionUtil {
             log.error("CreationJsonTxt 创建json文本对象时出错!!!", e);
         }
 
+    }
+
+    /**
+     * 根据Class对象,反射出对象的json文本
+     *
+     * @param aclass      类对象
+     * @param outPathJson 文本输出路径
+     */
+    public static String CreationJsonTxt(Class<?> aclass) {
+        String contex = StringUtils.EMPTY;
+        try {
+            if (!aclass.isInterface() && !aclass.isEnum()) {
+                Object instance = aclass.newInstance();
+                contex = JSONObject.toJSONString(instance, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue);
+
+            }
+        } catch (Exception e) {
+            log.error("CreationJsonTxt 创建json文本对象时出错!!!", e);
+        }
+        return contex;
+    }
+
+    /**
+     * 循环遍历指定类的全部属性(不包含父类)
+     * 判断是否有属性非空 如果有属性非空 return true
+     *
+     * @param obj 目标对象实例
+     * @return
+     */
+    public static boolean objectAllFieldContainIsNotEmpty(Object obj) {
+        Class<?> aClass = obj.getClass();
+        try {
+            // 获取当前类所有的属性, 不包含父类
+            List<Field> fieldList = getDeclaredFields(aClass);
+            for (Field field : fieldList) {
+                field.setAccessible(true);
+                // 获取当前属性的值
+                Object fieldValue = field.get(obj);
+                // 校验当前值是否为null
+                if (!ObjectUtils.isEmpty(fieldValue)) {
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            log.error(String.format("ReflectUtil:getObjectAllFieldValueIsNotNull:busiFlg:system exception: msg:%s stack:", e));
+        }
+        return false;
+    }
+
+    /**
+     * 获取 cla 自身的所有字段
+     *
+     * @param cla
+     * @return
+     */
+    public static List<Field> getDeclaredFields(Class<?> cla) {
+        List<Field> fieldList = OptionalUtil.ofBoolean(cla == null, cla, val -> new ArrayList<>(), val -> new ArrayList<>(Arrays.asList(val.getDeclaredFields())));
+        fieldList.forEach(field -> field.setAccessible(true));
+        return fieldList;
+    }
+
+    /**
+     * 获取指定对象,指定属性的set方法
+     *
+     * @param obj
+     * @param field
+     * @return
+     */
+    public static Method getObjectSetMethod(Object obj, Field field) {
+        Class<?> clazz = obj.getClass();
+        String fieldName = field.getName();
+        String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
+        Method method = getMethodInTarget(clazz, methodName);
+        return method;
+    }
+
+    /**
+     * 获取指定对象,指定属性的set方法
+     *
+     * @param obj
+     * @param field
+     * @return
+     */
+    public static Method getObjectSetMethod(Class clazz, Field field) {
+        String fieldName = field.getName();
+        String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
+        Method method = getMethodInTarget(clazz, methodName);
+        log.info("getObjectSetMethod:结束");
+        return method;
     }
 }

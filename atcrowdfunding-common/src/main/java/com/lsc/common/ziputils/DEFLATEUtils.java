@@ -6,12 +6,11 @@ import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
 /**
- * @Description:
- * DEFLATE压缩格式
+ * @Description: DEFLATE压缩格式
  * DEFLATE是同时使用了LZ77算法与哈夫曼编码（Huffman Coding）的一个无损数据压缩算法。
- *
+ * <p>
  * DEFLATE压缩与解压的源代码可以在自由、通用的压缩库zlib上找到，zlib官网：http://www.zlib.net/
- *
+ * <p>
  * jdk中对zlib压缩库提供了支持，压缩类Deflater和解压类Inflater，Deflater和Inflater都提供了native方法
  * @Author: lisc
  * @date: 2022/7/23

@@ -4,7 +4,7 @@ import lombok.NonNull;
 import lombok.ToString;
 
 @ToString
-public class TAdmin extends TMenuExample{
+public class TAdmin extends TMenuExample {
     private Integer id;
 
     private String loginacct;

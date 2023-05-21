@@ -1,7 +1,7 @@
 package com.lsc.test.demo;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lsc.freemarker.core.CustomClassLoader;
+import com.lsc.freemarker.utils.CustomClassLoader;
 import org.junit.Test;
 
 import java.io.File;
@@ -20,7 +20,7 @@ public class TestCode {
     @Test
     public void test01() throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
 
-    //    String classPath = "com.ipay.ibizecoprod.core.service.voyage.impl.MpOpenMarketPlaceServiceImpl";
+        //    String classPath = "com.ipay.ibizecoprod.core.service.voyage.impl.MpOpenMarketPlaceServiceImpl";
         String classPath = "com.ipay.ibizecoprod.core.service.voyage.impl.MpOpenMarketPlaceServiceImpl";
         // 创建自定义的类加载器
         CustomClassLoader loader = new CustomClassLoader();
@@ -59,15 +59,14 @@ public class TestCode {
         File file = new File("D:\\Code\\TestCode\\newzhongchou\\Freemarker-utils\\src\\main\\resources\\FreeMarkerFile\\SpannedFile\\20221013164314\\QueryMarketPlaceApplyListRequest.json");
         if (file.exists()) {
             System.out.println("存在");
-        }else {
+        } else {
             System.out.println("不存在,path" + file.getPath());
             boolean mkdirs = file.getParentFile().mkdirs();
             boolean newFile = file.createNewFile();
 
-            System.out.println(mkdirs+" ----  "+newFile);
+            System.out.println(mkdirs + " ----  " + newFile);
         }
     }
-
 
 
 }

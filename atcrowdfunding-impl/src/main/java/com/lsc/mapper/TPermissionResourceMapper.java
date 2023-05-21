@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TPermissionResource;
 import com.lsc.bean.TPermissionResourceExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TPermissionResourceMapper {

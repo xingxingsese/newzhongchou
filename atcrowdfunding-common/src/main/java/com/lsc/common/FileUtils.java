@@ -238,9 +238,9 @@ public class FileUtils {
         BufferedWriter bufferedWriter = null;
         try {
             // 如果文件不存在创建文件
-            if (!file.exists()) {
-                file.createNewFile();
-            }
+            // if (!file.exists()) {
+            file.createNewFile();
+            //  }
             bufferedWriter = new BufferedWriter(new FileWriter(file));
             bufferedWriter.write(content);
 

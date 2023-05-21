@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TMenu;
 import com.lsc.bean.TMenuExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TMenuMapper {

@@ -10,7 +10,7 @@ public class Column {
     // 列名称
     private String columnName;
     // 列名称(处理后的列名称)
-    private String columnName2;
+    private String javaColumnName;
     // 列类型
     private String columnType;
     // 列数据库类型

@@ -4,6 +4,7 @@ package com.lsc.common.encryptionutils;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+
 /**
  * @Description: AES（Advanced Encryption Standard） 加密/解密
  * @Author: lisc
@@ -44,6 +45,7 @@ public class AESUtil {
 
     /**
      * 解密
+     *
      * @param encrypted 需要解密的参数
      * @return
      * @throws Exception

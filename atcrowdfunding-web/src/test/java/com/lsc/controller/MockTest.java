@@ -31,11 +31,11 @@ public class MockTest {
     @Test
     public void test() {
         List listMock = Mockito.mock(List.class);
-        Mockito.doAnswer(new Answer(){
+        Mockito.doAnswer(new Answer() {
             @Override
-            public Object answer(InvocationOnMock invocationOnMock)throws Throwable {
-              Object argument = invocationOnMock.getArguments();
-                Consumer.class.getDeclaredMethod("accept",Object.class).invoke(argument,1);
+            public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+                Object argument = invocationOnMock.getArguments();
+                Consumer.class.getDeclaredMethod("accept", Object.class).invoke(argument, 1);
                 return argument;
             }
         }).when(listMock).forEach(Mockito.any());
@@ -67,8 +67,6 @@ public class MockTest {
 
         }
     }
-
-
 
 
 }

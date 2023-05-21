@@ -1,9 +1,12 @@
 package com.lsc.freemarker.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
+import java.net.CookieHandler;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,7 +65,7 @@ public class FileUtils {
         } else {
             // 只扫描jar包
             String path = dir.getPath();
-            if (path.endsWith(".jar")&& !path.contains("sources")) {
+            if (path.endsWith(".jar") && !path.contains("sources")) {
                 collector.add(dir);
             }
         }
@@ -82,14 +85,16 @@ public class FileUtils {
         }
         return result;
     }
+
     /**
      * 输出文件到指定目录
+     *
      * @param filePath 文件目录
      * @param fileName 文件名
-     * @param content 文件内容
+     * @param content  文件内容
      */
-    public static void fileWrite(String filePath,String fileName,String content) {
-        File file = new File(filePath,fileName);
+    public static void fileWrite(String filePath, String fileName, String content) {
+        File file = new File(filePath, fileName);
         BufferedWriter bufferedWriter = null;
         try {
             // 如果文件不存在创建文件
@@ -104,7 +109,7 @@ public class FileUtils {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 bufferedWriter.flush();
             } catch (IOException e) {
@@ -120,6 +125,7 @@ public class FileUtils {
 
     /**
      * 读取文件转换为字节码
+     *
      * @param classPath
      * @return
      */
@@ -135,12 +141,10 @@ public class FileUtils {
             in.close();
             return baos.toByteArray();
         } catch (Exception e) {
-            log.error("loadClazz方法执行异常",e);
+            log.error("loadClazz方法执行异常", e);
         }
         return null;
     }
 
 
 }
-
-

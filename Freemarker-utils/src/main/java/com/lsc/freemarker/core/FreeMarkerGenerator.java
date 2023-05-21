@@ -2,10 +2,13 @@ package com.lsc.freemarker.core;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.lsc.freemarker.db.DataBaseConnection;
 import com.lsc.freemarker.entity.FieldBean;
 import com.lsc.freemarker.entity.FreeMarkerDataBean;
 import com.lsc.freemarker.entity.MethodBean;
-import com.lsc.freemarker.utils.CustomClassLoader;
+import com.lsc.freemarker.entity.Table;
+import com.lsc.freemarker.enums.ResultOutPathEnum;
+import com.lsc.freemarker.enums.TemplatePathEnum;
 import com.lsc.freemarker.utils.FileUtils;
 import com.lsc.freemarker.utils.ReflectionUtil;
 import freemarker.cache.FileTemplateLoader;
@@ -15,6 +18,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.Assert;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -151,6 +155,10 @@ public class FreeMarkerGenerator {
     public static String scanAndGenerator(Map<String, Object> dataModel, String templatePath, String outPath) {
         //1  根据模版路径找到此路径下所有模版文件
         List<File> fileList = FileUtils.searchAllFile(new File(templatePath));
+        if (fileList.isEmpty()) {
+            log.info("模板路径下未找到模板文件");
+            return outPath;
+        }
         for (File file : fileList) {
             try {
                 executeGenertor(dataModel, file, templatePath, outPath);
@@ -171,18 +179,20 @@ public class FreeMarkerGenerator {
      * @throws Exception
      */
     public static void executeGenertor(Map<String, Object> dataModel, File file, String templatePath, String outPath) throws Exception {
-        // 1 文件路径处理 getAbsolutePath() 获取到当前file的绝对路径
-        // E:\TestCodeDome\FreeMarkerUtils\freemarker-template\templates\outtemplates\
-        //      ${path1}\${path2}\${path3}\${className}.java
+        log.info("executeGenertor:outPath: {} ", outPath);
         // 把前面的路径替换成空,只处理后面的路径
         String templateFileName = file.getAbsolutePath().replace(templatePath, "");
         String stringTemplate = processStringTemplate(templateFileName, dataModel);
-
+        log.info("templateFileName: {}", templateFileName);
         // 2 读取文件模版
         Template template = cfg.getTemplate(templateFileName);
         // 指定生成文件的字符集编码
         template.setOutputEncoding("utf-8");
 
+        String dateTime = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+        outPath = outPath + dateTime;
+
+        log.info("executeGenertor:outPath:处理后的 {} ", outPath);
         // 3 创建文件
         File file1 = FileUtils.mkdir(outPath, stringTemplate);
 
@@ -218,7 +228,7 @@ public class FreeMarkerGenerator {
         try {
             // 使用自定义的类加载器加载TestHelloWorld类
             Class classaa = loader.loadClass(classPath);
-            if (null == classaa){
+            if (null == classaa) {
                 log.info("classPathCreateMock 未加载到相关class文件");
                 return null;
             }
@@ -245,14 +255,14 @@ public class FreeMarkerGenerator {
         } catch (IllegalArgumentException e) {
             log.info("本地仓库此路径不存在,程序结束", e);
         } catch (NoClassDefFoundError error) {
-            log.info("NoClassDefFoundError ",error);
+            log.info("NoClassDefFoundError ", error);
             try {
                 // 把全类名多余的信息过滤掉
                 int indexOf = error.getMessage().indexOf("(");
                 String errorClassName = error.getMessage().substring(0, indexOf).trim();
                 loader.loadClass(errorClassName);
             } catch (ClassNotFoundException e) {
-                log.info("二次查询依然没有找到所需对象:{}",e);
+                log.info("二次查询依然没有找到所需对象:{}", e);
             }
         } catch (Throwable e) {
             log.info("Throwable  执行 异常类型: {}", e);
@@ -276,4 +286,31 @@ public class FreeMarkerGenerator {
     }
 
 
+    public boolean tableSqlCodeGeneration(String tableName, TemplatePathEnum templatePathEnum) {
+        boolean result = true;
+        try {
+            // 1 创建FreeMarker的配置类
+            Configuration instance = getInstance();
+
+            // 2 指定模版加载器 + 3 获取模版
+            FreeMarkerGenerator.generator(instance, templatePathEnum.TABLE_SQL_XML.getPath());
+
+            // 4 构造数据模型  map的key就是模版内占位符的key
+            Table tableData = DataBaseConnection.getDataBaseTableData(tableName);
+
+            System.out.println(JSONObject.toJSONString(tableData));
+
+            // 把构建的数据传递到模板内
+            Map<String, Object> dataModel = new HashMap<>();
+            dataModel.put("date", new Date());
+            dataModel.put("table", tableData);
+
+            // 5 代码生成  + 文件输出
+            FreeMarkerGenerator.scanAndGenerator(dataModel, TemplatePathEnum.TABLE_SQL_XML.getPath(), ResultOutPathEnum.TABLE_RESULT_PATH.getPath());
+        } catch (Exception e) {
+            log.info("生成sql语句文件发生异常", e);
+            result = false;
+        }
+        return result;
+    }
 }

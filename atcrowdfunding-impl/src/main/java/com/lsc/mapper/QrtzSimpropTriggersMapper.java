@@ -3,7 +3,9 @@ package com.lsc.mapper;
 import com.lsc.bean.QrtzSimpropTriggers;
 import com.lsc.bean.QrtzSimpropTriggersExample;
 import com.lsc.bean.QrtzSimpropTriggersKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzSimpropTriggersMapper {

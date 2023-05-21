@@ -3,7 +3,9 @@ package com.lsc.freemarker.demo;
 import com.lsc.freemarker.utils.FileUtils;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections.ListUtils;
 import org.junit.Test;
+import sun.applet.AppletClassLoader;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +17,7 @@ import java.net.URLClassLoader;
 import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
+import java.util.stream.Collectors;
 
 /**
  * @Description: 存根
@@ -119,7 +122,7 @@ public class JarLoaderDemo {
                 try {
                     Class clazz = Class.forName(clazzName);
 
-                    // 将类名称作为键，类Class对象作为值存入mao
+                    // 将类名称作为键，类Class对象作为值存入map
                     // 因为类名存在重复的可能，所以这里的类名是带包名的
                     clazzMap.put(clazzName, clazz);
 
@@ -134,6 +137,7 @@ public class JarLoaderDemo {
 
     }
 
+
     /**
      * 功能描述: 添加需要扫描的jar包
      *
@@ -143,20 +147,24 @@ public class JarLoaderDemo {
      * @Author:wangcanfeng
      * @Date: 2019/9/12-15:21
      */
-    public static void addUrl(File jarPath, URLClassLoader classLoader) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, MalformedURLException {
-        // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
+    public static void addUrl(File jarPath, URLClassLoader classLoader) {
+        try {
+            // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
 
-        // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
-        Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
+            // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
+            Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
 
-        // 反射访问属性或方法时将Accessible设置为true
-        if (!method.isAccessible()) {
-            method.setAccessible(true);
+            // 反射访问属性或方法时将Accessible设置为true
+            if (!method.isAccessible()) {
+                method.setAccessible(true);
+            }
+            // 把文件路径转为URL对象
+            URL url = jarPath.toURI().toURL();
+            // 把当前jar的路径加入到类加载器需要扫描的路径
+            method.invoke(classLoader, url);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        // 把文件路径转为URL对象
-        URL url = jarPath.toURI().toURL();
-        // 把当前jar的路径加入到类加载器需要扫描的路径
-        method.invoke(classLoader, url);
 
     }
 
@@ -168,6 +176,7 @@ public class JarLoaderDemo {
      * @return
      */
     public static Class<?> getClassObject(String jarPath, String classNamePath) {
+        log.info("getClassObject方法开始执行");
         Class<?> loadClass = null;
         try {
             // 获取委托的系统类加载器
@@ -177,59 +186,18 @@ public class JarLoaderDemo {
 
             // 递归遍历路径下的jar包
             List<File> files = FileUtils.searchAllJarFile(file);
-            // 遍历得到的jar包路径
-            for (File file1 : files) {
-                // 把指定路径下的jar文件添加到虚拟机
-                JarLoaderDemo.addUrl(file1, classLoader);
-            }
+            // 按文件最后修改时间排序
+            files.stream().sorted(Comparator.comparing(File::lastModified).reversed())
+                    // 获取第一个
+                    .limit(1)
+                    // 调用addurl方法,把jar包加载到jvm中
+                    .forEach((file1 -> JarLoaderDemo.addUrl(file1, classLoader)));
+
             loadClass = classLoader.loadClass(classNamePath);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return loadClass;
-    }
-
-    /**
-     * 功能描述: 添加需要扫描的jar包
-     *
-     * @param jarPath
-     * @return:void
-     * @since: v1.0
-     * @Author:wangcanfeng
-     * @Date: 2019/9/12-15:21
-     */
-  /*  public static void addUrl(File jarPath) throws NoSuchMethodException, InvocationTargetException,IllegalAccessException, MalformedURLException {
-        // URLClassLoader 该类加载器用于从指向 JAR 文件和目录的 URL 的搜索路径加载类和资源。这里假定任何以 '/' 结束的 URL 都是指向目录的。如果不是以该字符结束，则认为该 URL 指向一个将根据需要打开的 JAR 文件。
-
-        // 获取委托的系统类加载器
-        URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
-
-        // 反射获取类加载器中的addURL方法，并将需要加载类的jar路径 反射获取URL.class类的addURL()方法
-        Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
-
-        // 反射访问属性或方法时将Accessible设置为true
-        if (!method.isAccessible()) {
-            method.setAccessible(true);
-        }
-        // 把文件路径转为URL对象
-        URL url = jarPath.toURI().toURL();
-        // 把当前jar的路径加入到类加载器需要扫描的路径
-        method.invoke(classLoader, url);
-
-    }*/
-
-    @Test
-    public void test() throws ClassNotFoundException {
-
-        List<String> list = Arrays.asList("E:\\尚\\ideaxiangmu\\zaixianjiaoyu\\guli\\");
-
-        // DynamicClassLoader classLoader = new DynamicClassLoader(new String[]{"E:\\TestCodeDome\\ssm-crud\\target\\classes\\"});
-        DynamicClassLoader classLoader = new DynamicClassLoader((String[]) list.toArray());
-        Class<?> aClass = classLoader.loadClass("com.guli.ucenter.controller.MemberController");
-        System.out.println("aClass = " + aClass);
-
-
     }
 
 

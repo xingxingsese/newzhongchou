@@ -26,11 +26,10 @@ import java.util.List;
  */
 @Service
 public class CodeTemplateServiceImpl implements CodeTemplateService {
-     public Logger logger = LoggerFactory.getLogger(this.getClass());
+    public Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     TCodeTemplateMapper tCodeTemplateMapper;
-
 
 
     @Override
@@ -104,14 +103,14 @@ public class CodeTemplateServiceImpl implements CodeTemplateService {
     public void savaAdmin(TCodeTemplate tCodeTemplate) {
         // 检查用户名是否被占用
         boolean email = checkemail(tCodeTemplate);
-        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE,ExceptionCode.EMAIL_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE, ExceptionCode.EMAIL_THRER_ARE.getMsg());
         // 检查邮箱是否被占用
         boolean log = checkLogAccount(tCodeTemplate);
-        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE,ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE, ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
         tCodeTemplate.setUserpswd(AppUtils.getDigestPwd("123456"));
         tCodeTemplate.setCreatetime(AppUtils.getCurrentTime());
         tCodeTemplateMapper.insertSelective(tCodeTemplate);
-        logger.info("{} 新增完成 !",tCodeTemplate.getUsername());
+        logger.info("{} 新增完成 !", tCodeTemplate.getUsername());
     }
 
     @Override

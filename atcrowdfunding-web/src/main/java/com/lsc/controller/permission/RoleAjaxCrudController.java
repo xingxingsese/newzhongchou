@@ -30,12 +30,14 @@ public class RoleAjaxCrudController {
     RoleService roleService;
 
     @PostMapping("/role/update")
-    public String updataRole(TRole tRole){
+    public String updataRole(TRole tRole) {
         roleService.updataRole(tRole);
         return "ok";
     }
+
     /**
      * 根据id获取
+     *
      * @param id
      * @return
      */

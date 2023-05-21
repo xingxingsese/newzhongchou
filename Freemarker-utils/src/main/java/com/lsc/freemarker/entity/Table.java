@@ -1,6 +1,9 @@
 package com.lsc.freemarker.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -10,10 +13,10 @@ import java.util.List;
 
 @Data
 public class Table {
-    // 表名
-    private String name;
+    // 数据库表名
+    private String databaseTableName;
     // 处理后的表名
-    private String name2;
+    private String javaTableName;
     // 描述
     private String comment;
     // 主键列

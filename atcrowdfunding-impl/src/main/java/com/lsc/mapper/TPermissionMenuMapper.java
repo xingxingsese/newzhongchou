@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TPermissionMenu;
 import com.lsc.bean.TPermissionMenuExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TPermissionMenuMapper {
@@ -28,5 +30,5 @@ public interface TPermissionMenuMapper {
 
     int updateByPrimaryKey(TPermissionMenu record);
 
-    void insertBatchMenuPermission(@Param("permissionId")Integer permissionId, @Param("menuIds")List<Integer> menuIdsList);
+    void insertBatchMenuPermission(@Param("permissionId") Integer permissionId, @Param("menuIds") List<Integer> menuIdsList);
 }

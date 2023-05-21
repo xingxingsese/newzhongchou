@@ -34,15 +34,12 @@
 
 <%--页面展示图片--%>
 <style type="text/css">
-    body{
+    body {
         background-image: url(${ctx}/static/img/chuan.jpg); /*图片地址*/
         background-size: cover;
         background-repeat: no-repeat; /*图像不重复显示*/
     }
 </style>
-
-
-
 
 
 <script src="${ctx}/static/jquery/jquery-2.1.1.min.js"></script>

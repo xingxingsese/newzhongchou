@@ -1,4 +1,6 @@
 com\lsc\api\AdminService.class
 com\lsc\api\RoleService.class
+com\lsc\api\FreeMarkerService.class
+com\lsc\api\PermissonService.class
 com\lsc\api\MenuService.class
 com\lsc\constant\Constant.class

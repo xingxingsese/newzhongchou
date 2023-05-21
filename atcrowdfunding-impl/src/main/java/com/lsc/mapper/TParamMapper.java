@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TParam;
 import com.lsc.bean.TParamExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TParamMapper {

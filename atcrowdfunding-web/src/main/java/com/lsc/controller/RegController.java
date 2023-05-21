@@ -6,14 +6,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class RegController {
-	
-	@PostMapping("/reg")
-	public String reg() {
-		
-		return "redirect:member.html";
-	}
-	@GetMapping("/member.html")
-	public String memberPage() {
-		return "member";
-	}
+
+    @PostMapping("/reg")
+    public String reg() {
+
+        return "redirect:member.html";
+    }
+
+    @GetMapping("/member.html")
+    public String memberPage() {
+        return "member";
+    }
 }

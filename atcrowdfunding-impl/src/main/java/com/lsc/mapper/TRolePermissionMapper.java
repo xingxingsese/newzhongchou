@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TRolePermission;
 import com.lsc.bean.TRolePermissionExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TRolePermissionMapper {
@@ -28,5 +30,5 @@ public interface TRolePermissionMapper {
 
     int updateByPrimaryKey(TRolePermission record);
 
-    void insertPermissioinToRoleBath(@Param("rid")Integer rid,@Param("integerList") List<Integer> integerList);
+    void insertPermissioinToRoleBath(@Param("rid") Integer rid, @Param("integerList") List<Integer> integerList);
 }

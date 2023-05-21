@@ -41,7 +41,7 @@ public class AdminCrudControllerTest {
 
     @Test
     public void addAdmin() {
-     //   Mockito.when(tAdminMapper.selectByExample(any(TAdminExample.class))).thenReturn(new ArrayList<>());
+        //   Mockito.when(tAdminMapper.selectByExample(any(TAdminExample.class))).thenReturn(new ArrayList<>());
        /* ArrayList<TAdmin> list = new ArrayList<>();
         Mockito.when(tAdminMapper.selectByExample(any())).thenReturn(list);
         adminService.selectLogInfo("001","001");*/

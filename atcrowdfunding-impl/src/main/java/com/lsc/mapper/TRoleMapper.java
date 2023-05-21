@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TRole;
 import com.lsc.bean.TRoleExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TRoleMapper {

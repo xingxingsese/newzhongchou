@@ -17,7 +17,6 @@ import java.util.HashMap;
 public class FreemarkerUtils {
 
 
-
     public void FileTemplateLoader(String filePath) throws Exception {
         // 1 创建FreeMarker的配置类
         Configuration cfg = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
@@ -47,7 +46,6 @@ public class FreemarkerUtils {
         list.add("星期四");
         list.add("星期五");
         dateModel.put("weeks", list);
-
 
 
         // 5 文件输出

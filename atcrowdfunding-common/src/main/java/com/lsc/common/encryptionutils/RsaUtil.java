@@ -1,6 +1,7 @@
 package com.lsc.common.encryptionutils;
 
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TbUser;
 import com.lsc.bean.TbUserExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbUserMapper {

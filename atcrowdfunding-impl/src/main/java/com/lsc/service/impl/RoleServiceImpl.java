@@ -122,7 +122,7 @@ public class RoleServiceImpl implements RoleService {
     public void assignUserRole(Integer uid, String rids) {
         List<String> roleList = new ArrayList();
         if (StringUtils.isNotBlank(rids)) {
-             roleList = Arrays.asList(rids.split(","));
+            roleList = Arrays.asList(rids.split(","));
 
         }
         TAdminRoleExample tAdminRoleExample = new TAdminRoleExample();
@@ -134,6 +134,7 @@ public class RoleServiceImpl implements RoleService {
 
     /**
      * 删除觉得
+     *
      * @param uid
      * @param rids
      */
@@ -142,7 +143,7 @@ public class RoleServiceImpl implements RoleService {
         List<String> roleList = new ArrayList();
         if (StringUtils.isNotBlank(rids)) {
             roleList = Arrays.asList(rids.split(","));
-           // List<Integer> collect = Arrays.asList(rids.split(",")).stream().map(Integer::parseInt).collect(Collectors.toList());
+            // List<Integer> collect = Arrays.asList(rids.split(",")).stream().map(Integer::parseInt).collect(Collectors.toList());
 
         }
         TAdminRoleExample tAdminRoleExample = new TAdminRoleExample();

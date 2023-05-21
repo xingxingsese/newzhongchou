@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysUserToken;
 import com.lsc.bean.SysUserTokenExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysUserTokenMapper {

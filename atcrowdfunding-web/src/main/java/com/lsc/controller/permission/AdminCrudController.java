@@ -36,47 +36,49 @@ public class AdminCrudController {
     AdminService adminService;
 
     /**
-     *  角色service
+     * 角色service
      */
     @Autowired
     RoleService roleService;
 
     @GetMapping("/user/unAssign/role")
-    public String unAssignUserRole(@RequestParam("uid")Integer uid,@RequestParam("rids")String rids){
-        roleService.unAssignUserRole(uid,rids);
+    public String unAssignUserRole(@RequestParam("uid") Integer uid, @RequestParam("rids") String rids) {
+        roleService.unAssignUserRole(uid, rids);
         return "redirect:/user/assignRole.html?id=" + uid;
     }
 
     /**
      * 给用户分配指定的角色
+     *
      * @param uid
      * @param rids
      * @return
      */
     @GetMapping("/user/assign/role")
-    public String assignUserRole(@RequestParam("uid")Integer uid,@RequestParam("rids")String rids){
-        roleService.assignUserRole(uid,rids);
+    public String assignUserRole(@RequestParam("uid") Integer uid, @RequestParam("rids") String rids) {
+        roleService.assignUserRole(uid, rids);
         return "redirect:/user/assignRole.html?id=" + uid;
     }
+
     /**
      * 角色分配页
+     *
      * @return
      */
     @GetMapping("/user/assignRole.html")
-    public String toAssignRole(@RequestParam("id") Integer id,Model model){
+    public String toAssignRole(@RequestParam("id") Integer id, Model model) {
         // 查出客户已有的角色
-        List<TRole> roles =  roleService.getUserHasRoles(id);
+        List<TRole> roles = roleService.getUserHasRoles(id);
 
         // 查出客户未有的角色
         List<TRole> unRoles = roleService.getUserUnRoles(id);
 
         // 存入model中, 页面使用
-        model.addAttribute("roles",roles);
-        model.addAttribute("unRoles",unRoles);
+        model.addAttribute("roles", roles);
+        model.addAttribute("unRoles", unRoles);
 
         return "permission/user-role";
     }
-
 
 
     @GetMapping("/user/batch/delete")
@@ -95,39 +97,43 @@ public class AdminCrudController {
         }
         return "redirect:/admin/index.html";
     }
+
     /**
      * 批量删除
+     *
      * @param ids
      * @param session
      * @param model
      * @return
      */
     @GetMapping("/user/batch/delete")
-    public String deleteBatchAdmin(@RequestParam("ids") String ids,HttpSession session,Model model){
+    public String deleteBatchAdmin(@RequestParam("ids") String ids, HttpSession session, Model model) {
         model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));
         model.addAttribute("pn", session.getAttribute("pn"));
-        if (StringUtils.isNotBlank(ids)){
+        if (StringUtils.isNotBlank(ids)) {
             String[] split = ids.split(",");
             try {
                 for (String id : split) {
                     adminService.deleteAdmin(Integer.parseInt(id));
                 }
             } catch (NumberFormatException e) {
-                log.error("删除用户：{} 时出现异常",ids,e);
+                log.error("删除用户：{} 时出现异常", ids, e);
             }
         }
 
         return "redirect:admin/index.html";
     }
+
     /**
      * 单个删除
+     *
      * @param id
      * @param session
      * @param model
      * @return
      */
     @GetMapping("/user/delete")
-    public String deleteAdmin(@RequestParam("id") Integer id,HttpSession session,Model model){
+    public String deleteAdmin(@RequestParam("id") Integer id, HttpSession session, Model model) {
 
 
         model.addAttribute(Constant.QUERY_CONDITION_KEY, session.getAttribute(Constant.QUERY_CONDITION_KEY));

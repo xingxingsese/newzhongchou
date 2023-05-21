@@ -1,20 +1,29 @@
-package com.lsc.controller;
+package com.lsc.freemarker.core;
 
 import com.alibaba.fastjson.JSONObject;
+import com.lsc.freemarker.base.FreeMarkerDataModel;
+import com.lsc.freemarker.base.FreeMarkerServiceTemplate;
+import com.lsc.freemarker.entity.MockResult;
+import com.lsc.freemarker.entity.SetMethodBean;
+import com.lsc.freemarker.enums.ResultCodeEnum;
 import com.lsc.freemarker.entity.CrudBean;
+import com.lsc.freemarker.enums.ResultOutPathEnum;
+import com.lsc.freemarker.enums.TemplatePathEnum;
 import com.lsc.freemarker.utils.FileUtils;
+import com.lsc.freemarker.utils.ReflectionUtil;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by lisc on 2021/12/19
@@ -30,9 +39,15 @@ import java.util.Map;
 public class Generator {
 
     private static final Logger log = LoggerFactory.getLogger(Generator.class);
+    // 模版路径
+    private static final String TEMPLATE_PATH = "D:\\Code\\TestCode\\newzhongchou\\Freemarker-utils\\src\\main\\resources\\FreeMarkerFile\\CodeTemplates";
+
+    // 生成类路径
+    private static final String OUT_PATH = "D:\\Code\\TestCode\\newzhongchou\\Freemarker-utils\\src\\main\\resources\\FreeMarkerFile\\SpannedFile\\crud";
 
     // FreeMarker 连接对象
     private static Configuration cfg = null;
+
     /**
      * 1 创建FreeMarker的配置类
      * 2 制定模版加载器: 将模版存入缓存中
@@ -45,20 +60,26 @@ public class Generator {
      * 4 构造数据模型  map的key就是模版内占位符的key
      * 5 文件输出
      */
-    public static String generateCrudCode(String rootPath,String packagePath,String className,String tableName) {
-        // 模版路径
-        String templatePath = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\CodeTemplates";
-
-        // 生成类路径
-        String outPath = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\SpannedFile";
+    public static String generateCrudCode(String rootPath, String packagePath, String className, String tableName) {
+        log.info("Generator:generateCrudCode:rootPath:{},packagePath:{},className:{},tableName:{}", rootPath, packagePath, className, tableName);
+        if (StringUtils.isEmpty(rootPath)) {
+            log.info("Generator:generateCrudCode: rootPath为null");
+            return ResultCodeEnum.FAILURE.getCode();
+        }
+        String path = StringUtils.EMPTY;
+        if (rootPath.contains("iexpbizprod")) {
+            path = TEMPLATE_PATH + "\\iexpbizprod";
+        } else {
+            path = TEMPLATE_PATH + "\\ibizecoprod";
+        }
         // 元数据JSON文件路径
-        String jsonTextFile = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\MetaDataFile";
+        //String jsonTextFile = "E:\\TestCodeDome\\atcrowdfunding\\Freemarker-utils\\FreeMarkerFile\\MetaDataFile";
 
         // 1 创建FreeMarker的配置类
         Configuration instance = getInstance();
 
         // 2 指定模版加载器 + 3 获取模版
-        generator(instance, templatePath);
+        generator(instance, path);
 
         // 4 构造数据模型  map的key就是模版内占位符的key
         // Map<String, Object> dataModel = getDataModel(jsonTextFile);
@@ -66,12 +87,13 @@ public class Generator {
                 .rootPath(rootPath).packagePath(packagePath).className(className).tableName(tableName)
                 .build();
 
+
         Map<String, Object> dataModel = new HashMap<>();
-        dataModel.put("date",new Date());
-        dataModel.put("mock",crudBean);
+        dataModel.put("date", new Date());
+        dataModel.put("mock", crudBean);
 
         // 5 代码生成  + 文件输出
-        return scanAndGenerator(dataModel, templatePath, outPath);
+        return scanAndGenerator(dataModel, path, OUT_PATH);
 
     }
 
@@ -144,7 +166,6 @@ public class Generator {
     }
 
 
-
     /**
      * 代码生成
      * 1 扫描模版路径下所有模版
@@ -155,16 +176,18 @@ public class Generator {
      * @param outPath      输出代码路径
      */
     public static String scanAndGenerator(Map<String, Object> dataModel, String templatePath, String outPath) {
+        String result = ResultCodeEnum.SUCCESS.getCode();
         //1  根据模版路径找到此路径下所有模版文件
         List<File> fileList = FileUtils.searchAllFile(new File(templatePath));
         for (File file : fileList) {
             try {
                 executeGenertor(dataModel, file, templatePath, outPath);
             } catch (Exception e) {
+                result = ResultCodeEnum.FAILURE.getCode();
                 log.error("对模版进行代码生成时报错!", e);
             }
         }
-        return outPath;
+        return result;
     }
 
 
@@ -208,5 +231,32 @@ public class Generator {
         // 输出到out
         template.process(dataModel, out);
         return out.toString();
+    }
+
+    @Test
+    public void test() {
+        String name = "com.lsc.freemarker.entity.Bean";
+        ClassLoader classLoader = new CustomClassLoader();
+
+        MockResult<String> result = new MockResult();
+        FreeMarkerServiceTemplate.execute(result, TemplatePathEnum.SET_METHOD_PATH, ResultOutPathEnum.SET_METHOD_PATH, new FreeMarkerDataModel<SetMethodBean>() {
+            @Override
+            public SetMethodBean buildModelData() throws Exception {
+                Class<?> aClass = classLoader.loadClass(name);
+                List<Field> fieldList = ReflectionUtil.getDeclaredFields(aClass);
+
+                ArrayList<Method> methods = new ArrayList<>();
+                for (Field field : fieldList) {
+                    Method method = ReflectionUtil.getObjectSetMethod(aClass, field);
+                    if (null != method) {
+                        methods.add(method);
+                    }
+                }
+                log.info("set方法执行完毕");
+                List<String> methodList = methods.stream().map(Method::getName).collect(Collectors.toList());
+                return SetMethodBean.builder().className(aClass.getSimpleName()).methodsName(methodList).build();
+
+            }
+        });
     }
 }

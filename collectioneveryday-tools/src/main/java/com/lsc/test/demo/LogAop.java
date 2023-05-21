@@ -21,6 +21,7 @@ import java.lang.reflect.Method;
 @Aspect
 public class LogAop {
     public Logger log = LoggerFactory.getLogger(this.getClass());
+
     /**
      * 切入点
      * execution(<修饰符模式>?<返回类型模式><方法名模式>(<参数模式>)<异常模式>?)
@@ -36,12 +37,14 @@ public class LogAop {
      * 注意：
      * 1、如果目标方法自己try- catch了异常，而没有继续往外抛，则不会进入此通知。
      * 2、@AfterThrowing虽然处理异常，但它不会阻止异常传播到上一级调用者，如果没有catch，则会导致jvm终止。
+     *
      * @param e
      */
-    @AfterThrowing(throwing = "e",pointcut="ponitCut()")
+    @AfterThrowing(throwing = "e", pointcut = "ponitCut()")
     public void exceptionAdvice(JoinPoint jp, Throwable e) {
         System.out.println("异常通知" + e);
     }
+
     /**
      * 标注了@SystemLog 这个注解都会拦截
      */
@@ -101,7 +104,7 @@ public class LogAop {
         SystemLog annotation = currentMethod.getAnnotation(SystemLog.class);
         System.out.println("拦截方法注解上LogType值为：" + annotation.LogType());
 
-        log.info("AOP切面: {}.{}({})",className,methodName,param);
+        log.info("AOP切面: {}.{}({})", className, methodName, param);
 
         System.out.println("注解类型环绕通知..环绕后");
     }

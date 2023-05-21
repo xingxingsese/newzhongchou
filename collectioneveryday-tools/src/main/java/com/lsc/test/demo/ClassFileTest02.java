@@ -35,6 +35,7 @@ public class ClassFileTest02 extends ClassLoader {
 
     /**
      * 获取class文件的本地文件路径
+     *
      * @param classPath 例如/usr/java/classes下有一个test.App类，则/usr/java/classes即这个类的根路径，而.class文件的实际位置是/usr/java/classes/test/App.class
      */
     public List<String> getClassFilePath(String classPath) {
@@ -93,6 +94,7 @@ public class ClassFileTest02 extends ClassLoader {
 
     /**
      * 加载本地编译后的class文件
+     *
      * @param name
      * @param aClass
      * @return

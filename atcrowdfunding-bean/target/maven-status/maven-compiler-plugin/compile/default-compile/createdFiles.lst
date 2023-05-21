@@ -9,6 +9,7 @@ com\lsc\bean\TPermissionExample$Criterion.class
 com\lsc\bean\TPermissionMenuExample$Criteria.class
 com\lsc\bean\SysConfigExample$GeneratedCriteria.class
 com\lsc\bean\TReturnExample$Criteria.class
+com\lsc\bean\MockMethodBean$MockMethodBeanBuilder.class
 com\lsc\bean\TPermissionResource.class
 com\lsc\bean\TRoleExample$Criterion.class
 com\lsc\bean\QrtzFiredTriggersExample$Criterion.class
@@ -59,6 +60,7 @@ com\lsc\bean\TProjectTypeExample.class
 com\lsc\bean\TType.class
 com\lsc\bean\TOrderExample$Criterion.class
 com\lsc\bean\QrtzCronTriggersKey.class
+com\lsc\bean\MockClassBean.class
 com\lsc\bean\QrtzJobDetailsExample.class
 com\lsc\bean\QrtzSimpleTriggersExample.class
 com\lsc\bean\ScheduleJobLogExample$Criterion.class
@@ -83,6 +85,7 @@ com\lsc\bean\SysRoleExample$GeneratedCriteria.class
 com\lsc\bean\TTypeExample.class
 com\lsc\bean\TbUserExample$Criterion.class
 com\lsc\bean\TTransactionExample$GeneratedCriteria.class
+com\lsc\bean\TCodeTemplateExample.class
 com\lsc\bean\QrtzLocksKey.class
 com\lsc\bean\TOrder.class
 com\lsc\bean\SysUserRoleExample$Criterion.class
@@ -107,7 +110,9 @@ com\lsc\bean\TRoleExample$Criteria.class
 com\lsc\bean\QrtzSchedulerState.class
 com\lsc\bean\TMessageExample$GeneratedCriteria.class
 com\lsc\bean\QrtzSimpropTriggersExample$GeneratedCriteria.class
+com\lsc\bean\MockAttributeBean$MockAttributeBeanBuilder.class
 com\lsc\bean\SysOssExample.class
+com\lsc\bean\TCodeTemplateExample$Criterion.class
 com\lsc\bean\QrtzCronTriggersExample$GeneratedCriteria.class
 com\lsc\bean\TReturn.class
 com\lsc\bean\TCertExample$Criterion.class
@@ -139,13 +144,16 @@ com\lsc\bean\TProjectTypeExample$Criteria.class
 com\lsc\bean\TbUserExample$Criteria.class
 com\lsc\bean\TAccountTypeCertExample$Criterion.class
 com\lsc\bean\TCertExample.class
+com\lsc\bean\TCodeTemplateExample$Criteria.class
 com\lsc\bean\TProject.class
 com\lsc\bean\TProjectExample.class
 com\lsc\bean\SysLog.class
 com\lsc\bean\TProjectTag.class
 com\lsc\bean\QrtzFiredTriggers.class
 com\lsc\bean\SysOssExample$GeneratedCriteria.class
+com\lsc\bean\MockClassBean$MockClassBeanBuilder.class
 com\lsc\bean\QrtzPausedTriggerGrpsExample.class
+com\lsc\bean\MockMethodBean.class
 com\lsc\bean\TAdvertisementExample.class
 com\lsc\bean\TParamExample.class
 com\lsc\bean\TCertExample$GeneratedCriteria.class
@@ -169,6 +177,7 @@ com\lsc\bean\TTagExample$Criteria.class
 com\lsc\bean\SysUserExample.class
 com\lsc\bean\TMemberAddressExample$Criterion.class
 com\lsc\bean\TAdminExample$Criteria.class
+com\lsc\bean\MockAttributeBean.class
 com\lsc\bean\TTransactionExample$Criterion.class
 com\lsc\bean\SysMenuExample.class
 com\lsc\bean\SysCaptcha.class
@@ -209,6 +218,7 @@ com\lsc\bean\TPermissionMenuExample.class
 com\lsc\bean\TRoleExample$GeneratedCriteria.class
 com\lsc\bean\TResourceExample$GeneratedCriteria.class
 com\lsc\bean\TPermission.class
+com\lsc\bean\TCodeTemplateExample$GeneratedCriteria.class
 com\lsc\bean\SysOssExample$Criterion.class
 com\lsc\bean\TOrderExample$Criteria.class
 com\lsc\bean\QrtzBlobTriggersExample.class
@@ -217,6 +227,7 @@ com\lsc\bean\TMemberProjectFollow.class
 com\lsc\bean\QrtzSimpropTriggersExample$Criteria.class
 com\lsc\bean\QrtzJobDetailsKey.class
 com\lsc\bean\SysMenuExample$Criterion.class
+com\lsc\bean\CodeBean.class
 com\lsc\bean\TMenuExample$Criterion.class
 com\lsc\bean\TAdminRoleExample$GeneratedCriteria.class
 com\lsc\bean\SysOssExample$Criteria.class
@@ -241,6 +252,7 @@ com\lsc\bean\SysConfigExample$Criteria.class
 com\lsc\bean\TMemberCertExample.class
 com\lsc\bean\SysRoleMenu.class
 com\lsc\bean\TAdminRoleExample.class
+com\lsc\bean\TCodeTemplate.class
 com\lsc\bean\TMemberExample$Criterion.class
 com\lsc\bean\TPermissionMenuExample$GeneratedCriteria.class
 com\lsc\bean\QrtzJobDetailsExample$Criterion.class

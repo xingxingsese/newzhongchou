@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TMessage;
 import com.lsc.bean.TMessageExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TMessageMapper {

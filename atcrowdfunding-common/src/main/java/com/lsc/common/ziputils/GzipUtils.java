@@ -7,12 +7,11 @@ import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
 /**
- * @Description:
- * gzip压缩格式
+ * @Description: gzip压缩格式
  * gzip的实现算法还是deflate，只是在deflate格式上增加了文件头和文件尾。
- *
+ * <p>
  * 同样jdk也对gzip提供了支持，分别是GZIPOutputStream 和 GZIPInputStream类。
- *
+ * <p>
  * 同样可以发现GZIPOutputStream是继承于DeflaterOutputStream的，GZIPInputStream继承于InflaterInputStream，并且可以在源码中发现writeHeader和writeTrailer方法：
  * @Author: lisc
  * @date: 2022/7/23

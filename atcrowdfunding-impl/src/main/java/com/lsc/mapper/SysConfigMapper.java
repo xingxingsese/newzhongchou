@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysConfig;
 import com.lsc.bean.SysConfigExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysConfigMapper {

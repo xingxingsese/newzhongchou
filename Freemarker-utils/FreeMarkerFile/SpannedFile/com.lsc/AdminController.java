@@ -28,7 +28,7 @@ public class AdminCrudController {
     AdminService adminService;
 
     @GetMapping("/user/batch/delete")
-    public String deleteBacthAdmin(@RequestParam("ids")String ids,HttpSession session,Model model){
+    public String deleteBacthAdmin(@RequestParam("ids") String ids, HttpSession session, Model model) {
 
         adminService.deleteAdmin(id);
 
@@ -39,7 +39,7 @@ public class AdminCrudController {
     public String addAdmin(TAdmin tAdmin, Model model) {
         log.info("将要添加的用户为:{}", tAdmin);
         try {
-        adminService.savaAdmin(tAdmin);
+            adminService.savaAdmin(tAdmin);
         } catch (LscException e) {
             model.addAttribute(Constant.PAGE_MSG, e.getMsg());
             log.error("{}添加出错", tAdmin, e);
@@ -57,7 +57,7 @@ public class AdminCrudController {
     }
 
     @GetMapping("/user/edit.html")
-    public String toEdiPage(@RequestParam("id") Integer id,Model model) {
+    public String toEdiPage(@RequestParam("id") Integer id, Model model) {
         TAdmin admin = adminService.selectById(id);
 
         return "permission/user-edit";

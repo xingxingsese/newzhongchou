@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TDictionary;
 import com.lsc.bean.TDictionaryExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TDictionaryMapper {

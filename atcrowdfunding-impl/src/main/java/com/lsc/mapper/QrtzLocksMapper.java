@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.QrtzLocksExample;
 import com.lsc.bean.QrtzLocksKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzLocksMapper {

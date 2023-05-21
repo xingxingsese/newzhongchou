@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TAdminRole;
 import com.lsc.bean.TAdminRoleExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TAdminRoleMapper {
@@ -28,5 +30,5 @@ public interface TAdminRoleMapper {
 
     int updateByPrimaryKey(TAdminRole record);
 
-    void insertSelectiveBath(@Param("uid")Integer uid, @Param("rids")List<String> stringList);
+    void insertSelectiveBath(@Param("uid") Integer uid, @Param("rids") List<String> stringList);
 }

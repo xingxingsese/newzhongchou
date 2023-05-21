@@ -48,8 +48,8 @@ public class CompressionUI {
                 "D:\\Code\\TestCode\\newzhongchou\\everyday-tools\\src\\main\\java\\com\\lsc\\tools\\controoler\\CompressionUITwo.java"
         );
 
-       // String compressed = encryptedCompressed(list.get(0), list.get(1));
-        decryptionDecompression(TXT_PATH_ONE + "20221028191210.txt");
+        // String compressed = encryptedCompressed(list.get(0), list.get(1));
+        decryptionDecompression(TXT_PATH_ONE + "20221118203356.txt");
     }
 
     /**
@@ -108,11 +108,13 @@ public class CompressionUI {
         // 明文
         String content = new String(uncompress);
 
-        FileUtils.fileWriteAdbMkdir(DECRYPTION_TXTS + "pathAndContent.txt", content);
+        FileUtils.fileWriteAdbMkdir(DECRYPTION_TXTS + "pathAndContent2.txt", content);
         List<ClassBean> classBeans = JSON.parseObject(content, new TypeReference<List<ClassBean>>() {
         });
         classBeans.forEach(bean -> {
-            FileUtils.fileWriteAdbMkdir(RESULT_TXT_PATH + bean.getFileName(), bean.getContent());
+            //FileUtils.fileWriteAdbMkdir(RESULT_TXT_PATH + bean.getFileName(), bean.getContent());
+            // FileUtils.fileWriteAdbMkdir(bean.getPath() + bean.getFileName(), bean.getContent());
+            FileUtils.fileWriteAdbMkdir(bean.getPath(), bean.getContent());
         });
         log.info("CompressionUI:decryptionDecompression:end");
     }

@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.ScheduleJob;
 import com.lsc.bean.ScheduleJobExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ScheduleJobMapper {

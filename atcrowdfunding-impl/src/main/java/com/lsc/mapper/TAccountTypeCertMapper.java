@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TAccountTypeCert;
 import com.lsc.bean.TAccountTypeCertExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TAccountTypeCertMapper {

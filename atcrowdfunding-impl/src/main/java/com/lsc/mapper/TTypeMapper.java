@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TType;
 import com.lsc.bean.TTypeExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TTypeMapper {

@@ -36,4 +36,9 @@ public class CrudBean {
      * 表名
      */
     private String tableName;
+
+    /**
+     * 数据库表对象
+     */
+    private Table table;
 }

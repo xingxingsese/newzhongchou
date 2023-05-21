@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TMember;
 import com.lsc.bean.TMemberExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TMemberMapper {

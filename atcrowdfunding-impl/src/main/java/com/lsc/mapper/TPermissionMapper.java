@@ -2,6 +2,7 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TPermission;
 import com.lsc.bean.TPermissionExample;
+
 import java.util.List;
 
 import com.lsc.bean.TRolePermission;
@@ -31,4 +32,6 @@ public interface TPermissionMapper {
     int updateByPrimaryKey(TPermission record);
 
     List<TPermission> queryRolePermission(Integer userId);
+
+    List<TPermission> selectRolePermissions(Integer rid);
 }

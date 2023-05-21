@@ -218,10 +218,10 @@ public class FreeMarkerGenerator {
         try {
             // 使用自定义的类加载器加载TestHelloWorld类
             Class classaa = loader.loadClass(classPath);
-           if (null == classaa){
-               log.info("classPathCreateMock 未加载到相关class文件");
-               return null;
-           }
+            if (null == classaa) {
+                log.info("classPathCreateMock 未加载到相关class文件");
+                return null;
+            }
             // 获取全类名
             String classPathName = classaa.getName();
 
@@ -245,14 +245,14 @@ public class FreeMarkerGenerator {
         } catch (IllegalArgumentException e) {
             log.info("本地仓库此路径不存在,程序结束", e);
         } catch (NoClassDefFoundError error) {
-            log.info("NoClassDefFoundError ",error);
+            log.info("NoClassDefFoundError ", error);
             try {
                 // 把全类名多余的信息过滤掉
                 int indexOf = error.getMessage().indexOf("(");
                 String errorClassName = error.getMessage().substring(0, indexOf).trim();
                 loader.loadClass(errorClassName);
             } catch (ClassNotFoundException e) {
-                log.info("二次查询依然没有找到所需对象:{}",e);
+                log.info("二次查询依然没有找到所需对象:{}", e);
             }
         } catch (Throwable e) {
             log.info("Throwable  执行 异常类型: {}", e);

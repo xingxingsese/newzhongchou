@@ -23,15 +23,13 @@
     </div>
 </nav>
 <%--页面展示图片--%>
- <style type="text/css">
-     body{
-         background-image: url(${ctx}/static/img/yejing.jpg); /*图片地址*/
-         background-size: cover;
-         background-repeat: no-repeat; /*图像不重复显示*/
-     }
- </style>
-
-
+<style type="text/css">
+    body {
+        background-image: url(${ctx}/static/img/yejing.jpg); /*图片地址*/
+        background-size: cover;
+        background-repeat: no-repeat; /*图像不重复显示*/
+    }
+</style>
 
 
 <div class="container">
@@ -43,7 +41,7 @@
                 <strong>登录失败</strong> ${msg}
             </div>
         </c:if>
-        <h2 class="form-signin-heading" style="color:white;"><i class="glyphicon glyphicon-log-in" ></i> 用户登录</h2>
+        <h2 class="form-signin-heading" style="color:white;"><i class="glyphicon glyphicon-log-in"></i> 用户登录</h2>
         <div class="form-group has-success has-feedback">
             <input type="text" class="form-control" name="username" value="${username}" placeholder="请输入登录账号" autofocus>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>

@@ -3,7 +3,9 @@ package com.lsc.mapper;
 import com.lsc.bean.QrtzSimpleTriggers;
 import com.lsc.bean.QrtzSimpleTriggersExample;
 import com.lsc.bean.QrtzSimpleTriggersKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzSimpleTriggersMapper {

@@ -54,7 +54,7 @@ public class CompressionEncryptionTest {
         byte[] decrypt = PBEUtil.decrypt(base64, passWrod, passWrod.getBytes());
         // 解压缩
         uncompress = Bzip2Utils.uncompress(decrypt);
-        log.info("解密后:{}",new String(uncompress));
+        log.info("解密后:{}", new String(uncompress));
 
     }
 

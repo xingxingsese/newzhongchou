@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TProjectType;
 import com.lsc.bean.TProjectTypeExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TProjectTypeMapper {

@@ -26,7 +26,7 @@ import java.util.List;
  */
 @Service
 public class AdminServiceImpl implements AdminService {
-     public Logger logger = LoggerFactory.getLogger(this.getClass());
+    public Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     TAdminMapper tAdminMapper;
@@ -105,14 +105,14 @@ public class AdminServiceImpl implements AdminService {
     public void savaAdmin(TAdmin tAdmin) {
         // 检查用户名是否被占用
         boolean email = checkemail(tAdmin);
-        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE,ExceptionCode.EMAIL_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.EMAIL_THRER_ARE, ExceptionCode.EMAIL_THRER_ARE.getMsg());
         // 检查邮箱是否被占用
         boolean log = checkLogAccount(tAdmin);
-        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE,ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
+        AssertUtils.isTrue(email, ExceptionCode.ACCOUNT_THRER_ARE, ExceptionCode.ACCOUNT_THRER_ARE.getMsg());
         tAdmin.setUserpswd(AppUtils.getDigestPwd("123456"));
         tAdmin.setCreatetime(AppUtils.getCurrentTime());
         tAdminMapper.insertSelective(tAdmin);
-        logger.info("{} 新增完成 !",tAdmin.getUsername());
+        logger.info("{} 新增完成 !", tAdmin.getUsername());
     }
 
     @Override

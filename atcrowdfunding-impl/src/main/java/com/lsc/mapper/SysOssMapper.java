@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.SysOss;
 import com.lsc.bean.SysOssExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysOssMapper {

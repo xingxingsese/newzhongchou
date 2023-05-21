@@ -38,7 +38,7 @@ public class Bzip2Utils {
             bcos.write(srcBytes);
             bcos.close();
         } catch (Exception e) {
-            log.error("Bzip2Utils:compress 发生异常e:{}",e.getStackTrace(),e);
+            log.error("Bzip2Utils:compress 发生异常e:{}", e.getStackTrace(), e);
         }
         return out.toByteArray();
     }

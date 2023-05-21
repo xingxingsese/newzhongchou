@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TResource;
 import com.lsc.bean.TResourceExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TResourceMapper {

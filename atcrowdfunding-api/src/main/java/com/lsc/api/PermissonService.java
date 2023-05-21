@@ -28,6 +28,7 @@ public interface PermissonService {
 
     /**
      * 按照权限id查出它可以操作的所有菜单
+     *
      * @param permissionId 权限id
      * @return
      */

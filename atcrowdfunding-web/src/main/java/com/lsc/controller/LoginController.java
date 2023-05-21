@@ -31,36 +31,40 @@ public class LoginController {
     AdminService adminService;
 
 
-
     @PostMapping("/doLogin")
-    public String login(@RequestParam("username") String userName, @RequestParam("password")String passWord,
-                        HttpSession httpSession, Model model){
-        log.debug("userName: {}, passWord:{}",userName,passWord);
+    public String login(@RequestParam("username") String userName, @RequestParam("password") String passWord,
+                        HttpSession httpSession, Model model) {
+        log.debug("userName: {}, passWord:{}", userName, passWord);
         TAdmin tAdmin = adminService.selectLogInfo(userName, AppUtils.getDigestPwd(passWord));
-        if (tAdmin == null){
-            model.addAttribute(Constant.PAGE_MSG,"帐号或密码错误,请重新输入");
-            model.addAttribute("username",userName);
-            log.debug("用户:{} 密码错误 {}",userName,passWord);
+        if (tAdmin == null) {
+            model.addAttribute(Constant.PAGE_MSG, "帐号或密码错误,请重新输入");
+            model.addAttribute("username", userName);
+            log.debug("用户:{} 密码错误 {}", userName, passWord);
             return "forward:/login.jsp";
         }
-        httpSession.setAttribute(Constant.LOGIN_USER_SESSION_KEY,tAdmin);
+        httpSession.setAttribute(Constant.LOGIN_USER_SESSION_KEY, tAdmin);
 
         return "redirect:/main.html";
     }
 
     @GetMapping("/main.html")
-    public String manPage(HttpSession httpSession,Model model){
+    public String manPage(HttpSession httpSession, Model model) {
 
-        TAdmin loginUser = (TAdmin)httpSession.getAttribute(Constant.LOGIN_USER_SESSION_KEY);
-        if (loginUser == null){
-            model.addAttribute(Constant.PAGE_MSG,"请先登录");
+        TAdmin loginUser = (TAdmin) httpSession.getAttribute(Constant.LOGIN_USER_SESSION_KEY);
+        if (loginUser == null) {
+            model.addAttribute(Constant.PAGE_MSG, "请先登录");
             return "forward:/login.jsp";
         }
         //动态的去数据库查出菜单,并且组装好
         //List<TMenu> meunus = adminService.listMenus();
         List<TMenu> meunus = adminService.listYourMenus(loginUser.getId());
-        httpSession.setAttribute(Constant.MENU_SESSION_KEY,meunus);
+        httpSession.setAttribute(Constant.MENU_SESSION_KEY, meunus);
 
         return "main";
+    }
+
+    @PostMapping("/login")
+    public String loginPage() {
+        return "forward:/login.jsp";
     }
 }

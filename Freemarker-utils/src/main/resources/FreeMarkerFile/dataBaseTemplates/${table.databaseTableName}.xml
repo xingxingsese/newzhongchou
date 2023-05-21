@@ -1,0 +1,136 @@
+<table sqlname="${table.databaseTableName}" dummyPk="id" physicalName="${table.databaseTableName}">
+
+    <!--批量插入-->
+    <operation name="batchInsert">
+        <extraparams>
+            <param name="items" javatype="java.util.List"/>
+        </extraparams>
+        <sql>
+            <![CDATA[
+                INSERT INTO ${table.databaseTableName}
+                (<#list table.columns as column>${column.columnName}<#sep>, </#list>)
+                VALUES (<#list table.columns as column>?<#sep>, </#list>)
+
+
+		    ]]>
+        </sql>
+        <sqlmap>
+            <![CDATA[
+                INSERT INTO ${table.databaseTableName}
+                (<#list table.columns as column>${column.columnName}<#sep>, </#list>)
+                VALUES
+                 <iterate conjunction=",">
+                 (
+                    <#list table.columns as column>
+                    #items[].${column.javaColumnName}#<#sep>, </#sep>
+                    </#list>
+                  )
+                 </iterate>
+		    ]]>
+        </sqlmap>
+    </operation>
+
+    <!--单条插入-->
+    <operation name="insert" paramtype="object">
+        <sql>
+            <![CDATA[
+                INSERT INTO ${table.databaseTableName}
+                  (<#list table.columns as column>${column.columnName}<#sep>, </#list>)
+                VALUES (<#list table.columns as column>?<#sep>, </#list>)
+		    ]]>
+        </sql>
+    </operation>
+
+    <!--查询单条-->
+    <operation name="selectOneByIpayUserId" multiplicity="one">
+        <sql>
+            <![CDATA[
+                 SELECT
+					<#list table.columns as column>${column.columnName}<#sep>, </#list>
+                 FROM
+                    ${table.databaseTableName}
+                 WHERE
+                    ipay_user_id = ? for update
+            ]]>
+        </sql>
+    </operation>
+
+    <!--查询多条-->
+    <operation name="selectByUserIdAndLegalName" multiplicity="many">
+        <sql>
+            <![CDATA[
+                 SELECT
+                    <#list table.columns as column>${column.columnName}<#sep>, </#list>
+                 FROM
+                    ${table.databaseTableName}
+                 WHERE
+                    user_id = ? and legal_name = ?
+                 FOR UPDATE
+            ]]>
+        </sql>
+    </operation>
+
+    <!--分页查-->
+    <operation name="queryCompanyInfoList" multiplicity="many">
+        <extraparams>
+            <param name="user_id" javatype="java.lang.String"/>
+            <param name="pageSize" javatype="java.lang.Integer"/>
+            <param name="offset" javatype="java.lang.Integer"/>
+        </extraparams>
+        <sql>
+            <![CDATA[
+                SELECT
+                    <#list table.columns as column>${column.columnName}<#sep>, </#list>
+                FROM
+                    ${table.databaseTableName}
+            ]]>
+        </sql>
+        <sqlmap>
+            <![CDATA[
+                 SELECT
+                    <#list table.columns as column>${column.columnName}<#sep>, </#list>
+                 FROM
+                    ${table.databaseTableName}
+                 WHERE
+                    user_id = #userId#
+                 ORDER BY gmt_create desc
+                 LIMIT #offset#,#pageSize#
+            ]]>
+        </sqlmap>
+    </operation>
+
+    <!--更新-->
+    <operation name="updateByIpayUserId" paramtype="object">
+        <sql>
+            <![CDATA[
+                UPDATE ${table.databaseTableName}
+                SET gmt_modified = CURRENT_TIMESTAMP
+                WHERE ipay_user_id = ?
+            ]]>
+        </sql>
+        <sqlmap>
+            <![CDATA[
+                UPDATE ${table.databaseTableName}
+                SET
+					gmt_modified = CURRENT_TIMESTAMP
+					<#list table.columns as column>
+					<dynamic prepend=","><isNotNull property="${column.javaColumnName}">${column.columnName} = #${column.javaColumnName}#</isNotNull></dynamic>
+					</#list>
+                WHERE
+                    ipay_user_id = #ipayUserId#
+            ]]>
+        </sqlmap>
+    </operation>
+
+
+    <operation name="deleteByIpayUser" multiplicity="one">
+        <sql>
+            <![CDATA[
+                 DELETE FROM ${table.databaseTableName}
+                 WHERE
+                    ipay_user_id = ?
+            ]]>
+        </sql>
+    </operation>
+
+</table>

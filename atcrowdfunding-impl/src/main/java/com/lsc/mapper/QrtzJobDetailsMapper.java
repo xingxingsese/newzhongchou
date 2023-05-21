@@ -3,7 +3,9 @@ package com.lsc.mapper;
 import com.lsc.bean.QrtzJobDetails;
 import com.lsc.bean.QrtzJobDetailsExample;
 import com.lsc.bean.QrtzJobDetailsKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzJobDetailsMapper {

@@ -3,7 +3,9 @@ package com.lsc.mapper;
 import com.lsc.bean.QrtzFiredTriggers;
 import com.lsc.bean.QrtzFiredTriggersExample;
 import com.lsc.bean.QrtzFiredTriggersKey;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface QrtzFiredTriggersMapper {

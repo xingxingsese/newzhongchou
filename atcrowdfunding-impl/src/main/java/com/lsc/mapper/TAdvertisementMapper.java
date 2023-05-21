@@ -2,7 +2,9 @@ package com.lsc.mapper;
 
 import com.lsc.bean.TAdvertisement;
 import com.lsc.bean.TAdvertisementExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TAdvertisementMapper {

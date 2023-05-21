@@ -45,26 +45,25 @@ public class FreeMarkerController {
 
     /**
      * 根据json文件生成java代码
-     *
      */
     @PostMapping("/freemarker/jsonbuildcode")
     public String beanJsonBuildCode(CodeBean request) {
         log.info("接收到的数据为:{}", JSON.toJSONString(request));
 
         HashMap<String, Object> map = new HashMap<>();
-        map.put("projectPath",request.getProjectPath());
-        map.put("ClassName",request.getClassName());
-        map.put("MapClassName",request.getMapClass());
-        map.put("date",new Date());
+        map.put("projectPath", request.getProjectPath());
+        map.put("ClassName", request.getClassName());
+        map.put("MapClassName", request.getMapClass());
+        map.put("date", new Date());
         String outPath = request.getOutPath();
         Boolean result = freeMarkerService.beanJsonBuildCode(Constant.JAVA_CODE_TEMPLATE_PATH, outPath, map);
 
 
-        return result?Constant.OK:Constant.FAIL;
+        return result ? Constant.OK : Constant.FAIL;
     }
 
     @PostMapping("/freemarker/templete/mock")
-    public String buildMockCode(TCodeTemplate tCodeTemplate){
+    public String buildMockCode(TCodeTemplate tCodeTemplate) {
         log.info("接收到的数据为:{}", tCodeTemplate);
         tCodeTemplate.setCreateDate(new Date());
         tCodeTemplate.setType(Constant.MOCK);

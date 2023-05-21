@@ -41,10 +41,8 @@ public class MenuAjaxCrudController {
     /**
      * 为指定权限,分配它可以操作的菜单
      *
-     * @param permissionId
-     *            权限id
-     * @param menuIds
-     *            菜单的id集合用,号分割
+     * @param permissionId 权限id
+     * @param menuIds      菜单的id集合用,号分割
      * @return
      */
     @PostMapping("/menu/permisson/save")
@@ -53,6 +51,7 @@ public class MenuAjaxCrudController {
         menuService.saveMenuPermissions(permissionId, menuIds);
         return "ok";
     }
+
     /**
      * 查询所有菜单
      */

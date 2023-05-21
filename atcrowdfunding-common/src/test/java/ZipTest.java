@@ -1,4 +1,3 @@
-import com.alibaba.fastjson.JSONObject;
 import com.lsc.common.FileUtils;
 import com.lsc.common.encryptionutils.Base64Util;
 import com.lsc.common.encryptionutils.PBEUtil;
@@ -18,6 +17,7 @@ public class ZipTest {
 
     private static final String PATH = "C:\\Users\\zuiho\\Desktop\\压缩后\\AssertUtils.java";
     private static final String PATH2 = "C:\\Users\\zuiho\\Desktop\\压缩后\\";
+
     /**
      * 输入多个url地址,压缩zip,压缩,加密
      */
@@ -38,16 +38,16 @@ public class ZipTest {
         // 转为base64
         encode = Base64Util.encryptBASE64(encrypt);
         // 输出密文
-        FileUtils.fileWriteAdbMkdir(PATH2+file.getName(),encode);
-        ZipUtils.fileToZip(PATH2,PATH2,"yasuo");
+        FileUtils.fileWriteAdbMkdir(PATH2 + file.getName(), encode);
+        ZipUtils.fileToZip(PATH2, PATH2, "yasuo");
 
-        byte[] zipBytes = FileUtils.readFileAllBytesReturnBytes(PATH2+"yasuo.zip");
+        byte[] zipBytes = FileUtils.readFileAllBytesReturnBytes(PATH2 + "yasuo.zip");
         // 加密
         byte[] encryptZIP = PBEUtil.encrypt(zipBytes, passWrod, salt.getBytes());
         // 转为base64
         String encodeZIP = Base64Util.encryptBASE64(encryptZIP);
         // 输出密文
-        FileUtils.fileWriteAdbMkdir(PATH2+"xxxxxxxx.txt",encode);
+        FileUtils.fileWriteAdbMkdir(PATH2 + "xxxxxxxx.txt", encode);
     }
 
     @Test
